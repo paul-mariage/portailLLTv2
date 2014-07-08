@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Export-Package: uk.co.spudsoft.birt.emitters.excel,uk.co.spudsoft.birt
+ .emitters.excel.framework
+Require-Bundle: org.eclipse.birt.report.engine,org.apache.poi;bundle-v
+ ersion="[3.9.0,4.0.0)",javax.xml.stream;bundle-version="[1.0.1,2.0.0)
+ "
+Bundle-Vendor: SpudSoft
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,lib/commons-codec-1.5.jar,lib/dom4j-1.6.1.jar,lib/
+ stax-api-1.0.1.jar,lib/xmlbeans-2.3.0.jar,lib/poi-3.9-20121203.jar,li
+ b/poi-ooxml-3.9-20121203.jar,lib/poi-ooxml-schemas-3.9-20121203.jar
+Bundle-Version: 4.2.3.v20140106-0433
+Bundle-Name: SpudSoft BIRT Excel Emitters
+Bundle-Activator: uk.co.spudsoft.birt.emitters.excel.framework.ExcelEm
+ itterPlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: uk.co.spudsoft.birt.emitters.excel;singleton:=tru
+ e
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

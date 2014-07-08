@@ -1,0 +1,118 @@
+/* Copyright 1994-2006, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+.actuate-selector-type-group
+{
+    margin-bottom: 0;
+}
+
+.actuate-selector-type-wrap
+{
+    display: inline;
+	padding: 3px 0 0 0;
+    line-height:45px;
+    white-space: nowrap;
+}
+
+.actuate-selector-type-group .actuate-selector-type-wrap
+{
+    height: 45px;
+}
+
+.actuate-browser-ie .actuate-selector-type-group .actuate-selector-type-wrap
+{
+    height: 48px;
+}
+
+.actuate-browser-ie .actuate-selector-type-wrap input
+{
+    width:48px;
+    height:48px;
+}
+
+.actuate-selector-type-wrap div:focus
+{
+	outline-style: dotted;
+	outline-width: thin;
+}
+
+.actuate-selector-type {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 48px;
+	width: 48px;
+    vertical-align: bottom;
+} 
+
+.actuate-selector-type {
+    margin-bottom: 3px;
+}
+
+.actuate-browser-ie .actuate-selector-type {
+    margin-bottom: 2px;
+}
+
+.actuate-selector-type-focus .actuate-selector-type,
+.actuate-selector-type-over
+{
+	background-position: 0 -100px;
+}
+
+.actuate-selector-type-down {
+	background-position: 0 -100px;
+}
+
+.actuate-selector-type-checked .actuate-selector-type-focus .actuate-selector-type, 
+.actuate-selector-type-checked .actuate-selector-type-over {
+	background-position:0 -150px;
+}
+
+.actuate-selector-type-checked .actuate-selector-type-down {
+	background-position:0 -150px;
+}
+
+.actuate-selector-type-checked .actuate-selector-type 
+{
+	background-position:0 -150px;
+}
+
+.actuate-selector-type-group-label {
+    border-bottom: 1px solid #99BBE8;
+    color: #15428B;
+    margin-bottom: 5px;
+    padding-left: 3px !important;
+    float: none !important;
+}
+
+.actuate-selector-type-checkBox .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_checkbox.png');
+}
+
+.actuate-selector-type-dropdown .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_dropdown.png');
+}
+
+.actuate-selector-type-list .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_list.png');
+}
+
+.actuate-selector-type-slider .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_slider.png');
+}
+
+.actuate-selector-type-radioButton .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_radio.png');
+}
+
+.actuate-selector-type-calendar .actuate-selector-type
+{
+	background-image: url('../../images/selector/selector_type_calendar.png');
+}
+
+ 

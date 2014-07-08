@@ -1,0 +1,23 @@
+
+.actuate_iv_ui_dialog_style_ivValueDialog .labelWidth
+{
+	width: 72px;
+}	
+
+/******************************************************************************
+ *	select value dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_style_ivValueDialog .findValueInputText
+{
+	width		: 270px;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .inputText
+{
+	width: 270px;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .valueListWidth
+{
+	width: 270px !important;
+}

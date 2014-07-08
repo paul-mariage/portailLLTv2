@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgetMetaData>
+
+ 	
+	<!-- common classes -->
+	<class name="AcIconClass">
+		<member name="name" dataType="String"/>
+	</class>
+
+	<!-- Label classes -->
+	<class name="AcLabelCfgClass">
+		<member name="label" dataType="String"/>
+		<member name="theme" dataType="String"/>
+	</class>
+	
+	<class name="AcLabelClass">
+		<member name="cfg" dataType="AcLabelCfgClass"/>
+	</class>
+
+	<!-- Button classes -->
+	<class name="AcButtonCfgClass">
+		<member name="labelData" dataType="String"/>
+		<member name="labelDataField" dataType="String"/>
+		<member name="label" dataType="String"/>
+		<member name="enabled" dataType="Boolean"/>
+		<member name="icon" dataType="AcIconClass"/>
+		<member name="position" dataType="String"/>
+		<member name="theme" dataType="String"/>
+	</class>
+
+	<class name="AcButtonClass">
+		<event name="SELECT" dataType="Object"/>
+		<member name="cfg" dataType="AcButtonCfgClass"/>
+		<method name="getId" returnType="String"/>
+		<method name="getValue" returnType="String"/>
+	</class>
+
+	<!-- Navbar classes -->
+	<class name="AcNavBarItemClass">
+		<member name="label" dataType="String"/>
+		<member name="icon" dataType="AcIconClass"/>
+		<member name="position" dataType="String"/>
+	</class>
+	
+	<class name="AcNavBarClass">
+		<event name="SELECT" dataType="Object"/>
+		<member name="activeItem" dataType="AcNavBarItemClass"/>
+		<member name="theme" dataType="String"/>
+	</class>
+
+	<!-- List classes -->
+	<class name="AcListItemClass">
+	    <member name="icon" dataType="AcIconClass"/>
+		<member name="primaryField" dataType="String"/>
+		<member name="secondaryField" dataType="String"/>
+		<member name="description" dataType="String"/>
+	    <member name="splitButton" dataType="Boolean"/>
+		<member name="countBubbleField" dataType="String"/>
+	</class>
+
+	<class name="AcListCfgClass">
+		<member name="statcData" dataType="Object"/>
+		<member name="listData" dataType="String"/>
+		<member name="sectionKey" dataType="String"/>
+		<member name="title" dataType="String"/>
+		<member name="itemStructure" dataType="AcListItemClass"/>
+		<member name="itemMarkup" dataType="String"/>
+		<member name="enableSearch" dataType="Boolean"/>
+		<member name="theme" dataType="String"/>		
+	</class>
+
+	<class name="AcListClass">
+		<event name="ITEMSELECT" dataType="Object"/>
+		<event name="SHOWDETAIL" dataType="Object"/>
+		<member name="cfg" dataType="AcListCfgClass"/>
+		<method name="getSelectedValues" returnType="Object"/>
+		<method name="refresh"/>
+	</class>
+
+	<!-- Chart classes -->
+	<class name="AcChartClass">
+		<event name="SELECT" dataType="Object"/>
+		<event name="REFRESH" dataType="Object"/>
+		<member name="chartData" dataType="String"/>
+		<member name="chartModel" dataType="String"/>
+		<method name="filter">
+			<argument name="column" dataType="String"/>
+			<argument name="value" dataType="String"/>
+		</method>
+		<method name="refresh"/>
+	</class>
+
+	<!-- DataView classes -->
+	<class name="AcDataViewIteratorClass">
+		<method name="getData" returnType="Object"/>
+		<method name="filter"/>
+	</class>
+
+	<class name="AcDataViewClass">
+		<event name="REFRESH" dataType="Object"/>
+		<method name="getIterator" returnType="AcDataViewIterator"/>
+	</class>
+
+	<!-- Custom classes -->
+	<class name="AcCustomClass">
+		<event name="SELECT" dataType="Object"/>
+		<event name="REFRESH" dataType="Object"/>
+		
+		<member name="data" dataType="AcDataViewClass"/>
+		<member name="container" dataType="Object"/>
+	</class>
+
+	<!-- System classes -->
+	<class name="AcSystemClass">
+		<method name="phone">
+			<argument name="number" dataType="String"/>
+		</method>
+		<method name="sms">
+			<argument name="message" dataType="String"/>
+		</method>
+		<method name="email">
+			<argument name="to" dataType="String"/>
+			<argument name="cc" dataType="String"/>
+			<argument name="message" dataType="String"/>
+		</method>
+		<method name="toScreen">
+			<argument name="screen" dataType="String"/>
+		</method>
+		<method name="toDialog">
+			<argument name="dialog" dataType="String"/>
+		</method>
+		<method name="toURL">
+			<argument name="url" dataType="String"/>
+		</method>
+	</class>
+
+	<!-- Enumeration -->
+	<ChoiceType name="AcIconPosition">
+	    <Choice displayNameID="Choices.acIconPosition.left" name="left"/>
+	    <Choice displayNameID="Choices.acIconPosition.right" name="right"/>
+	    <Choice displayNameID="Choices.acIconPosition.top" name="top"/>
+	    <Choice displayNameID="Choices.acIconPosition.bottom" name="bottom"/>
+	</ChoiceType>
+
+	<!-- common elements (Internal data structure) -->
+	<element name="AcIconElement" class="AcIconClass">
+		<property name="iconName" type="string"/>
+	</element>
+	
+	<!-- Label widget -->
+	<widget name="AcLabelWidget" widgetClass="AcLabelClass">
+		<property name="label" type="string"/>
+		<property name="theme" type="string"/>
+	</widget>
+
+	<!-- Button widget -->
+	<widget name="AcButtonWidget" widgetClass="AcButtonClass">
+		<property name="labelData" type="string"/>
+		<property name="labelDataField" type="string"/>
+		<property name="label" type="string"/>
+		<property name="enabled" type="boolean"/>
+		<property name="icon" type="element">
+			<type name="AcIconElement"/>
+		</property>
+		<property name="position" type="choice">
+			<type name="AcIconPosition"/>
+			<default>left</default>
+		</property>
+		<property name="theme" type="string"/>
+	</widget>
+	
+	<!-- Navbar widget -->
+	<element name="AcNavBarItemElement" class="AcNavBarItemClass">
+		<property name="label" type="string"/>
+		<property name="icon" type="element">
+			<type name="AcIconElement"/>
+		</property>
+	</element>
+
+	<widget name="AcNavBarWidget" widgetClass="AcNavBarClass">
+		<property name="items" type="element" isList="true">
+			<type name="AcNavBarItemElement"/>
+		</property>
+		<!-- 1-based index, 0 means no active item. -->
+		<property name="activeItem" type="integer"/>
+		<property name="iconPosition" type="choice">
+			<type name="AcIconPosition"/>
+			<default>top</default>
+		</property>
+		<property name="theme" type="string"/>
+	</widget>
+
+	<!-- List widget -->
+	<element name="AcListStaticDataElement">
+	    <property name="icon" type="element">
+			<type name="AcIconElement"/>
+		</property>
+	    <property name="label" type="string"/>
+	    <property name="secondaryLabel" type="string"/>
+	    <property name="description" type="string"/>
+	    <property name="splitButton" type="boolean"/>
+	</element>
+
+	<element name="AcListItemElement" class="AcListItemClass">
+	    <property name="icon" type="element">
+			<type name="AcIconElement"/>
+		</property>
+		<property name="primaryField" type="string"/>
+		<property name="secondaryField" type="string"/>
+		<property name="description" type="string"/>
+	    <property name="splitButton" type="boolean"/>
+		<property name="countBubbleField" type="string"/>
+	</element>
+
+	<widget name="AcListWidget" widgetClass="AcListClass">
+		<property name="staticData" type="element" isList="true">
+			<type name="AcListStaticDataElement"/>
+		</property>
+		<property name="listData" type="string"/>
+		<property name="sectionKey" type="string"/>
+		<property name="title" type="string"/>
+		<property name="itemStructure" type="element">
+			<type name="AcListItemElement"/>
+		</property>
+		<property name="itemMarkup" type="string"/>
+		<property name="enableSearch" type="boolean"/>
+		<property name="theme" type="string"/>
+	</widget>
+
+	<!-- Chart widget -->
+	<widget name="AcChartWidget" widgetClass="AcChartClass">
+		<property name="chartData" type="string"/>
+		<property name="chartModel" type="string"/>
+	</widget>
+
+	<!-- Custom widget -->
+	<widget name="AcCustomWidget" widgetClass="AcCustomClass">
+		<property name="code" type="string"/>
+		<property name="data" type="string"/>
+	</widget>
+
+</widgetMetaData>

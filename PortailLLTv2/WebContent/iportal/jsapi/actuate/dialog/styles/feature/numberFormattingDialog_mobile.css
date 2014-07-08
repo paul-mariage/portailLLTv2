@@ -1,0 +1,14 @@
+
+.actuate_dialog_format_NumberFormattingDialog
+{
+	width: 380px;
+}
+.actuate_dialog_format_NumberFormattingDialog  .formatdialog_label
+{
+	line-height: 33px;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .formatdialog_label 
+{
+	float:none;
+}

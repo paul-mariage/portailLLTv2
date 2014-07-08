@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<display-name>PortailLLT</display-name>
+	<context-param>
+		<param-name>ENABLE_CLIENT_SIDE_REDIRECT</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<param-name>INSTALL_MODE</param-name>
+		<param-value>standalone</param-value>
+	</context-param>
+	<context-param>
+		<param-name>HOME_PAGE</param-name>
+		<param-value>www.actuate.com/ihub3</param-value>
+	</context-param>
+	<context-param>
+		<param-name>AC_DOC_BASE</param-name>
+		<param-value>http://www.actuate.com/documentation/ihub3</param-value>
+	</context-param>	
+	<context-param>
+		<param-name>DEFAULT_WORKGROUP_FUNCTIONALITY_ROLE</param-name>
+		<param-value>Active Portal Intermediate</param-value>
+	</context-param>
+	<context-param>
+		<param-name>DEFAULT_WORKGROUP_SKIN</param-name>
+		<param-value>treeview</param-value>
+	</context-param>
+	<!--
+		Use this variable for controlling the number of items displayed in membership lists in the management console like
+		the roles lists in the user properties pages etc...
+
+		This variable needs to be used with caution.
+		Setting this to a very high value can cause the page to load slowly or the browser might run out of memory and crash.
+		
+		The minimum value allowed for this variable is 5. Values less than 5 will be ignored.
+	-->
+	<context-param>
+		<param-name>MEMBERSHIP_LIST_SIZE</param-name>
+		<param-value>100</param-value>
+	</context-param>
+	<context-param>
+		<!-- 
+			Default locale, a list of locale is available in
+			http://java.sun.com/j2se/1.4.1/docs/guide/intl/locale.doc.html 
+		-->
+		<param-name>DEFAULT_LOCALE</param-name>
+		<param-value>$$Default_Locale$$</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Default timezone, from WEB-INF\timezonemap.xml
+		-->
+		<param-name>DEFAULT_TIMEZONE</param-name>
+		<param-value>$$Default_Timezone$$</param-value>
+	</context-param>
+	<context-param>
+		<param-name>VOLUME_PROFILE_LOCATION</param-name>
+		<param-value>/WEB-INF/volumeProfile.xml</param-value>
+	</context-param>		
+	<!--
+		This setting enables cookie writing
+	-->
+	<context-param>
+		<param-name>COOKIE_ENABLED</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+	<!--
+		Determines whether to send cookie in a secure manner
+	-->
+	<context-param>
+		<param-name>COOKIE_SECURE</param-name>
+		<param-value>false</param-value>
+	</context-param>
+
+	<!--
+		Cookie domain to be used
+		http://java.sun.com/products/servlet/2.1/api/javax.servlet.http.Cookie.html
+		This must be the same domain name accessed by the client. For example if
+		the client access
+			http://www.actuate.com/iportal/iportal/activePortal/login.jsp
+		the domain name is .actuate.com
+		
+		Empty COOKIE_DOMAIN means we do not set the cookie domain.
+	-->
+	<context-param>
+		<param-name>COOKIE_DOMAIN</param-name>
+		<param-value></param-value>
+	</context-param>
+
+	<!--
+		The object id used to store the http session level report parameter.  This id will be used by the product
+		to retrieve the session level report parameters that are registered by customers.  The http session object should
+		be an instance of com.actuate.parameter.SessionLevelParameter.  if the default implementation of
+		com.actuate.parameter.SessionLevelParameter, then customer should extend this class to have a customized
+		logic in setting or retrieving report parameters.
+	-->
+	<context-param>
+		<param-name>SESSION_DEFAULT_PARAMETER_VALUE_ID</param-name>
+		<param-value>SessionDefaultParameterValue</param-value>
+	</context-param>
+
+	<context-param>
+		<!--
+			The number of seconds for the time interval to call System.gc() forcefully.
+			If this number is 0 or non integer, then the forced garbage collection is
+			disabled.
+		-->
+		<param-name>FORCED_GC_INTERVAL</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Session time out in seconds
+		-->
+		<param-name>LOGIN_TIMEOUT</param-name>
+		<param-value>1200</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Enable error logging
+		-->
+		<param-name>ENABLE_ERROR_LOGGING</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Enable debug message in the log file
+		-->
+		<param-name>ENABLE_DEBUG_LOGGING</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<!-- Enable stress test message in the log file -->
+		<param-name>ENABLE_STRESS_LOGGING</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<param-name>ERROR_LOG_FILE_ROLLOVER</param-name>
+		<param-value>MONTHLY</param-value>
+	</context-param>
+	<context-param>
+		<param-name>LOG_FILE_LOCATION</param-name>
+		<param-value>$$Logfile_Location$$/logs</param-value>
+	</context-param>
+	<context-param>
+		<param-name>MAX_BACKUP_ERROR_LOGS</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<param-name>TEMP_FOLDER_LOCATION</param-name>
+		<param-value>$$Temp_Folder$$</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			EXECUTE_REPORT_WAIT_TIME is used to control how long (in seconds) the 
+			iServer worker thread should wait for report execution to complete
+			before it sends response to client. 
+			Note: Synchronous report execution only
+		-->
+		<param-name>EXECUTE_REPORT_WAIT_TIME</param-name>
+		<param-value>20</param-value>
+	</context-param>
+	<context-param>
+		<!-- 
+			List of engines that will be loaded when application starts up. Allowed values are 
+			"birt" and "ess". Please use comma to separate the names if there are more than one. 
+			Engines that are not in the list will be loaded upon request. 
+		-->
+		<param-name>PRELOAD_ENGINE_LIST</param-name>
+		<param-value>birt</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			The socket time out on connection to iServer while
+			waiting for a response in seconds.
+		-->
+		<param-name>SERVER_QUERY_TIMEOUT</param-name>
+		<param-value>8</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Adds the following to HTTP response header. If set to no-store, reports in excel format may not work.
+		-->
+		<param-name>CACHE_CONTROL</param-name>
+		<param-value></param-value>
+	</context-param>
+	<context-param>
+		<!--
+		
+			Viewer navigation bar setting. 
+			This is the time the navigation bar refreshes it self 
+			in seconds when running a progressive report
+		-->
+		<param-name>PROGRESSIVE_REFRESH</param-name>
+		<param-value>1800</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Enable to completly turn off progressive viewing.
+		-->
+		<param-name>PROGRESSIVE_VIEWING_ENABLED</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param> 		<!--
+			Enable agentStyleEngine propety for HTML render option for BIRT reports.
+		-->
+		<param-name>BIRT_HTMLRENDEROPTION_ENGCASSTYLE</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the memory size of each BIRT
+		report archive file. If the actual file size exceeds the memory size,
+		the report will be written in the disk instead of being cached in memory.
+		Note: The unit of this parameter is kilobyte.
+		-->
+		<param-name>BIRT_MAX_MEMORY_SIZE_PER_ARCHIVE</param-name>
+		<param-value>200</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the total memory size of BIRT
+		report archive files. 
+		Note: The unit of this parameter is kilobyte.
+		-->
+		<param-name>BIRT_ARCHIVE_MEMORY_TOTALSIZE</param-name>
+		<param-value>50000</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to enable/disable caching report document in 
+		archive file.
+		-->
+		<param-name>BIRT_REPORT_DOCUMENT_CACHE_ENABLED</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to automatically close archive file for non-transient
+		document.
+		-->
+		<param-name>BIRT_ARCHIVE_AUTO_CLOSE_ENABLED</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to enable/disable caching page count for report 
+		document in archive file.
+		-->
+		<param-name>BIRT_REPORT_PAGE_COUNT_CACHE_ENABLED</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the timeout of transient BIRT
+		report archive files. 
+		Note: The unit of this parameter is seconds.
+		-->
+		<param-name>TRANSIENT_ARCHIVEFILECACHE_TIMEOUT_SECONDS</param-name>
+		<param-value>3600</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the timeout of persistent BIRT
+		report archive files. 
+		Note: The unit of this parameter is seconds.
+		-->
+		<param-name>PERSISTENT_ARCHIVEFILECACHE_TIMEOUT_SECONDS</param-name>
+		<param-value>7200</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the total memory size of BIRT
+		report archive files. 
+		Note: The unit of this parameter is kilobyte.
+		-->
+		<param-name>BIRT_REPORT_DESIGN_CACHE_TOTAL_NUMBER_OF_ENTRIES</param-name>
+		<param-value>50</param-value>
+	</context-param>
+	<context-param>
+			<!--
+			This parameter is used to control the expiry time in seconds for the entries in 
+			BIRT report design cache. 
+			-->
+			<param-name>BIRT_REPORT_DESIGN_CACHE_TIMEOUT</param-name>
+			<param-value>1800</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the result set buffer size for a dataset in a BIRT report.
+		Note: The unit of this parameter is megabyte.
+		-->
+		<param-name>BIRT_DATA_RESULTSET_MAX_BUFFER_SIZE</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to set an upper limitation for linked data model in memory.
+		Note: The unit of this parameter is megabyte
+		-->
+		<param-name>BIRT_LINKED_DATA_MODEL_DATA_MODEL_SIZE</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the max number of rows bound for a chart in a BIRT report.
+		-->
+		<param-name>BIRT_CHART_MAX_ROW</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control the max size of variables for a flash chart in a BIRT report.
+		-->
+		<param-name>BIRT_CHART_MAX_VARIABLE_SIZE</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to set time out for convertion from chart to image in a BIRT report (in milliseconds).
+		-->
+		<param-name>BIRT_CHART_CONVERT_TO_IMAGE_TIME_OUT</param-name>
+		<param-value>6000</param-value>
+	</context-param>
+	<context-param>
+		<!--
+		This parameter is used to control which emitter will be used for a specific BIRT report render format.
+		Note: The param-value is "render_format:emitter_ID" separated by ";", for example,
+			<param-value>pdf:org.eclipse.birt.report.engine.emitter.pdf;xml:org.eclipse.birt.report.engine.emitter.xml</param-value>	
+		-->
+		<param-name>BIRT_RENDER_FORMAT_EMITTER_ID_MAPPING</param-name>
+		<param-value>html:org.eclipse.birt.report.engine.emitter.html;xhtml:com.actuate.birt.report.engine.emitter.xhtml;pdf:org.eclipse.birt.report.engine.emitter.pdf;postscript:org.eclipse.birt.report.engine.emitter.postscript;xls:com.actuate.birt.report.engine.emitter.xls;ppt:org.eclipse.birt.report.engine.emitter.ppt;pptx:org.eclipse.birt.report.engine.emitter.pptx;doc:org.eclipse.birt.report.engine.emitter.word;docx:org.eclipse.birt.report.engine.emitter.docx</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JREM_THREAD_POOL_SIZE</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JREM_TASK_QUEUE_SIZE</param-name>
+		<param-value>1000</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JREM_THREADPOOL_SYNC_TASKQUEUE_TIMEOUT</param-name>
+		<param-value>300</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JREM_THREADPOOL_MAXSYNC_TASKRUNTIME</param-name>
+		<param-value>600</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JREM_THREADPOOL_MONITORTHREAD_POLLINGINTERVAL</param-name>
+		<param-value>30</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			This parameter is used to control if the report search results will contain the column 
+			header when the output format is CSV/TSV.  It has values of true or false. Default is 
+			true, in which the report search results will include the column headers. When the value is 
+			set to false, the column header won't be included.
+		-->
+		<param-name>SEARCH_ENABLE_COLUMN_HEADERS</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			This parameter is used to control 
+			if the report search results will be double quoted or not. It 
+			has value of true/false. Default is true. The search result 
+			will be double quoted when the output format is CSV/TSCV.
+		-->
+		<param-name>SEARCH_USE_QUOTE_DELIMITER</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Send Management Console administrative messages that 
+			stop the cluster master and get server status directly to
+			the Actuate server cluster master. 
+			Set param-value to false to send the messages to the
+			Actuate server that Management Console is using.
+		-->
+		<param-name>STOPPING_AND_STATUS_ADMIN_SEND_TO_MASTER</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Enable External Authentication by setting the Security Adapter class name.
+			SECURITY_MANAGER_CLASS is deprecated.
+		-->
+		<param-name>SECURITY_ADAPTER_CLASS</param-name>
+		<param-value>com.actuate.iportal.security.LocalSecurityAdapter</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			Max fetch size set while obtaining Folder Items, Job list, Job notice list, Channel list.
+		-->
+		<param-name>MAX_LIST_SIZE</param-name>
+		<param-value>150</param-value>
+	</context-param>
+	<context-param>
+		<!--
+			AutoSuggest Fetch Size for jsapi parameter component's autosuggest control type
+			By default, fetch everything
+		-->
+		<param-name>AUTOSUGGEST_FETCH_SIZE</param-name>
+		<param-value>-1</param-value>
+	</context-param>
+
+	<context-param>
+		<!--
+			AutoSuggest delay (in milliseconds) for jsapi parameter component's autosuggest control type
+		-->
+		<param-name>AUTOSUGGEST_DELAY</param-name>
+		<param-value>500</param-value>
+	</context-param>
+
+	<context-param>
+		<!--
+			AutoSuggest UI List Size for jsapi parameter component's autosuggest control type
+			By default, show everything.
+		-->
+		<param-name>AUTOSUGGEST_LIST_SIZE</param-name>
+		<param-value>10</param-value>
+	</context-param>
+
+	<!-- Indicates if currently runing under ActuateJavaComponent or BIRTReportProfessional.-->
+	<context-param>
+		<param-name>WORKGROUP_PRODUCT_MODE</param-name>
+		<param-value>ActuateJavaComponent</param-value>
+	</context-param>
+	
+	<!-- Repository -->
+	
+	<context-param>
+		<param-name>STANDALONE_REPOSITORY_CLASS</param-name>
+		<param-value>com.actuate.iportal.repository.jcr.localfs.LocalFileSystemRepository</param-value>
+	</context-param>
+	<!--
+		This parameter controls if dynamic resource path is enabled, e.g.
+		resource path can be passed through URL
+	-->	
+	<context-param>
+		<param-name>BIRT_ALLOW_DYNAMIC_RESOURCE_PATH</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<!--
+		This parameter controls if transient document should be saved into
+		user defined path configured by BIRT_SAVE_REPORT_DOCUMENT_FOLDER
+		during report viewing.
+	-->	
+	<context-param>
+		<param-name>BIRT_SAVE_REPORT_DOCUMENT_ENABLED</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<!--
+		This parameter specifies the path when saving transient docuemnt
+		option is enabled. This path could be either absolute or relative,
+		when it's relative, the path must start with "/", e.g. "/documents",
+		and the relative path is based on the root repository path. In both
+		absolute and relative case, the path must pre-created and already
+		existed before running.
+	-->	
+	<context-param>
+		<param-name>BIRT_SAVE_REPORT_DOCUMENT_FOLDER</param-name>
+		<param-value>/document</param-value>
+	</context-param>
+	<!--
+		This parameter controls if transient security id is enabled, if this
+		is enabled, JREM will try get the security id from current system
+		properties. This option is internally used and should not be changed
+		by end user.
+	-->	
+	<context-param>
+		<param-name>ALLOW_TRANSIENT_SECURITY_ID</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<!--
+		This parameter specifies the root path of the iportal repository. This
+		parameter maps to BIRT_VIEWER_WORKING_FOLDER parameter from Open
+		Source Viewer in some degree.
+	-->	
+	<context-param>
+		<param-name>STANDALONE_REPOSITORY_PATH</param-name>
+		<param-value>WEB-INF/repository</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_ACCESS_MANAGER</param-name>
+		<param-value>com.actuate.iportal.repository.jcr.localfs.LocalAccessManager</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_HOME_FOLDER</param-name>
+		<param-value>/Home</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_REPOSITORY_FILE_AUTHENTICATION</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_PUBLIC_FOLDER</param-name>
+		<param-value>/Public</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_ALLOW_ANONYMOUS</param-name>
+		<param-value>TRUE</param-value>
+	</context-param>
+	<context-param>
+		<param-name>STANDALONE_ANONYMOUS_USERNAME</param-name>
+		<param-value>anonymous</param-value>
+	</context-param>
+	<context-param>
+		<param-name>TRANSIENT_STORE_PATH</param-name>
+		<param-value>temp</param-value>
+	</context-param>
+	<context-param>
+		<param-name>TRANSIENT_STORE_MAX_SIZE_KB</param-name>
+		<param-value>2048000</param-value>
+	</context-param>
+	<context-param>
+		<param-name>TRANSIENT_STORE_TIMEOUT_MIN</param-name>
+		<param-value>40</param-value>
+	</context-param>
+	<context-param>
+		<param-name>REPOSITORY_CACHE_TIMEOUT_SEC</param-name>
+		<param-value>900</param-value>
+	</context-param>
+
+	<!-- JUL Logging Configuration -->
+	<!-- JUL log is located at LOG_FILE_LOCATION -->
+	<context-param>
+		<param-name>JUL_LOG_FILE_SIZE_KB</param-name>
+		<param-value>20000</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JUL_LOG_FILE_COUNT</param-name>
+		<param-value>4</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JUL_LOG_FILE_LEVEL</param-name>
+		<!-- valid JUL log levels: SEVERE WARNING INFO CONFIG FINE FINER FINEST -->
+		<param-value>WARNING</param-value>
+	</context-param>
+	<context-param>
+		<param-name>JUL_LOG_CONSOLE_LEVEL</param-name>
+		<!-- JUL level: OFF, ALL, SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST -->
+		<param-value>OFF</param-value>
+	</context-param>
+	<context-param>
+		<param-name>ENABLE_JUL_LOG</param-name>
+		<!-- TURE, FALSE -->
+		<param-value>TRUE</param-value>
+	</context-param>
+	
+	<!-- Java Report API -->
+	<context-param>
+		<!-- Default view for image cache expiration time in seconds -->
+		<param-name>JAVA_REPORT_API_IMAGE_CACHE_EXPIRATION</param-name>
+		<param-value>86400</param-value>
+	</context-param>
+	
+	<context-param>
+		<!-- Number of idle connections cached by BIRT JDBC connection pool -->
+		<param-name>BIRT_JDBC_CONNECTION_POOL_SIZE</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	
+	<context-param>
+		<!-- Idle timeout of the cached JDBC connections (in seconds) -->
+		<param-name>BIRT_JDBC_CONNECTION_POOL_TIMEOUT</param-name>
+		<param-value>3600</param-value>
+	</context-param>	
+
+	<!-- ERNI -->
+	<context-param>
+		<param-name>BIRT_VIEWER_LOCALE</param-name>
+		<param-value>en-US</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>BIRT_RESOURCE_PATH</param-name>
+		<param-value>resources</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>BIRT_SCRIPT_LIB_PATH</param-name>
+		<param-value>scriptlib</param-value>
+	</context-param>
+	
+	<!-- Default number of data rows to be used in BIRT Studio -->
+	<!-- Must be a positive number less than or equal to MAX_DATA_CACHE_ROW_COUNT -->
+	<context-param>
+		<param-name>DEFAULT_DATA_CACHE_ROW_COUNT</param-name>
+		<param-value>50</param-value>
+	</context-param>
+
+	<!-- If number of data rows to be used is less than or equal to MEMORY_DATA_CACHE_ROW_COUNT -->
+	<!-- the data will be cached in memory instead of file system. -->
+	<!-- It can improve the performance by reducing I/O overhead but may increase memory usage. -->
+	<!-- Must be a positive number less than or equal to MAX_DATA_CACHE_ROW_COUNT -->
+	<context-param>
+		<param-name>MEMORY_DATA_CACHE_ROW_COUNT</param-name>
+		<param-value>50</param-value>
+	</context-param>
+
+	<!-- Maximum number of data rows can be used in BIRT Studio -->
+	<!-- Must be a positive number less than 10000 -->
+	<context-param>
+		<param-name>MAX_DATA_CACHE_ROW_COUNT</param-name>
+		<param-value>200</param-value>
+	</context-param>
+
+	<!-- Number of values to be shown in parameter dialog for a dynamic value parameter in BIRT Studio -->
+	<!-- A positive number N means only the first N values are shown in parameter dialog. -->
+	<!-- 0  means all values from DB are shown in parameter dialog. 0 is the default value. -->
+	<!-- -1 means only the first N values are shown where N equals to the current data cache row count set for the current design session.  -->
+	<!-- NOTE #1: full list is shown in parameter dialog if it is triggerred by clicking at "Save And View" to run the report -->
+	<!-- NOTE #2: the setting only applies to dynamic value parameter, -->
+	<!-- 		  and all values are shown for static value parameter no matter how many values it has.  -->
+	<context-param>
+		<param-name>MAX_NUMBER_OF_VALUES_FOR_DYNAMIC_PARAMETER</param-name>
+		<param-value>0</param-value>
+	</context-param>
+
+	<!-- Number of data rows to be used for select values in BIRT Studio -->
+	<!-- must be a non-negative number. 0 means no limit -->
+	<context-param>
+		<param-name>MORE_VALUE_ROW_COUNT</param-name>
+		<param-value>200</param-value>
+	</context-param>
+
+	<!-- Page break interval can be used in BIRT Studio, set to 0 will result in no page break interval set-->
+	<!-- Must be a non-negative number -->
+	<context-param>
+		<param-name>DEFAULT_PAGE_BREAK_INTERVAL</param-name>
+		<param-value>50</param-value>
+	</context-param>
+	
+	<!-- 
+		This configure variable is to set the default report template category name.
+		If such a report template category is not available to a particular user, the first one in the category list will be used as the default.
+	-->
+	<context-param>
+		<param-name>DEFAULT_REPORT_TEMPLATE_CATEGORY_NAME</param-name>
+		<param-value>Standard</param-value>
+	</context-param>
+		
+	<!--
+		Control display order of Fields and Folders. Default value is "ascending".
+		Valid values are: "ascending", "descending", "none".
+	-->	  
+	<context-param>
+		<param-name>DATAFIELDS_DISPLAY_ORDER</param-name>
+		<param-value>ascending</param-value>
+	</context-param>
+
+	<!-- Whether to perform the string filter in case-sensitive way or case-insensitive way. -->
+	<!-- Valid values are "true" and "false".  -->
+	<!-- The default value is "false". -->
+	<!-- When it is false, "NY" may match both "NY" and "ny". --> 
+	<context-param>
+		<param-name>ENABLE_CASE_SENSITIVE_STRING_FILTER</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+	<!-- Maximum number of concurrent users using BIRT Studio -->
+	<context-param>
+		<param-name>MAX_BRSTUDIO_USER_SESSION</param-name>
+		<param-value>256</param-value>
+	</context-param>
+
+	<!-- Maximum number of designs the user can edit concurrently in BIRT Studio -->
+	<context-param>
+		<param-name>MAX_BRSTUDIO_DESIGN_SESSION</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<!-- Design session time out in seconds. If not specify it, default to login timeout. -->
+	<context-param>
+		<param-name>BRSTUDIO_DESIGN_SESSION_TIMEOUT</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<param-name>NUMBER_OF_FILTER_VALUES</param-name>
+		<param-value>200</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>ALLOW_IV_PAGE_LIMIT</param-name>
+		<param-value>200</param-value>
+	</context-param>
+	
+	<!-- this parameter is just for 'pdf' specificially, for 'doc','xls', 'ppt'  -->
+ 	<!-- we can not control its behavior of openning in same window or new window  -->
+	<!-- because window OS has higher priority to control this feature by its own mechanism -->
+ 	<!-- Configuration in windows is :  -->
+ 	<!-- 1. open 'my windows';  2. go to 'tools'; 3. click 'folder options'; 4. find 'File Types' tab  -->
+ 	<!-- 5. choose file type , ex 'doc';  6. press 'Advanced' button; 7. select or unselect 'browse in same window'  -->	
+ 	<context-param>
+   		<param-name>EXPORT_AS_ATTACHMENT</param-name>
+   		<param-value>true</param-value>
+  	</context-param>
+	
+	<context-param>
+		<param-name>ALLOW_EXPORT_PAGE_LIMIT</param-name>
+		<param-value>200</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>IV_ALLOW_JAVASERVER_MODE</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>IV_ENABLE_IV</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+ 	<!--
+ 		Specify the proxy URL in customer's deployment environment
+ 		Sample: "http://host:8999/path/"
+ 	 -->
+  	<context-param>
+  		<param-name>PROXY_BASEURL</param-name>
+  		<param-value></param-value>
+    	</context-param>
+
+ 	<!-- Maximuim page content size in K -->
+ 	<context-param>
+ 		<param-name>MAX_PAGE_SIZE</param-name>
+ 		<param-value>256</param-value>
+ 	</context-param>
+ 	
+ 	<!-- Gadget generation waiting time in seconds -->
+ 	<context-param>
+ 		<param-name>GADGET_GENERATION_WAITING_TIME</param-name>
+ 		<param-value>20</param-value>
+ 	</context-param>
+
+	<!-- Crosstab Row Page break interval can be used in XTab Analyzer -->
+	<!-- Must be a non-negative number -->
+	<context-param>
+		<param-name>DEFAULT_ROW_PAGE_BREAK_INTERVAL</param-name>
+		<param-value>40</param-value>
+	</context-param>
+	
+	<!-- Crosstab Column Page break interval can be used in XTab Analyzer -->
+	<!-- Must be a non-negative number -->
+	<context-param>
+		<param-name>DEFAULT_COLUMN_PAGE_BREAK_INTERVAL</param-name>
+		<param-value>10</param-value>
+	</context-param>
+
+	<!-- Max cube fetch edge limit -->
+	<!-- Must be a non-negative number less than Integer.MAX -->
+	<!-- Equal or less than 0 means taking the default value Integer.MAX -->
+	<context-param>
+		<param-name>BIRT_CUBE_FETCH_LIMIT_ROW_EDGE</param-name>
+		<param-value></param-value>
+	</context-param>
+	<context-param>
+		<param-name>BIRT_CUBE_FETCH_LIMIT_COLUMN_EDGE</param-name>
+		<param-value></param-value>
+	</context-param>
+	
+	<!-- Max drill size can be used to restrict data on all levels of drill dialog in XTab Analyzer -->
+	<!-- Equal or less than 0 means no restriction. -->
+	<context-param>
+		<param-name>MAX_DRILL_SIZE</param-name>
+		<param-value>2000</param-value>
+	</context-param>
+	
+	<!-- whether collpse the attribute node in dimension tree.false:collpase;true:expand-->
+	<context-param>
+		<param-name>DISPLAY_ATTRIBUTE_ITEM</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	
+	<!-- Filter used to add cache header to the mapped urls. cache valid for 1 day only-->
+	<filter>
+		<filter-name>Cache</filter-name>
+		<filter-class>com.actuate.iv.HeaderFilter</filter-class>
+		<init-param>
+			<param-name>cache</param-name>
+			<param-value>public, max-age=86400</param-value>
+		</init-param>
+		<init-param>
+			<param-name>HTML resources</param-name>
+			<param-value>public, max-age=86400</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>/iv/images/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>/jsapi</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>*.swf</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Cache</filter-name>
+		<url-pattern>/ivresource</url-pattern>
+	</filter-mapping>
+
+	<!-- Filter used to determine if the user has timed out or not so that the user
+		can be redirected to the login page.
+
+	<filter>
+		<filter-name>SecurityFilter</filter-name>
+		<filter-class>com.actuate.iportal.filter.SecurityFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SecurityFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+	-->
+	<!-- Listener used to remove session information that are stored in iPortal's servlet
+		 context.
+	-->
+	<listener>
+		<listener-class>com.actuate.sso.SSOListener</listener-class>
+	</listener>
+
+    <servlet>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<servlet-class>com.actuate.iv.adapter.ViewerAdapterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/frameset</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/run</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/preview</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/parameter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/document</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/output</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewerAdapterServlet</servlet-name>
+		<url-pattern>/extract</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ServerStatus</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.StartupServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>ViewPage</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.ViewPageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FileUpload</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SetLicenseTerms</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.SetLicenseTermsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ExportParametersToFile</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.ExportParametersToFileServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetReportData</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.GetReportDataServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ViewEmbeddedObject</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.ViewEmbeddedObjectServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetStyleSheet</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.GetStyleSheetServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetStaticData</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.GetStaticDataServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetDynamicData</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.GetDynamicDataServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DownloadFile</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.FileDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DownloadSearchResult</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.DownloadSearchResultServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CacheDownload</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.CacheDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GenericRedirector</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.AcGenericRedirectorServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProcessFile</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.ProcessFileServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OdboTunnel</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.OdboTunnelServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CubeStore</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.CubeStoreServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AnalyticsExpLevel</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.AnalyticsExpLevelServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SmartSearchServlet</servlet-name>
+		<servlet-class>com.actuate.reportcast.servlets.SmartSearchServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.actuate.iportal.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>WSServlet</servlet-name>
+		<servlet-class>com.actuate.iportal.servlet.WSServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+
+	<!-- Action Servlet Configuration -->
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>validate</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+  	<servlet>
+       <servlet-name>AjaxProxy</servlet-name>
+       <servlet-class>com.actuate.ajax.AjaxJsonProxyServlet</servlet-class>
+       <!-- Proxy request parts handler to use -->
+       <init-param>
+	        <param-name>proxyRequestsHandlerFactory</param-name>
+            <param-value>com.actuate.ajax.request.MapProxyRequestsHandlerFactory</param-value>
+       </init-param>
+        <!-- Timeout value for the proxy session (in milliseconds)-->
+       <init-param>
+            <param-name>sessionTimeout</param-name>
+            <param-value>5000</param-value>
+       </init-param>
+       <!-- Specifies whether the servlet must automatically follow redirects
+           returned by the target server. (boolean)
+        -->
+       <init-param>
+           <param-name>followRedirect</param-name>
+           <param-value>false</param-value>
+       </init-param>
+    </servlet> 
+	<servlet>
+		<servlet-name>IVServlet</servlet-name>
+		<servlet-class>com.actuate.iv.servlet.IVServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>IVResourceServlet</servlet-name>
+		<servlet-class>com.actuate.iv.servlet.IVResourceServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DAServlet</servlet-name>
+		<servlet-class>com.actuate.da.servlet.DAServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DAResourceServlet</servlet-name>
+		<servlet-class>com.actuate.da.servlet.DAResourceServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ERNIViewerServlet</servlet-name>
+		<servlet-class>com.actuate.erni.servlet.ERNIViewerServlet</servlet-class>
+		<init-param>
+			<param-name>axis.ServerConfigFile</param-name>
+			<param-value>iportal-server-config.wsdd</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>OdaSampleServlet</servlet-name>
+		<servlet-class>com.actuate.erni.oda.ClassicModels.SampleServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UserProfileServlet</servlet-name>
+		<servlet-class>com.actuate.iportal.servlet.UserProfileServlet</servlet-class>
+	</servlet>
+
+	<!-- Action Servlet Mapping -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OdboTunnel</servlet-name>
+		<url-pattern>/servlet/OdboTunnel</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServerStatus</servlet-name>
+		<url-pattern>/servlet/ServerStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewPage</servlet-name>
+		<url-pattern>/servlet/ViewPage/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExportParametersToFile</servlet-name>
+		<url-pattern>/servlet/ExportParametersToFile</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/servlet/FileUpload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetLicenseTerms</servlet-name>
+		<url-pattern>/servlet/SetLicenseTerms</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetReportData</servlet-name>
+		<url-pattern>/servlet/GetReportData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewEmbeddedObject</servlet-name>
+		<url-pattern>/servlet/ViewEmbeddedObject</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetStyleSheet</servlet-name>
+		<url-pattern>/servlet/GetStyleSheet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetStaticData</servlet-name>
+		<url-pattern>/servlet/GetStaticData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetDynamicData</servlet-name>
+		<url-pattern>/servlet/GetDynamicData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DownloadFile</servlet-name>
+		<url-pattern>/servlet/DownloadFile/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DownloadSearchResult</servlet-name>
+		<url-pattern>/servlet/DownloadSearchResult</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CacheDownload</servlet-name>
+		<url-pattern>/servlet/CacheDownload/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GenericRedirector</servlet-name>
+		<url-pattern>/servlet/GenericRedirector</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CubeStore</servlet-name>
+		<url-pattern>/servlet/CubeStore</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AnalyticsExpLevel</servlet-name>
+		<url-pattern>/servlet/AnalyticsExpLevel</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SmartSearchServlet</servlet-name>
+		<url-pattern>/viewer/searchreport.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProcessFile</servlet-name>
+		<url-pattern>/servlet/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OdaSampleServlet</servlet-name>
+		<url-pattern>/OdaSample</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+       <servlet-name>AjaxProxy</servlet-name>
+       <url-pattern>/ajaxproxy</url-pattern>
+    </servlet-mapping>
+    
+	<servlet-mapping>
+		<servlet-name>IVServlet</servlet-name>
+		<url-pattern>/iv</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>IVResourceServlet</servlet-name>
+		<url-pattern>/ivresource</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>IVResourceServlet</servlet-name>
+		<url-pattern>/jsapi</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet-mapping>
+		<servlet-name>IVResourceServlet</servlet-name>
+		<url-pattern>/jsresource/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DAServlet</servlet-name>
+		<url-pattern>/da</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DAServlet</servlet-name>
+		<url-pattern>/dapopup</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DAResourceServlet</servlet-name>
+		<url-pattern>/daresource</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ERNIViewerServlet</servlet-name>
+		<url-pattern>/wr</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>WSServlet</servlet-name>
+		<url-pattern>/wsservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginservlet</url-pattern>
+	</servlet-mapping>
+
+
+	
+	<servlet-mapping>
+		<servlet-name>UserProfileServlet</servlet-name>
+		<url-pattern>/userprofile</url-pattern>
+	</servlet-mapping>
+<jsp-config>
+	<taglib>
+		<taglib-uri>
+			/users
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/users.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/filesfolders
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/filesfolders.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/filetypes
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/filetypes.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/channels
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/channels.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/roles
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/roles.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/common
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/common.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/groups
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/groups.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/i18n
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/i18n.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/script
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/script.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/login
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/login.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/jobs
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/jobs.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/viewer
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/viewer.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/servers
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/servers.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/printers
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/printers.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/system
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/system.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/partitions
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/partitions.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/systemvolumes
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/systemvolumes.tld
+		</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>
+			/volume
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/volume.tld
+		</taglib-location>
+	</taglib>
+	
+	<!-- Actuate utility tag Library -->
+	<taglib>
+		<taglib-uri>
+			/actabpanel
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/actabpanel.tld
+		</taglib-location>
+	</taglib>
+
+	<taglib>
+		<taglib-uri>
+			/commoncontrols
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/commoncontrols.tld
+		</taglib-location>
+	</taglib>
+
+
+	<!-- Struts Tag Library Descriptors -->
+	<taglib>
+		<taglib-uri>
+			/struts-bean
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/struts-bean.tld
+		</taglib-location>
+	</taglib>
+	
+	<taglib>
+		<taglib-uri>
+    		/struts-html
+    	</taglib-uri>
+		<taglib-location>
+    		/WEB-INF/struts-html.tld
+    	</taglib-location>
+	</taglib>
+    
+	<taglib>
+		<taglib-uri>
+			/struts-logic
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/struts-logic.tld
+		</taglib-location>
+	</taglib>
+	
+	<taglib>
+		<taglib-uri>
+			/struts-tiles
+		</taglib-uri>
+		<taglib-location>
+			/WEB-INF/struts-tiles.tld
+		</taglib-location>
+	</taglib>
+</jsp-config>
+<servlet>
+		<description>
+		</description>
+		<display-name>LoginsServlet</display-name>
+		<servlet-name>LoginsServlet</servlet-name>
+		<servlet-class>com.llt.servlets.LoginsServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.llt.servlets.LogoutServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RecuperationGroup</display-name>
+		<servlet-name>RecuperationGroup</servlet-name>
+		<servlet-class>com.llt.servlets.RecuperationGroup</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RecuperationUsers</display-name>
+		<servlet-name>RecuperationUsers</servlet-name>
+		<servlet-class>com.llt.servlets.RecuperationUsers</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RecuperationUsersGroup</display-name>
+		<servlet-name>RecuperationUsersGroup</servlet-name>
+		<servlet-class>com.llt.servlets.RecuperationUsersGroup</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>createUserAdmin</display-name>
+		<servlet-name>createUserAdmin</servlet-name>
+		<servlet-class>com.llt.servlets.createUserAdmin</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>createUser</display-name>
+		<servlet-name>createUser</servlet-name>
+		<servlet-class>com.llt.servlets.createUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>createGroupAdmin</display-name>
+		<servlet-name>createGroupAdmin</servlet-name>
+		<servlet-class>com.llt.servlets.createGroupAdmin</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>deleteUser</display-name>
+		<servlet-name>deleteUser</servlet-name>
+		<servlet-class>com.llt.servlets.deleteUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>deleteGroup</display-name>
+		<servlet-name>deleteGroup</servlet-name>
+		<servlet-class>com.llt.servlets.deleteGroup</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>changeStateUser</display-name>
+		<servlet-name>changeStateUser</servlet-name>
+		<servlet-class>com.llt.servlets.changeStateUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>changeGroupUser</display-name>
+		<servlet-name>changeGroupUser</servlet-name>
+		<servlet-class>com.llt.servlets.changeGroupUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>sendInfoUser</display-name>
+		<servlet-name>sendInfoUser</servlet-name>
+		<servlet-class>com.llt.servlets.sendInfoUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>updateUser</display-name>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>com.llt.servlets.updateUser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>WebReport</display-name>
+		<servlet-name>WebReport</servlet-name>
+		<servlet-class>com.llt.birt.WebReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginsServlet</servlet-name>
+		<url-pattern>/LoginsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecuperationGroup</servlet-name>
+		<url-pattern>/RecuperationGroup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecuperationUsers</servlet-name>
+		<url-pattern>/RecuperationUsers</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecuperationUsersGroup</servlet-name>
+		<url-pattern>/RecuperationUsersGroup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>createUserAdmin</servlet-name>
+		<url-pattern>/createUserAdmin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>createUser</servlet-name>
+		<url-pattern>/createUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>createGroupAdmin</servlet-name>
+		<url-pattern>/createGroupAdmin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteUser</servlet-name>
+		<url-pattern>/deleteUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteGroup</servlet-name>
+		<url-pattern>/deleteGroup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>changeStateUser</servlet-name>
+		<url-pattern>/changeStateUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>changeGroupUser</servlet-name>
+		<url-pattern>/changeGroupUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sendInfoUser</servlet-name>
+		<url-pattern>/sendInfoUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>updateUser</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WebReport</servlet-name>
+		<url-pattern>/WebReport</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Upload</display-name>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.llt.ftp.Upload</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>FTPserver</display-name>
+		<servlet-name>FTPserver</servlet-name>
+		<servlet-class>com.llt.ftp.FTPserver</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>UploadFile</display-name>
+		<servlet-name>UploadFile</servlet-name>
+		<servlet-class>com.llt.ftp.UploadFile</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>recoverInformation</display-name>
+		<servlet-name>recoverInformation</servlet-name>
+		<servlet-class>com.llt.servlets.recoverInformation</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>UpdateDB</display-name>
+		<servlet-name>UpdateDB</servlet-name>
+		<servlet-class>com.llt.ftp.UpdateDB</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RecupAbonnement</display-name>
+		<servlet-name>RecupAbonnement</servlet-name>
+		<servlet-class>com.llt.servlets.RecupAbonnement</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>abonnerSite</display-name>
+		<servlet-name>abonnerSite</servlet-name>
+		<servlet-class>com.llt.servlets.abonnerSite</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/Upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FTPserver</servlet-name>
+		<url-pattern>/FTPserver</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadFile</servlet-name>
+		<url-pattern>/UploadFile</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>recoverInformation</servlet-name>
+		<url-pattern>/recoverInformation</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateDB</servlet-name>
+		<url-pattern>/UpdateDB</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecupAbonnement</servlet-name>
+		<url-pattern>/RecupAbonnement</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>abonnerSite</servlet-name>
+		<url-pattern>/abonnerSite</url-pattern>
+	</servlet-mapping>	
+
+</web-app>

@@ -1,0 +1,100 @@
+
+/******************************************************************************
+ *	File Browser Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_file_ivSaveFileDialog table,
+.actuate_iv_ui_dialog_file_ivSaveFileDialog div,
+.actuate_iv_ui_dialog_file_ivSaveFileDialog tr	
+{
+	margin: 0px;
+	padding: 0px;	
+}					 
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .breadcrumb
+{
+	cursor:default;
+	font-size:8pt;
+	font-style: normal;
+	font-weight: normal;
+	color:blue;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .breadcrumb_item_enabled
+{
+	cursor:pointer;
+	color:blue;
+	text-decoration:underline;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .breadcrumb_item_disabled
+{
+	color:blue;	
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .titleSpacing
+{
+	height: 7px;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .itemSpacing
+{
+	height: 11px;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .elementsWidth,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .elementsWidth
+{
+	width: 265px !important;	
+}
+
+/*
+Added this extra class because in traditional UI if we 
+add width through CSS, there is some extra width getting appended.
+Therefore we cannot make it 250px here
+*/
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .comboWidth,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .comboWidth
+{
+	width: 250px !important;	
+}
+
+/******************************************************************************
+ *	Document Save Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog table,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog div,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog tr,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog td	
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .breadcrumb
+{
+	cursor:default;
+	font-size:8pt;
+	color:blue;
+	font-family:tahoma,verdana,arial,sans-serif;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .breadcrumb_item_enabled
+{
+	cursor:pointer;
+	color:blue;
+	text-decoration:underline;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .breadcrumb_item_disabled
+{
+	color:blue;	
+}
+
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .titleSpacing
+{
+	height: 7px;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .itemSpacing
+{
+	height: 11px;
+}

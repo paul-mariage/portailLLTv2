@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML>
+	<HEAD>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
+		<LINK REL="shortcut icon" HREF="<jsp:getProperty name='presentationBean' property='baseUrl' />iv/images/actuateIcon.ico" type="image/x-icon" /> 
+		<LINK HREF="../../../iv/styles/default.css" MEDIA="screen" REL="stylesheet" TYPE="text/css"/>
+  		<script type="text/javascript" src="../../../iportal/jsapi/actuateAPI.js"></script>
+  		
+	</HEAD>
+	
+	<BODY CLASS="viewerBody" STYLE="margin: 0px; padding: 0px;" ONLOAD="javascript:init( );">
+
+		<SCRIPT TYPE="text/javascript">
+		
+		// <![CDATA[
+			var hasSVGSupport = false;
+			var useVBMethod = false;
+			if ( navigator.mimeTypes != null && navigator.mimeTypes.length > 0 )
+			{
+			    if ( navigator.mimeTypes["image/svg+xml"] != null )
+			    {
+			        hasSVGSupport = true;
+			    }
+			}
+			if ( !hasSVGSupport )
+			{
+			    var ua = navigator.userAgent;
+				if ( ua != null && ua.toLowerCase().indexOf("msie 9") >= 0 )
+				{
+			        hasSVGSupport = true;
+				}
+				else
+				{
+				    useVBMethod = true;
+				}
+			}
+		// ]]>
+		</SCRIPT>
+		
+		<SCRIPT TYPE="text/vbscript">
+			On Error Resume Next
+			If useVBMethod = true Then
+		    	hasSVGSupport = IsObject(CreateObject("Adobe.SVGCtl"))
+			End If
+		</SCRIPT>
+	
+		<SCRIPT TYPE="text/javascript">
+		    var report = ""; 
+		    var bookmark = "";
+			function init( )
+			{	
+			
+				var baseURL = "";	
+				
+				var location = window.location.toString( );
+				
+				var splitStr = location.split( "IVStandaloneViewerFragment.html?");
+				var params = "";
+				var user = "";
+				var password = "";
+				var profile = "";
+				var vp = "";
+				var userEnv = "tablet";
+				if( splitStr && splitStr.length > 1 )
+				{
+					params = splitStr[1].split("&");
+					if( params && params.length )
+					{
+						for( var i=0; i<params.length;i ++ )
+						{
+							if( params[i].indexOf( "profile=") > -1 )
+							{
+								profile = params[i].replace( "profile=", "" );
+							}	
+							else if( params[i].indexOf( "user=") > -1 )
+							{
+								user = params[i].replace( "user=", "" );
+							}
+							else if( params[i].indexOf( "password=") > -1 )
+							{
+								password = params[i].replace( "password=", "" );
+							}
+							else if( params[i].indexOf( "baseurl=") > -1 )
+							{
+								baseURL = decodeURIComponent( params[i].replace( "baseurl=", "" ) );
+							}
+							else if( params[i].indexOf( "__report=") > -1 )
+							{
+								report = params[i].replace( "__report=", "" );
+							}
+							else if( params[i].indexOf( "__vp=") > -1 )
+							{
+								vp = params[i].replace( "__vp=", "" );
+							}
+							else if( params[i].indexOf( "__userenv") > -1 )
+							{
+								userEnv = params[i].replace( "__userenv=", "" );
+							}	
+							else if( params[i].indexOf( "__bookmark") > -1 )
+							{
+								bookmark = params[i].replace( "__bookmark=", "" );
+							}	
+						}	
+					}	
+				}	
+				
+				if( location.indexOf( "mode=offline") > -1 )
+				{
+					baseURL = "file:///C:/work/DevIportal/Actuate/Project-Branches/1538-Birt-Mobile/iPortalApp/";
+					//baseURL = "file:///mnt/sdcard/";
+					actuate.MOBILE_APP_MODE = "offline";
+				}	
+				else
+				{
+					actuate.MOBILE_APP_MODE = "online";
+				}
+				var meta;
+				if (document.createElement && (meta = document.createElement('meta'))) 
+				{		
+					meta.name = "viewport";
+					meta.content = "width=device-width,initial-scale=1";
+					// now add the meta element to the head
+					document.getElementsByTagName('head').item(0).appendChild(meta);
+				}
+				var reqOps = new actuate.RequestOptions( );
+				if( vp != "" )
+				{	
+					reqOps.setVolumeProfile( vp );
+				}
+				actuate.USER_ENV = userEnv;
+				actuate.load("viewer");
+				actuate.initialize(
+						baseURL,
+						reqOps,
+						user,
+						password,
+						initSuccess
+						);
+			}
+			
+			function initSuccess()
+			{	
+				Ext.setup({
+					onReady: function() {
+						initViewer( );
+						}
+					});	
+					
+			}
+			
+			function initViewer( )
+			{	
+				try
+				{
+					// ted 21336
+					// get UUID for viewr
+					//var viewerUUID = <%=viewerUUID%>;
+					var viewerUUID = -1903478419;
+					// pass UUID to viewer
+					var viewer = new actuate.Viewer( "container", null, viewerUUID );
+					//viewer.setSupportSVG( hasSVGSupport );
+					//viewer.setReportDesign( "/Public/BIRT and BIRT Studio Examples/CustomersListByCountry_aggr.rptdesign" );
+					report = decodeURIComponent( report );
+					if( report.indexOf( ".rptdesign") > -1 )
+					{	
+						viewer.setReportDesign( report );
+					}
+					else if( report.indexOf( ".rptdocument") > -1 )
+					{
+						viewer.setReportDocument( report );
+					}
+					if( bookmark != "" )
+					{
+						viewer.setReportletBookmark( bookmark );
+					}	
+					var options = new actuate.viewer.UIOptions( );
+					viewer.setUIOptions( options );
+					viewer.submit( );
+				}
+				catch( e )
+				{
+					alert( e.getErrorMessage( ) );
+				}
+			}
+			
+		</SCRIPT>
+
+		<!-- Header section -->
+		<DIV CLASS="standaloneViewer">
+			<!-- ted 27913 remove logo from iv -->
+			<!--< DIV CLASS="viewerCaption">
+				 <IMG BORDER="0" style="padding-bottom:1px" SRC="<ap:skinImage imageName="Logo" />" ALIGN="middle"> 
+			</DIV> -->
+			
+				<DIV ID="container" CLASS="viewerContainer" style="background-color:#474747"></DIV>
+				
+		</DIV>
+	</BODY>
+</HTML>

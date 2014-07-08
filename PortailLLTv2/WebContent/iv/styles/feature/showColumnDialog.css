@@ -1,0 +1,11 @@
+/******************************************************************************
+ *	show column Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_column_ivShowColumnDialog table,
+.actuate_iv_ui_dialog_column_ivShowColumnDialog div,
+.actuate_iv_ui_dialog_column_ivShowColumnDialog tr,
+.actuate_iv_ui_dialog_column_ivShowColumnDialog td,
+{
+	margin: 0px;
+	padding: 0px;	
+}

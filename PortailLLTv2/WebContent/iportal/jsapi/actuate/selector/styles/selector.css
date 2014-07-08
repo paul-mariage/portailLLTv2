@@ -1,0 +1,242 @@
+.actuate-selector-panel {
+    border-style: none;
+}
+
+.gadgets-gadget-chrome >.actuate-selector-panel,.actuate-selector-radio-panel .actuate-widget-table-layout{
+	margin: 0 0 0 11px;
+}
+
+.actuate-selector-radio-panel .actuate-widget-table-layout{
+	padding: 0 11px 0 0 ;
+}
+
+
+.actuate-selector-panel .actuate-widget-table-layout-cell{
+	padding: 3px 0 0 0;
+}
+
+.actuate-selector-radio-panel-header,.actuate-selector-panel-header,.actuate-selector-radio-panel .actuate-form-cb-label {
+    overflow:hidden;
+    zoom:1;
+    color: black;
+	font:normal 14px 'Source Sans Pro', tahoma, verdana, arial, sans-serif !important;
+    border-style: none;    
+    line-height: 16px; /* Change this line-height for TED 56263 */
+    height: 16px;
+    background-color: transparent;
+}
+
+.actuate-selector-panel-body .actuate-selector-panel-header.actuate-selector-panel-header-noborder.actuate-unselectable{
+  height: 1px;
+}
+
+.actuate-selector-radio-panel-header{
+    margin: 0 18px 0 0;
+}
+.actuate-selector-panel-header,.actuate-selector-radio-panel .actuate-form-cb-label {
+    padding: 0 6px 6px !important;
+}
+.actuate-selector-panel .actuate-widget-table-layout-cell,.actuate-selector-panel .actuate-form-field {
+	font:normal 14px 'Source Sans Pro', tahoma, verdana, arial, sans-serif !important;
+}
+
+.actuate-selector-panel-header .actuate-widget-tool,.actuate-selector-radio-panel .actuate-widget-tool-selector-clear {
+	font-size  : 14px    !important;
+    color      : #2998fb !important;
+ 	width      : auto!important;
+	height	   : 18px!important;
+ 	background : none repeat scroll 0 0 transparent !important;
+}
+
+.actuate-selector-panel-body {
+    border-style: none;
+	overflow:hidden;
+    background:transparent;
+    position: relative; /* added for item scroll positioning */
+}
+
+.actuate-selector-panel-bbar .actuate-selector-toolbar {
+    border:1px solid #99bbe8;
+    border-top:0 none;
+    overflow:hidden;
+    padding:2px;
+}
+
+
+.actuate-selector-panel-tbar .actuate-selector-toolbar {
+    border:1px solid #99bbe8;
+    border-top:0 none;
+    overflow:hidden;
+    padding:2px;
+}
+
+.actuate-selector-panel-header .actuate-widget-tool-selector-clear {
+	    background-position:0 0px;
+}
+
+.actuate-selector-panel-header .actuate-widget-tool-selector-apply {
+		color: black; 
+		width: auto; 
+		background: none; 
+}
+
+.actuate-selector-panel-header .actuate-widget-tool-selector-seperator {
+		color: black; 
+		width: auto; 
+		background: url("../images/combo/dropdown-y.png") repeat-y scroll right 0 transparent; 
+}
+
+
+.actuate-selector-panel-header .actuate-widget-tool-selector-select-all {
+	    background-position:0 -16px;
+}
+
+.actuate-selector-panel .actuate-form-radio {
+	height: 15px;
+	width: 15px;
+} 
+
+.actuate-selector-panel .actuate-form-radio-focus .actuate-form-radio,
+.actuate-selector-panel .actuate-form-radio-over {
+	background-position: -15px 0;
+}
+.actuate-selector-panel .actuate-form-radio-down {
+	background-position:-30px 0;
+}
+.actuate-selector-panel .actuate-form-radio-checked .actuate-form-radio-focus .actuate-form-radio, 
+.actuate-selector-panel .actuate-form-radio-checked .actuate-form-radio-over {
+		background-position:-15px -15px !important;
+}
+.actuate-selector-panel .actuate-form-radio-checked .actuate-form-radio-down {
+		background-position:-30px -15px !important;
+}
+.actuate-selector-panel .actuate-form-radio-checked .actuate-form-radio {
+	background-position:0 -15px;
+}
+
+.actuate-selector-panel .actuate-form-check-wrap,
+.actuate-selector-panel .actuate-form-radio-wrap
+{
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.actuate-selector-panel .actuate-form-check {
+	background-image: url(../images/checkbox.png);
+} 
+
+.actuate-selector-panel .actuate-form-radio {
+	background-image: url(../images/radio.png);
+}
+
+.actuate-selector-panel .actuate-slider {
+	left:7px;
+    /*top:10px;*/
+    top: 6px;
+}
+	
+.actuate-selector-panel .actuate-selector-list .actuate-list-item {
+	font:normal 14px 'Source Sans Pro', tahoma, verdana, arial, sans-serif !important;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.actuate-selector-panel .actuate-selector-list .actuate-list-selected{
+	border:1px dotted #353535 !important;
+    background:#e1e1e1 !important;
+}
+
+.actuate-selector-panel .actuate-list,
+.actuate-selector-panel .actuate-list-inner,
+.actuate-selector-panel .actuate-selector-search-box {
+	background-color: transparent;
+}
+
+.actuate-selector-list-tl,
+.actuate-selector-list-tr,
+.actuate-selector-list-bl,
+.actuate-selector-list-br {
+	background-color: transparent;
+	background-repeat: no-repeat;
+    zoom:1;
+    position:relative;
+}
+	
+.actuate-selector-list-tl {
+	background-position: 0 0;
+}
+
+.actuate-selector-list-tr {
+	background-position: right 0;
+}
+
+.actuate-selector-list-tm {
+	height: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.actuate-selector-list-ml {
+}
+
+.actuate-selector-list-mr {
+}
+
+.actuate-selector-float-right {
+	float:right;
+}
+
+.actuate-selector-list-bl {
+	background-position: 0 bottom;
+}
+
+.actuate-selector-list-br {
+	background-position: right bottom;
+}
+
+.actuate-selector-list-bm {
+	height: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.actuate-selector-list-body {
+	background-color: transparent;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.actuate-selector-list-body .actuate-list {
+	background-color: transparent;
+	border: none;	 
+}
+
+.actuate-selector-list-body .actuate-list {
+	overflow: inherit;
+	overflow-x: inherit;
+	overflow-y: inherit:
+}
+
+.actuate-selector-list-body .actuate-list-inner {
+	overflow: auto;
+}
+
+.actuate-list-selector-panel .actuate-widget-panel-body {
+	background: transparent;
+} 
+
+.actuate-list-selector-panel-header
+{
+	text-overflow:clip;
+	overflow:hidden;
+}
+
+.actuate-selector-panel .actuate-list-item {
+    border-bottom: 1px solid #e1e1e1 !important;
+}
+
+.actuate-form-check-wrap, .actuate-form-radio-wrap {
+    line-height: 16px;
+}

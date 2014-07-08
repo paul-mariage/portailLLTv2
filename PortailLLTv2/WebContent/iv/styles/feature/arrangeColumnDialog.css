@@ -1,0 +1,49 @@
+/******************************************************************************
+ *	Reorder column Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog table,
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog div,
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog tr,
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog td
+{
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .manage_column_dialog_div
+{
+	height:90px;
+	width:200px;
+}
+
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .imagebutton
+{
+	border-width:0px;
+	border-height:0px;
+	padding:0px;
+	width:16px;
+	height:16px;
+	cursor: pointer;
+	background-color:transparent;
+}
+
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .manage_column_dialog_text
+{
+	cursor:pointer;
+}
+  
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .manage_column_dialog_text_hidden
+{
+  	color:#CCCCCC;
+  	cursor:default;
+}
+
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .titleSpacing
+{
+	width: 6px;
+}
+
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .itemSpacing
+{
+	width: 10px;
+}

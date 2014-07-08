@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+		PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.2</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname></shortname>
+	<info>
+		This taglib provides tags which are used for internationalization and
+		the formatted display of internationalized strings
+	</info>
+	<tag>
+		<name>bundle</name>
+		<tagclass>com.actuate.reportcast.tags.common.BundleTag</tagclass>
+		<teiclass>org.apache.taglibs.i18n.BundleTEI</teiclass>
+		<info>
+			This tag wraps the org.apache.taglibs.i18n.BundleTag.
+ 			It overrides the doEndTag() method and sets the ChangeResponseLocale 
+ 			feature to false. This tag must be placed in a JSP before any other i18n tags.
+		</info>
+		<attribute>
+			<name>baseName</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>localeAttribute</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>message</name>
+		<tagclass>org.apache.taglibs.i18n.MessageTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag implements a body tag that allows the usage of a resource bundle 
+			to internationalize content in a web page. The "key" attribute is required, 
+			and is used to look up content in the resource bundle. 
+			The "args" attribute is optional, and if present, provides items to pass 
+			to a MessageFormat. The BundleTag must first be used in order to ensure that 
+			the proper bundle is loaded. 
+		</info>
+		<attribute>
+			<name>bundle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>bundleRef</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>args</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>messageArg</name>
+		<tagclass>org.apache.taglibs.i18n.MessageArgumentTag</tagclass>
+		<info>
+			This tag is used as a sub-tag inside a MessageTag to create 
+			an ordered list of arguments to use with java.text.MessageFormat
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ifdef</name>
+		<tagclass>org.apache.taglibs.i18n.IfdefTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag implements body tag that allows the usage of a resource bundle 
+			to internationalize content in a web page. If a value is found in the 
+			resource bundle for the required "key" attribute, then the enclosed JSP 
+			is evaluated, otherwise, it is skipped. 
+			
+			The ifdef and ifndef tags makes it possible to conditionally evaluate 
+			sections of a JSP based on whether or not a value is provided for 
+			the given key. 
+		</info>
+		<attribute>
+			<name>bundle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>bundleRef</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ifndef</name>
+		<tagclass>org.apache.taglibs.i18n.IfndefTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag implements body tag that allows the usage of a resource bundle 
+			to internationalize content in a web page. If a value is found in the 
+			resource bundle for the required "key" attribute, then the enclosed JSP 
+			is evaluated, otherwise, it is skipped. 
+			
+			The ifdef and ifndef tags makes it possible to conditionally evaluate 
+			sections of a JSP based on whether or not a value is provided for 
+			the given key.
+		</info>
+		<attribute>
+			<name>bundle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>bundleRef</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>locale</name>
+		<tagclass>org.apache.taglibs.i18n.LocaleTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag defines a locale context  for use by other inner JSP tags. 
+			This is either specified using the locale property, the combination 
+			of 'language', 'country' and the optional 'variant' property or 
+			the current HTTP request is used.
+			If no other locale can be found then the default JVM locale is used.
+			Other sub-tags will use this locale if no other locale is specified.
+		</info>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>language</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>country</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>variant</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatString</name>
+		<tagclass>org.apache.taglibs.i18n.FormatStringTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag outputs a String value or displays the defaultText property if the 
+			String is null. The defaultText defaults to "".
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatNumber</name>
+		<tagclass>org.apache.taglibs.i18n.FormatNumberTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag formats a number using a locale.
+
+			A pattern can be specified such as '##,###.##'.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatCurrency</name>
+		<tagclass>org.apache.taglibs.i18n.FormatCurrencyTag</tagclass>
+		<bodycontent>JSP</bodycontent>		
+		<info>
+			This tag formats a number as a currency using a locale.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatPercent</name>
+		<tagclass>org.apache.taglibs.i18n.FormatPercentTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag formats a number as a percentage using a locale.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatDate</name>
+		<tagclass>org.apache.taglibs.i18n.FormatDateTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag formats a Date value using a locale.
+
+			A style (short/medium/long/full) can be specified
+			or a pattern such as 'YYYY MMM ddd'.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>formatDateTime</name>
+		<tagclass>org.apache.taglibs.i18n.FormatDateTimeTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag formats a Date value as a date-time using a locale.
+
+			A dateStyle and a timeStyle (short/medium/long/full) can be specified.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>dateStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>timeStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>formatTime</name>
+		<tagclass>org.apache.taglibs.i18n.FormatTimeTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag formats a Date value as a time using a locale.
+
+			A style (short/medium/long/full) can be specified.
+
+			If the value is null then the default text is used.
+
+			If no locale is specified then the parent &lt;i18n:locale&gt; tag is used.
+			If no parent &lt;i18n:locale&gt; tag exists then the locale is taken from the
+			current request. If still no locale could be found then the 
+			current JVM locale is used.
+		</info>
+		<attribute>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

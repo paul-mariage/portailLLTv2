@@ -1,0 +1,21 @@
+/******************************************************************************
+ *	reorder column dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .actuateIV_up-arrow
+{
+	background-image : url("../../../iv/images/tomerge/dialog/arrow_up_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .actuateIV_down-arrow
+{
+	background-image : url("../../../iv/images/tomerge/dialog/arrow_down_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+.actuate_iv_ui_dialog_column_ivArrangeColumnDialog .imagebutton 
+{
+	width : 32px;
+	height : 32px;
+}

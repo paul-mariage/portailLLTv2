@@ -1,0 +1,146 @@
+/* Copyright 1994-2006, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+
+/******************************************************************************
+ *	Shared Dialog Styles
+ *****************************************************************************/
+
+.actuate_shared_resource .iv_dialog_link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_shared_resource .iv_dialog_link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}
+
+.actuate_file_btn_upFolder
+{
+	background: url('../images/folderUp16.png') no-repeat scroll 0 0 transparent !important;
+	padding-right: 20px !important;
+}
+
+.actuate_file_btn_search
+{
+	background: url('../images/searchSml16.png') no-repeat scroll 0 0 transparent !important;
+	padding-right: 10px !important;
+}
+
+.actuate-list-item.actuate-list-selected .actuate_file_folderClose16 {
+    background: url("../images/folder_active.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)!important;
+}
+
+.actuate_file_folderClose16
+{
+	background: url('../images/folderClose16.png') no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;    
+    margin: 13px 0 0 0;
+    height: 20px;
+    width: 20px;    
+}
+
+.actuate_file_open16
+{
+	background: url('../images/folder_active.png') no-repeat scroll 0 0 transparent !important;
+	    display: block;
+    float: left;    
+    margin: 13px 0 0 0;
+    height: 20px;
+    width: 20px;    
+}
+
+.actuate_file_fileGeneric16.rptdesign , actuate-list-item.actuate-list-selected .actuate_file_fileGeneric16.rptdesign {
+	background: url('../images/design20.png') no-repeat scroll 0 0 transparent !important;
+	background-size: 16px 16px !important;
+}
+
+.actuate_file_fileGeneric16.rptdocument, actuate-list-item.actuate-list-selected .actuate_file_fileGeneric16.rptdocument {
+	background: url('../images/document20.png') no-repeat scroll 0 0 transparent !important;
+	background-size: 16px 16px !important;
+}
+
+.actuate-list-item.actuate-list-selected .actuate_file_fileGeneric16
+{
+	background: url('../images/file_active.png') no-repeat scroll 0 0 transparent;	
+}
+
+.actuate_file_fileGeneric16
+{
+	background: url('../images/fileGeneric16.png') no-repeat scroll 0 0 transparent;
+	display: block;
+    float: left;    
+    margin: 13px 0 0 0;
+    height: 20px;
+    width: 20px;    
+}
+
+.actuate_file_description
+{
+	background : whitesmoke !important;
+	color : rgb(50, 50, 50) !important;
+	overflow : auto;
+}
+
+.actuate_file_btn .actuate-widget-btn-left,
+.actuate_file_btn .actuate-widget-btn-right,
+.actuate_file_btn .actuate-widget-btn-center
+{
+	background: none;
+}
+
+.actuate-item-disabled .actuate-widget-btn-text.actuate_file_btn_upFolder {
+    cursor: default!important;
+}
+
+.actuate_ExportData_move_buttons,
+.actuate_flex_builder_move_buttons,
+.actuate_tabledata_builder_move_buttons,
+.actuate_crosstab_builder_move_buttons
+{
+	padding: 0px;
+}
+
+.actuate_ExportData_move_buttons .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_flex_builder_move_buttons .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_flex_builder_up_down_buttons .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_tabledata_builder_up_down_buttons  .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_tabledata_builder_move_buttons .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_crosstab_builder_up_down_buttons .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate_crosstab_builder_move_buttons .actuate-widget-btn-center .actuate-widget-btn-text
+{
+    height: 32px !important; 
+    width: 32px !important;
+}
+
+.actuate_crosstab_dateGroup_dialog .actuate-tree-node-leaf a
+{
+	font-weight: bold !important;
+}/* Copyright 1994-2006, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+.actuate_shared_resource td
+{
+  	font-size: 11px;
+}
+
+.actuate_shared_resource textarea
+{
+	border-style		: solid;
+	border-color		: #7F9DB9;
+	border-width		: 1px;
+	border-radius       : 4px;	
+}
+
+
+

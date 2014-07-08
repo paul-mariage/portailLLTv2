@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131112-0430 Build &lt;4.2.3.v20131112-0430></property>
+    <themes>
+        <theme name="Modern" id="2">
+            <styles>
+                <style name="group_aggr_cell_blank" id="867">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_label" id="868">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="869">
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="870">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="871">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="872">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_header" id="873">
+                    <property name="backgroundColor">#DDDDDD</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="table_header_cell_chart" id="8731">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="group_header_cell_back" id="874">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_front" id="875">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="876">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="group_header1" id="877">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header2" id="878">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_heading1" id="304">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading2" id="305">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading" id="306">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_footer" id="879">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer1" id="880">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer2" id="881">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_header" id="882">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header1" id="883">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header2" id="884">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_heading" id="992">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading1" id="920">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading2" id="921">
+                    <property name="backgroundColor">#CCCCCC</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_header_cell_chart" id="8821">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table_detail" id="885">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="886">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="887">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="888">
+                    <property name="backgroundColor">#DDDDDD</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_aggr_cell_front" id="891"/>
+                <style name="group_header" id="892">
+                    <property name="backgroundColor">#F1F1F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table" id="896">
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="Clean Blue" id="688">
+            <styles>
+                <style name="group_aggr_cell_blank" id="938">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_front" id="939"/>
+                <style name="group_aggr_cell_label" id="940">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="941">
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="8822">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="8823">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="944">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_header" id="8824">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_heading" id="307">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading1" id="308">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading2" id="309">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_header_cell_back" id="946">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_front" id="947">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="948">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="group_header1" id="949">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header2" id="950">
+                    <property name="backgroundColor">#D3E8F1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_footer" id="951">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer1" id="952">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer2" id="953">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_heading" id="991">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading1" id="922">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading2" id="8825">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_header" id="954">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header1" id="955">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header2" id="956">
+                    <property name="backgroundColor">#66B0D1</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header_cell_chart" id="9541">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table" id="957">
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="table_detail" id="958">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="959">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="960">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="961">
+                    <property name="backgroundColor">#A7D0E2</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="table_header" id="962">
+                    <property name="backgroundColor">#A7D0E2</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="table_header_cell_chart" id="9621">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="Warm Red" id="499">
+            <styles>
+                <style name="group_aggr_cell_blank" id="500">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_label" id="501">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="502">
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="503">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="504">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="505">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_header" id="506">
+                    <property name="backgroundColor">#F59275</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header_cell_chart" id="5061">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="group_header_cell_back" id="507">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_front" id="508">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="509">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="group_header1" id="510">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header2" id="511">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_heading" id="310">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading1" id="311">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="group_heading2" id="312">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_footer" id="512">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer1" id="513">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer2" id="514">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderBottomColor">#999999</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_heading" id="990">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading1" id="9622">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_heading2" id="9623">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                </style>
+                <style name="section_header" id="515">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header1" id="516">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header2" id="517">
+                    <property name="backgroundColor">#DF5E34</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header_cell_chart" id="5151">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table_detail" id="518">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="519">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="520">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="521">
+                    <property name="backgroundColor">#F59275</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_aggr_cell_front" id="522"/>
+                <style name="group_header" id="523">
+                    <property name="backgroundColor">#FAC9BA</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopColor">#999999</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table" id="524">
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="Grayscale" id="835">
+            <styles>
+                <style name="group_aggr_cell_blank" id="836">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_front" id="837"/>
+                <style name="group_aggr_cell_label" id="456">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="458">
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="838">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="9624">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="852">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_header" id="853">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header1" id="850">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header2" id="851">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_heading" id="300">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_heading1" id="301">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_heading2" id="302">
+                    <property name="backgroundColor">#B7B7B7</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_header_cell_back" id="840">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header_cell_front" id="841">
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="842">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="section_footer" id="843">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer1" id="9625">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_footer2" id="9626">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                </style>
+                <style name="section_heading" id="993">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_heading1" id="994">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_heading2" id="995">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_header" id="844">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header1" id="854">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header2" id="855">
+                    <property name="backgroundColor">#353535</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderTopColor">#FFFFFF</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="section_header_cell_chart" id="8441">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table_detail" id="845">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#353535</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="846">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="847">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="848">
+                    <property name="backgroundColor">#808080</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header" id="849">
+                    <property name="backgroundColor">#808080</property>
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header_cell_chart" id="8491">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table" id="895">
+                    <property name="fontFamily">"Tahoma"</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+            </styles>
+        </theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="23"/>
+    </page-setup>
+</library>

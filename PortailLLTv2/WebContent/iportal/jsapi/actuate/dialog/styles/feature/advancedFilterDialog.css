@@ -1,0 +1,154 @@
+
+/******************************************************************************
+ * IV Advanced Filter dialog.
+ *****************************************************************************/
+.actuate_dialog_AdvancedFilterDialog table,
+.actuate_dialog_AdvancedFilterDialog div,
+.actuate_dialog_AdvancedFilterDialog tr,
+.actuate_dialog_AdvancedFilterDialog a,
+.actuate_dialog_AdvancedFilterDialog button,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab table,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab div,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab tr,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab a,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab button	
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;	
+}
+
+.actuate-browser-ie .actuate_dialog_AdvancedFilterDialog .valueRadio,
+.actuate-browser-ie .actuate_dialog_impl_helper_GadgetBuilderFilterTab .valueRadio
+{
+	margin-right: 4px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .dialog_content_table td,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+
+.actuate_dialog_AdvancedFilterDialog table, actuate_dialog_impl_helper_GadgetBuilderFilterTab table, .actuate_dialog_impl_helper_GadgetBuilderFilterTab div
+{
+	background-color: transparent;
+}	
+ 
+.actuate_dialog_AdvancedFilterDialog .labelWidth,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .labelWidth, 
+{
+	width: 78px;	
+}
+
+.actuate_dialog_AdvancedFilterDialog .conditionSelectBoxWidth,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .conditionSelectBoxWidth
+{
+	width: 325px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .filterValuePickerDiv,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .filterValuePickerDiv
+{
+}
+
+.actuate_dialog_AdvancedFilterDialog .filterValuePickerRadio,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .filterValuePickerRadio
+{
+	left: 0px;	
+}
+
+.actuate_dialog_AdvancedFilterDialog .valueTextBox,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .valueTextBox
+{	
+	width: 320px;
+	line-height: 12px;
+	valign: middle;
+}
+
+.actuate_dialog_AdvancedFilterDialog .valueTablePadding td,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .valueTablePadding td
+{	
+	padding: 1px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .link_enabled,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_dialog_AdvancedFilterDialog .link_disabled,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}
+
+.actuate_dialog_AdvancedFilterDialog .selectValuesLinkMargin,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .selectValuesLinkMargin
+{	
+	margin-left: 2px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .valuesListWidth,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .valuesListWidth
+{
+	width: 325px;
+	height: 80px;	
+}
+
+.actuate_dialog_AdvancedFilterDialog .relativePosition,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .relativePosition
+{
+	position: relative;	
+}
+
+.actuate_dialog_AdvancedFilterDialog .filtersAreaContentDiv,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .filtersAreaContentDiv
+{	
+	width: 100%;
+	padding-right: 4px;
+	border-style: solid; 
+	border-color: #cccccc; 
+	background-color: #ffffff; 
+	border-width: 1px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .symbolButtonSize_1,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .symbolButtonSize_1
+{
+	width: 45px; 
+	height: 25px;
+}
+
+.actuate_dialog_AdvancedFilterDialog .symbolButtonSize_2,
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .symbolButtonSize_2
+{
+	height: 25px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_dialog_impl_helper_GadgetBuilderFilterTab .link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}

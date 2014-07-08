@@ -1,0 +1,52 @@
+
+/******************************************************************************
+ * IV Export Report dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog div
+{
+	background-color: transparent;
+}			 
+ 
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .rectangle
+{
+	border-style:solid;
+	border-color:#7F9DB9;
+	border-width:1px;
+	padding:4px;
+	width: 100%;
+	background-color: transparent;
+}
+
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .outputFormatBox
+{
+	width: 100%;
+	height: 25px;
+}
+
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .valueInput
+{
+	width: 50px;
+	/*
+	line-height: 11px;
+	height: 13px;
+	*/
+	valign: middle;
+}
+
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .labelCell
+{
+	width: 40%;
+}
+
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .inputCell
+{
+	width: 60%;
+	cellpadding: 0;
+}
+
+.actuate_iv_ui_dialog_exportReport_ivExportReportDialog .tableWidth
+{
+	width: 100%;
+	height: 25px;
+	background-color: transparent;
+}

@@ -1,0 +1,120 @@
+
+/******************************************************************************
+ * IV Table Filter dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog table,
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog div,
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog tr,
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog td
+{
+	margin: 0px;
+	padding: 0px;	
+}	
+ 
+ 
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog div
+{
+ 
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .conditionalformatdiv
+{
+	/*width:540px;*/
+	margin:0px auto;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .conditionarea
+{
+	margin-left: 4px;
+	height: 22px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .divWidth
+{
+	width: 100%;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .margin
+{
+	margin-top: 4px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .conditionalformatcontainer
+{
+	width:100%;
+	height:100%;
+	border-style:solid;
+	border-color:#7f9db9;
+	border-width:1px;
+	margin-top: 3px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .previewbox
+{
+	display: relative;
+	height: 27px;
+	width: 205px; 
+	text-align: center;
+	white-space: no-wrap;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #003063;
+	border-width: 1px;
+	background-color: #ffffff; 
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .previewtext
+{
+	vertical-align: top;
+	height: 25px;
+	width: 210px; 
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .lineheight
+{
+	line-height: 30px;
+}	
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .value
+{
+	width:200px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .tableMargin
+{
+	margin: 6px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .tableMargin td
+{
+	padding: 2px;
+	padding-right: 4px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .valueTable td
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .chagevaluebtn1
+{
+	position: relative;
+	left: 442px;
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .chagevaluebtn2
+{
+	position: relative;
+	left: 488px;
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+

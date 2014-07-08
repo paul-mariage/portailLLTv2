@@ -1,0 +1,186 @@
+
+/******************************************************************************
+ *	Aggregation Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog div
+{
+	background-color: transparent; 
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .delete
+{
+	width:100%; 
+	text-align: right;
+	padding: 1px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .section1
+{
+	height:100%; 
+	border:solid 1px #7F9DB9;
+	clear:both;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .section1_left
+{
+	height:100%; 
+	float:left; 
+	padding:5px; 
+	border-right:solid 1px #7F9DB9;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .select_function
+{
+	padding-bottom: 5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .section1_right
+{
+	float:left; 
+	height:100%; 
+	padding:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .section2
+{
+	height:100%; 
+	margin-top:5px; 
+	padding:5px; 
+	border: solid 1px #7F9DB9;
+	clear: both;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .section3
+{
+	margin-top:5px;
+	padding-left:5px;
+	border:solid 1px #7F9DB9;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .aggregate_on_label
+{
+	float:left;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .aggregation_level
+{
+	float:left; 
+	padding-left:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .labelmargin
+{
+	margin-left:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .add
+{
+	width:100%; 
+	text-align: center;
+}
+
+
+/******************************************************************************
+ *	Aggregation Accordion Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog div
+{
+	background-color: transparent; 
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .delete
+{
+	width:100%; 
+	text-align: right;
+	padding: 1px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .section1
+{
+	height:100%; 
+	border-top:solid 1px #7F9DB9;
+	border-bottom:solid 1px #7F9DB9;
+	clear:both;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .section1_left
+{
+	height:100%; 
+	float:left; 
+	padding:5px; 
+	border-right:solid 1px #7F9DB9;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .select_function
+{
+	padding-bottom: 5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .accordionSlideBorder
+{
+	border: none !important;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .accordionBorder
+{
+	border: 1px solid #7f9db9 !important;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .section1_right
+{
+	float:left; 
+	height:100%; 
+	padding:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .section2
+{
+	height:100%; 
+	margin-top:5px; 
+	padding:5px; 
+	border-top: solid 1px #7F9DB9;
+	border-bottom: solid 1px #7F9DB9;
+	clear: both;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .section3
+{
+	margin-top:5px;
+	padding-left:5px;
+	border-top:solid 1px #7F9DB9;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .aggregate_on_label
+{
+	float:left;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .aggregation_level
+{
+	float:left; 
+	padding-left:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .labelmargin
+{
+	margin-left:5px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .add
+{
+	width:100%; 
+	text-align: center;
+}
+

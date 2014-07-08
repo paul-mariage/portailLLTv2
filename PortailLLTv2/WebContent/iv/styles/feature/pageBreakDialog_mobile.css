@@ -1,0 +1,24 @@
+/******************************************************************************
+ *	Page break dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_ivPageBreakDialog .pagebreak_dialog_inputtext
+{
+	line-height	: 130%;
+	width		: 135px;
+	font-size	: 8pt;
+	font-family	: tahoma,verdana,arial,sans-serif;
+	font-style  : normal;
+	font-weight : normal;
+	padding-top : 1px;
+	margin-top  : 3px;
+}
+ .actuate_iv_ui_dialog_ivPageBreakDialog .x-form-fieldset-title
+ {
+ 	margin-left : 0px;
+ }
+ 
+.actuate_iv_ui_dialog_ivPageBreakDialog .x-form-fieldset-title
+{
+	margin-left : 0px;
+}

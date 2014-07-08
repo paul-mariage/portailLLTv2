@@ -1,0 +1,28 @@
+
+/******************************************************************************
+ *	group detail dialog
+ *****************************************************************************/
+ #actuate_iv_ui_dialog_group_ivGroupDetailDialog
+ {
+ 	width : 410px;
+ }
+ 
+ .actuate_iv_ui_dialog_group_ivGroupDetailDialog .ColumnWidthofNoInterval
+ {
+ 	width : 260px;
+ }
+ 
+ .actuate_iv_ui_dialog_group_ivGroupDetailDialog .ColumnWidthofInterval
+ {
+ 	width : 220px;
+ }
+ 
+ #actuate_iv_ui_dialog_group_ivGroupDetailDialog_setInterval
+ {
+ 	width : 210px;
+ }
+ 
+ #actuate_iv_ui_dialog_group_ivGroupDetailDialog_interval_range
+ {
+ 	width : 50px;
+ }

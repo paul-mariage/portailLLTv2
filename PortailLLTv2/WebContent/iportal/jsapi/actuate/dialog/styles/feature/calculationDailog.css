@@ -1,0 +1,71 @@
+.calculation_dialog_padding_top
+{
+	vertical-align: top;
+	padding-top:10px;
+	float:left;
+	word-wrap:break-word;
+	overflow :hidden;
+}
+
+.calculation_dialog_label
+{
+	valign : left;
+	text-valign : left;
+	width : 100px;
+}
+
+.calculation_dialog_validate
+{
+	cursor:pointer;
+	color:blue;
+	text-decoration:underline;
+	text-align: center;
+	margin:0 auto;
+}
+
+.calculation_dialog_advanced_example,
+.calculation_dialog_syntax {
+	color:gray;
+}
+
+
+.calculation_dialog_description {
+	color:gray;
+	float:left;
+	word-wrap:break-word;	
+	overflow :hidden;
+	margin-bottom:10px;
+}
+
+.calculation_dialog_advanced_learnMore {
+	float:left;
+	margin-top:5px;
+}
+
+.calculation_dialog_advanced_expression {
+	resize: none;
+	overflow : auto;	
+}
+
+.calculation_dialog_expressionHint {
+	position:absolute;
+	background-color:#FFFFCC;
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	padding:2px;
+	display:none;
+}
+.calculation_dialog_result { 
+	padding: 1px 0 0 0;
+    margin-left: 4px;
+	background-color: #ffffff; 
+	color: #000000; 
+}
+.calculation_dialog_sresult {
+	padding: 1px 0 0 0;
+    margin-left: 4px; 
+	background-color: #36c; 
+	color: #ffffff; 
+	cursor: pointer;
+}

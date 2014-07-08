@@ -1,0 +1,69 @@
+
+.actuate_dialog_font_FontDialog .titleSpacing
+{
+	width:150px;
+}
+
+.actuate_dialog_font_FontDialog .imagebutton
+{
+	width				: 32px !important;
+ 	height				: 32px !important;
+}
+
+.actuate_dialog_font_FontDialog .fontPreviewBox
+{
+	width: 310px !important;
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_bold_disable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/bold_disable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_bold_enable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/bold_enable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_italic_disable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/italic_disable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_italic_enable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/italic_enable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_underline_disable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/underline_disable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .actuateIV_underline_enable
+{
+	background-image : url("../../../../../../iv/images/tomerge/dialog/underline_enable_mobi.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_dialog_font_FontDialog .x-input-radio, .actuate_dialog_font_FontDialog .x-field input
+{
+	padding: 0px !important;
+}
+
+.actuate_dialog_font_FontDialog .x-form-label span
+{
+	padding-left: 40px;
+	float:left;	
+}

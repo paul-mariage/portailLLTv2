@@ -1,0 +1,180 @@
+.actuate_mobile_shared .commonInputBoxStyle input[type=text]
+{
+	border-style		: solid;
+	border-color		: #7F9DB9;
+	border-width		: 1px;
+	border-radius       : 4px;	
+}
+
+.actuate_mobile_shared td
+{
+	font-size: 12px !important;
+	font-family			: tahoma, verdana, arial, sans-serif !important;
+	font-style          : normal !important;
+	font-weight         : normal !important;
+	text-shadow : none !important;
+	text-rendering : auto !important;
+}
+
+.actuate_mobile_shared a
+{
+	font-size: 15px !important;
+}	
+
+.actuate_mobile_shared .iv_dialog_link_enabled, .actuate_mobile_shared .iv_dialog_link_disabled
+{
+	font-size: 15px;	
+}
+
+.x-sheet
+{
+	border-style:solid !important;
+	border-width:2px !important;
+	padding:1px !important;
+	margin:2px !important;
+}
+
+div.x-sheet
+{
+	-webkit-box-shadow: rgba(0,0,0,0.4) 0 .1em .5em !important;
+	-webkit-border-radius: .5em !important;
+	border-radius: .5em !important;
+}
+
+.x-sheet-body
+{
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-bottom: 10px !important;
+	padding-top: 12px !important;
+	background-color: white !important;
+	border-radius: .3em !important;
+}
+
+.x-form-fieldset .x-panel-body
+{
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	padding-bottom: 6px !important;
+	padding-top: 6px !important;
+}
+
+.x-msgbox-body
+{
+	padding:10px !important;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+div.x-sheet.x-msgbox
+{
+	width: auto !important;
+	max-width: 370px;
+	min-width: 200px;
+}
+
+.x-msgbox-text
+{
+	color: black !important;
+	text-shadow: none !important;
+	font-size: 12px !important;
+	font-family			: tahoma, verdana, arial, sans-serif !important;
+	font-style          : normal !important;
+	font-weight         : normal !important;
+}
+
+.x-msgbox-buttons
+{
+	background-color: #EFF1F2 !important;
+}
+
+.x-msgbox-buttons .x-button {
+	background: none !important;
+	border-color: #659EC7 !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+.x-msgbox-question
+{
+	background-image: url("../../mobile/images/icon-question.gif");
+	width: 32px;
+	height: 32px;
+	background-repeat: none !important;
+	float: left !important;
+}
+
+.x-msgbox-info
+{
+	background-image: url("../../mobile/images/icon-warning.gif");
+	width: 32px;
+	height: 32px;
+	background-repeat: none !important;
+	float: left !important;
+}
+
+
+/******************************************************************************
+ *	checkbox/radio button right alignment style spec
+ *****************************************************************************/
+.x-label-align-right .x-input-checkbox::after, 
+.x-label-align-right .x-input-radio::after, 
+.x-label-align-right .x-input-radio:checked::after, 
+.x-label-align-right .x-input-checkbox:checked::after 
+{
+	left : 1em !important;
+	right : auto !important;
+}
+
+.actuate-widget-color-palette {
+    width: 230px !important;
+    height: 230px !important;
+}
+
+.actuate-widget-color-palette em span 
+{
+    height: 23px !important;
+    line-height: 23px !important;
+    width: 23px !important;
+}
+
+.actuate-cp-rgbslider
+{
+	width: 23px !important;
+}
+
+.actuate-cp-colorpicker
+{
+	padding-right: 0px !important;
+}
+
+.actuate-cp-center div
+{
+	width: 180px !important;
+}
+
+.actuate-cp-left
+{
+	height: 260px !important;
+}
+
+.actuate-cp-foot, .actuate-cp-head
+{
+	width: 210px !important;
+}	
+
+
+/******************************************************************************
+ *	checkbox/radio button right alignment style spec
+ *****************************************************************************/
+.x-label-align-right .x-input-checkbox::after, 
+.x-label-align-right .x-input-radio::after, 
+.x-label-align-right .x-input-radio:checked::after, 
+.x-label-align-right .x-input-checkbox:checked::after 
+{
+	left : 1em !important;
+	right : auto !important;
+}
+
+
+

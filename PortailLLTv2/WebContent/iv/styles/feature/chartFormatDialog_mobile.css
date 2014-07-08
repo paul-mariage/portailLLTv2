@@ -1,0 +1,157 @@
+
+ /******************************************************************************
+ *	chart format dialog
+ *****************************************************************************/
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_showLegendId .x-form-label span
+{
+	padding-left : 80px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_showLegend td
+{
+	padding-top : 2px;
+	padding-right : 1px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_yScaleMinLiteralID
+{
+	width   : 50px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_yScaleMaxLiteralID
+{
+	width   : 50px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_yScaleStepLiteralArea
+{
+	width   : 50px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_yScaleMinLiteral
+{
+	width   : 50px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_yScaleMaxLiteral
+{
+	width   : 50px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_xcategoryLabelSettings td
+{
+	padding-right : 2px;
+	padding-top   : 2px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_xcategoryLabelSettings td.categoryLabelCheckboxTD2
+{
+	padding-left  : 4px;
+	padding-right : 8px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_xcategorystaggerLabelSettings td
+{
+	padding-right : 2px;
+}
+
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_xcategorystaggerLabelSettings td.categoryLabelCheckboxTD2
+{
+	padding-left  : 4px;
+	padding-right : 8px;
+}
+
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryLabelSettings td
+{
+	padding-right : 2px;
+}
+
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryLabelSettings td.categoryLabelCheckboxTD2
+{
+	padding-left  : 4px;
+	padding-right : 8px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryStaggerArea td
+{
+	padding-right : 2px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryStaggerArea td.categoryLabelCheckboxTD2
+{
+	padding-left  : 4px;
+	padding-right : 8px;
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_YAxisScaleDivID table
+{
+	vertical-align : middle; 
+}
+#actuate_iv_ui_dialog_chart_ivChartFormatDialog_YAxisScaleDivID table td
+{
+	padding-top    : 4px;
+}
+td#actuate_iv_ui_dialog_chart_ivChartFormatDialog_chartTitleSpacing
+{
+	padding-right  : 2px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-form-fieldset-title
+{
+	font-size : 15px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-form-fieldset
+{
+	margin : 3px 0 3px 0;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-form-fieldset-title
+{
+	margin-left : 0;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-form-label
+{
+	padding-top : 1px;
+	padding-bottom : 1px;
+}
+
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_chartSize td
+{
+	padding-top : 2px;
+	padding-right : 1px;
+}
+
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_chartDimension td
+{
+	padding-top : 2px;
+	padding-right : 1px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryLabelSettings td
+{
+	padding-top : 2px;
+	padding-right : 1px;
+}
+tr#actuate_iv_ui_dialog_chart_ivChartFormatDialog_ycategoryStaggerArea td
+{
+	padding-top : 2px;
+	padding-right : 1px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-field input[type="checkbox"]
+{
+	padding : 2px 0 2px 0;
+}
+
+label#actuate_iv_ui_dialog_chart_ivChartFormatDialog_fontButtonForChartTitle
+{
+	font-size : 15px;
+}
+label#actuate_iv_ui_dialog_chart_ivChartFormatDialog_fontButtonForXTitle
+{
+	font-size : 15px;
+}
+label#actuate_iv_ui_dialog_chart_ivChartFormatDialog_fontButtonForXTitleLabel
+{
+	font-size : 15px;
+}
+label#actuate_iv_ui_dialog_chart_ivChartFormatDialog_fontButtonForYTitle
+{
+	font-size : 15px;
+}
+label#actuate_iv_ui_dialog_chart_ivChartFormatDialog_fontButtonForYTitleLabel
+{
+	font-size : 15px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .x-form-label span
+{
+ 	padding-left: 40px;
+}

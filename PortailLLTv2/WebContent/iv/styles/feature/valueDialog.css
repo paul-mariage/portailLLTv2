@@ -1,0 +1,57 @@
+ 
+/******************************************************************************
+ * IV value dialog.
+ *****************************************************************************/
+
+.actuate-browser-ie7 .actuate_iv_ui_dialog_style_ivValueDialog .fieldMargin
+{
+	padding-left: 1px;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .labelWidth
+{
+	width: 70px;	
+	padding-right: 0px !important;	
+}
+
+.actuate-browser-ie .actuate_iv_ui_dialog_style_ivValueDialog .valueRadio
+{
+	margin-right: 4px;
+}
+
+
+.actuate_iv_ui_dialog_style_ivValueDialog table, .actuate_iv_ui_dialog_style_ivValueDialog div
+{
+	background-color: transparent;
+}			
+ 
+.actuate_iv_ui_dialog_style_ivValueDialog .valueListDiv
+{
+	width	: 180px;
+	height	: 100px;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .inputText
+{
+	width		: 180px;
+	valign		: middle;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .findValueInputText
+{
+	width		: 180px;
+	height      : 17px;
+	valign		: middle;
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog .padding
+{
+	/*padding-top: 3px;*/
+}
+
+.actuate_iv_ui_dialog_style_ivValueDialog td
+{
+	padding:1px;
+	padding-left: 0px;
+	padding-right: 2px;
+}

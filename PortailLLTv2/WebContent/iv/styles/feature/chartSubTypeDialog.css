@@ -1,0 +1,301 @@
+
+/******************************************************************************
+ * IV Chart Subtype dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .chartSubTypeBoxHeight
+{
+	height: 200px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .padding
+{
+	padding: 9px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .itemSpacing
+{
+	padding-right: 7px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .titleSpacing
+{
+	padding-bottom: 7px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .dialog_chartSubType_Div
+ {
+  	width:280px;
+  	vertical-align: bottom;
+ }
+ 
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .dialog_content_table,
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .dialog_chartTypeTable
+{  	
+  	border:0;
+  	margin:0;
+  	border-collapse: collapse;
+  	width: 100%;
+}
+ 
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .dialog_content_table tr
+{
+	vertical-align: top;
+}  
+ 
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .subtypeimages
+{
+	border-style: none;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .subTypeCell,
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .subTypeTexts
+{
+	text-align: center;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartSubTypeDialog .noSubtypeTexts,
+.actuate_iv_ui_dialog_chart_ivFlashGadgetTypeDialog .noSubtypeTexts
+{
+	text-align: left;
+	padding: 8px;
+}
+
+/******************************************************************************
+ * ChartType selected
+ ******************************************************************************/
+.actuateCSSSprite_otherchart
+{
+	background-image  : url('../../images/otherchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_percentstarkedchart
+{
+	background-image  : url('../../images/percentstarkedchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_piechart
+{
+	background-image  : url('../../images/piechart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_sidebysidechart
+{
+	background-image  : url('../../images/sidebysidechart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_stackedchart
+{
+	background-image  : url('../../images/stackedchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuateCSSSprite_radarchart
+{
+	background-image  : url('../../images/radarchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+
+/******************************************************************************
+ * ChartType unselected
+ ******************************************************************************/
+.actuateCSSSprite_unsel_otherchart
+{
+	background-image  : url('../../images/unsel_otherchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_unsel_percentstarkedchart
+{
+	background-image  : url('../../images/unsel_percentstarkedchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_unsel_piechart
+{
+	background-image  : url('../../images/unsel_piechart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_unsel_sidebysidechart
+{
+	background-image  : url('../../images/unsel_sidebysidechart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+.actuateCSSSprite_unsel_stackedchart
+{
+	background-image  : url('../../images/unsel_stackedchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuateCSSSprite_unsel_radarchart
+{
+	background-image  : url('../../images/unsel_radarchart.gif');
+	background-color  : transparent;
+	border-style: none;
+}
+
+/******************************************************************************
+ *	chart subtype
+ *****************************************************************************/
+ 
+/******************************************************************************
+ *	otherchart.gif
+ *****************************************************************************/
+.actuateIV_IV_line_on{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_area_depth_selected{ background-position: 0 -77px; width: 78px; height: 78px; } 
+.actuateIV_barStick_stock_selected{ background-position: 0 -160px; width: 48px; height: 48px; } 
+.actuateIV_bubble_selected{ background-position: 0 -213px; width: 48px; height: 48px; } 
+.actuateIV_candlestick_stock_selected{ background-position: 0 -266px; width: 48px; height: 48px; } 
+.actuateIV_difference_selected{ background-position: 0 -319px; width: 48px; height: 48px; } 
+.actuateIV_gantt_selected{ background-position: 0 -372px; width: 48px; height: 48px; } 
+.actuateIV_overlay_area_selected{ background-position: 0 -425px; width: 48px; height: 48px; } 
+.actuateIV_overlay_line_flash_selected{ background-position: 0 -478px; width: 72px; height: 72px; } 
+.actuateIV_overlay_line_selected{ background-position: 0 -555px; width: 48px; height: 48px; } 
+.actuateIV_scatter_selected{ background-position: 0 -608px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	percentstarkedchart.gif
+ *****************************************************************************/
+.actuateIV_percentStacked_area_selected{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_barChart_selected{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar_flashChart_selected{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_bar_selected{ background-position: 0 -189px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column_flash_selected{ background-position: 0 -272px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column_selected{ background-position: 0 -355px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_cone_selected{ background-position: 0 -408px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_line_selected{ background-position: 0 -461px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_pyramid_selected{ background-position: 0 -514px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_tube_selected{ background-position: 0 -567px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	piechart.gif
+ *****************************************************************************/
+.actuateIV_IV_doughnut-angle_on{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_doughnut-front_on{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_flash_selected{ background-position: 0 -154px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_selected{ background-position: 0 -231px; width: 48px; height: 48px; } 
+.actuateIV_pie_flash_selected{ background-position: 0 -284px; width: 72px; height: 72px; } 
+.actuateIV_pie_flash_selectedchart{ background-position: 0 -361px; width: 72px; height: 72px; } 
+.actuateIV_pie_selected{ background-position: 0 -438px; width: 48px; height: 48px; } 
+.actuateIV_standard_meter_selected{ background-position: 0 -491px; width: 48px; height: 48px; } 
+.actuateIV_superimposed_meter_selected{ background-position: 0 -544px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	sidebysidechart.gif
+ *****************************************************************************/
+.actuateIV_IV_column-single_on{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_column-stack_on{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_sideBySide_barChart_selected{ background-position: 0 -154px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_bar_flashChart_selected{ background-position: 0 -207px; width: 78px; height: 78px; } 
+.actuateIV_sideBySide_column_flash_selected{ background-position: 0 -290px; width: 78px; height: 78px; } 
+.actuateIV_sideBySide_column_selected{ background-position: 0 -373px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_cone_selected{ background-position: 0 -426px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_pyramid_selected{ background-position: 0 -479px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_tube_selected{ background-position: 0 -532px; width: 48px; height: 48px; } 
+
+ 
+/******************************************************************************
+ *	stackedchart.gif
+ *****************************************************************************/
+.actuateIV_stackded_column_flash_selected{ background-position: 0 0; width: 78px; height: 78px; } 
+.actuateIV_stackded_column_selected{ background-position: 0 -83px; width: 48px; height: 48px; } 
+.actuateIV_stacked_area_selected{ background-position: 0 -136px; width: 48px; height: 48px; } 
+.actuateIV_stacked_barChart_selected{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar_flashChart_selected{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_stacked_cone_selected{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_stacked_line_selected{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_stacked_pyramid_selected{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_stacked_tube_selected{ background-position: 0 -484px; width: 48px; height: 48px; } 
+
+ 
+/******************************************************************************
+ *	unsel_otherchart.gif
+ *****************************************************************************/
+.actuateIV_IV_line_off{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_barStick_stock{ background-position: 0 -77px; width: 48px; height: 48px; } 
+.actuateIV_bubble{ background-position: 0 -130px; width: 48px; height: 48px; } 
+.actuateIV_candlestick_stock{ background-position: 0 -183px; width: 48px; height: 48px; } 
+.actuateIV_difference{ background-position: 0 -236px; width: 48px; height: 48px; } 
+.actuateIV_gantt{ background-position: 0 -289px; width: 48px; height: 48px; } 
+.actuateIV_overlay_area{ background-position: 0 -342px; width: 48px; height: 48px; } 
+.actuateIV_overlay_line{ background-position: 0 -395px; width: 48px; height: 48px; } 
+.actuateIV_scatter{ background-position: 0 -448px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	unsel_percentstarkedchart.gif
+ *****************************************************************************/
+.actuateIV_percentStacked_area{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar_flash{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_column_flash{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_cone{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_line{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_pyramid{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_tube{ background-position: 0 -484px; width: 48px; height: 48px; } 
+ 
+
+/******************************************************************************
+ *	unsel_piechart.gif
+ *****************************************************************************/
+.actuateIV_IV_doughnut-angle_off{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_doughnut-front_off{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_IV_pie-angle_off{ background-position: 0 -154px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_flash{ background-position: 0 -231px; width: 72px; height: 72px; } 
+.actuateIV_pie{ background-position: 0 -308px; width: 78px; height: 78px; } 
+.actuateIV_pie_depth{ background-position: 0 -391px; width: 78px; height: 78px; } 
+.actuateIV_pie_flash{ background-position: 0 -474px; width: 72px; height: 72px; } 
+.actuateIV_standard_meter{ background-position: 0 -551px; width: 48px; height: 48px; } 
+.actuateIV_superimposed_meter{ background-position: 0 -604px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	unsel_sidebysidechart.gif
+ *****************************************************************************/
+.actuateIV_IV_column-single_off{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_column-stack_off{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_sideBySide_column{ background-position: 0 -154px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_column_flash{ background-position: 0 -207px; width: 78px; height: 78px; } 
+.actuateIV_sideByside_bar{ background-position: 0 -290px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_bar_flash{ background-position: 0 -343px; width: 78px; height: 78px; } 
+.actuateIV_sideByside_cone{ background-position: 0 -426px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_pyramid{ background-position: 0 -479px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_tube{ background-position: 0 -532px; width: 48px; height: 48px; } 
+
+
+
+/******************************************************************************
+ *	unsel_stackedchart.png
+ *****************************************************************************/
+.actuateIV_stacked_area{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar_flash{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_stacked_column{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_stacked_column_flash{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_stacked_cone{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_stacked_line{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_stacked_pyramid{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_stacked_tube{ background-position: 0 -484px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	radarchart.gif
+ *****************************************************************************/
+.actuateIV_spider_selected{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_standardradar_selected{ background-position: 0 -53px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	unsel_radarchart.gif
+ *****************************************************************************/
+.actuateIV_spider{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_standardradar{ background-position: 0 -53px; width: 48px; height: 48px; } 

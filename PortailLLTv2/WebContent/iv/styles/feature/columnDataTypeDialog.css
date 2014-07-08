@@ -1,0 +1,10 @@
+
+/******************************************************************************
+ *	Column Data type
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_column_ivColumnDataTypeDialog .colDataTypeDiv
+{
+	width: 400px; 
+	overflow: auto;
+}

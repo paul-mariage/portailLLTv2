@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<!--
+
+	Use one of these:
+		selectedTabParameter or selectedTab
+		
+		selectedTabParameter: the key is from request.getParameter()
+		selectedTab: the key is just the passed value
+		
+		
+	Example usage:
+	
+	<ui:tabPanel
+		selectedTabParameter="key">
+			
+		<ui:tabMiddle>
+			<TD>
+				This is formatted using MessageFormat with 4 parameters:
+				{0},{1},{2},{3}
+			</TD>
+		</ui:tabMiddle>
+		<ui:tabMiddleSelected>
+			<TD>This is a selected tab.
+				Parameter0: {0}
+				Parameter1: {1}
+				Parameter2: {2}
+				Parameter3: {3}</TD>			
+		</ui:tabMiddleSelected>
+	
+		<ui:tab key="0">
+			This is tab label
+			<ui:content>
+				The content of the tab is here
+				
+				Parameter0 is the bodyContent of tab tag
+				Parameter1 is the 0 based index of the tab
+				Parameter2 is the selected/unselected attribute of tab
+				Parameter3 is the 
+			</ui:content>
+		</ui:tab>
+
+	</ui:tabPanel>
+
+			
+  -->
+ 
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>UserInterfaceTagLibrary</shortname>
+	<tag>
+		<name>tabPanel</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabPanelTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<!-- The key of the selected tab -->
+			<name>selectedTab</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- The key of the default tab (used if selectedTab == null) 
+				 Default is the first tab.
+			-->
+			<name>defaultTab</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- Use key from http request parameter -->
+			<name>selectedTabParameter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- "horizontal" or "vertical" -->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- HTML attribute for tab table -->
+			<name>tableAttribute</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- HTML attribute for TD tab when style=vertical -->
+			<name>tabAttribute</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- HTML attribute for TD content when style=vertical -->
+			<name>contentAttribute</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- flush before doing a pageContext.include -->
+			<name>flush</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>		
+	</tag>
+	<tag>
+		<name>tab</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.Tab</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<!-- The key that identifies this tab, if not set automatically the key is "0","1","2"... 
+				Use with tabPanel.selectedTab attribute
+			-->
+			<name>key</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 3rd parameter for messageFormat tabMiddleSelected -->
+			<name>selected</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 3rd parameter for messageFormat tabMiddle -->
+			<name>unselected</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>content</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.Content</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>
+			This tag is used to specify a JSP body content, or include from another
+			file using pageContext.include(include).
+		</info>
+		<attribute>
+			<!--
+				the jsp file to be included instead of body content,
+				if this is specified SKIP_BODY returned in start tag
+			-->
+			<name>page</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>tabBegin</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabBegin</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<name>tabSeparator</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabSeparator</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<name>tabEnd</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabEnd</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<!-- Specify MessageFormat string for HTML code to put on unselected tab 
+			 messageFormat.format(new Object[] {tabContent,tabIndex})				 
+		  -->
+		<name>tabMiddle</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabMiddle</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<!-- Specify MessageFormat string for HTML code to put on selected tab 
+			 messageFormat.format(new Object[] {tabContent,tabIndex})				 
+		  -->
+		<name>tabMiddleSelected</name>
+		<tagclass>com.actuate.activeportal.tags.tabpanel.TabMiddleSelected</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+
+	<tag>
+		<name>skinResource</name>
+		<tagclass>com.actuate.activeportal.skin.ResourceTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>This tag is used for loading a resource from the correct skin. It depends on the userinfobean for the purpose of identifying the skin. If the user is not authenticated then it looks up the cookie to find out the last used skin. It then writes out the url to the resource into the html page.</info>
+		<attribute>
+			<!--This attribute identifies the resource which has to be loaded for the skin.
+For e.g. if you have a css file in the base directory i.e. /acweb/css/allstyles.css, then you specify the resource path as /css/style.css.
+The tag will resolve this path to the current skin folder i.e. if you are using the classic skin then the path resolved will be "/private/skins/classic/css/style.css"-->
+			<name>resource</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>skinImage</name>
+		<tagclass>com.actuate.activeportal.skin.ImageLoaderTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info></info>
+		<attribute>
+			<!--
+				This attribute indicates the name of the image to be loaded from the skin.config file.
+			-->
+			<name>imageName</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib> 

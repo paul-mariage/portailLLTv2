@@ -1,0 +1,33 @@
+
+/******************************************************************************
+ *	IV Print Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_ivPrintDialog .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_ivPrintDialog .rectangle
+{
+	border-style:solid;
+	border-color:#7F9DB9;
+	border-width:1px;
+	padding:2px;
+}
+
+.actuate_iv_ui_dialog_ivPrintDialog .inputText
+{
+	height:12px;
+}
+
+.actuate_iv_ui_dialog_ivPrintDialog .titleSpacing
+{
+	height: 7px;
+}
+
+.actuate_iv_ui_dialog_ivPrintDialog .padding
+{
+	padding-left: 23px;
+	background-color: transparent;
+}

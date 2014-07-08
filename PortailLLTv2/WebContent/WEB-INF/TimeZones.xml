@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Time zones used in Actuate iServer, with aliases used in legacy code -->
+
+<TimeZones version="2" copyright="Copyright &#169; 2009-2012 Actuate Corporation">
+
+	<TimeZone id="Africa/Cairo">
+		<DisplayName locale="default">Africa/Cairo</DisplayName>
+		<Alias>ART</Alias>
+		<Alias>EET</Alias>
+		<Alias>Egypt Standard Time</Alias>
+		<Alias>GMT+2:00 Cairo</Alias>
+	</TimeZone>
+
+	<TimeZone id="Africa/Johannesburg">
+		<DisplayName locale="default">Africa/Johannesburg</DisplayName>
+		<Alias>CAT</Alias>
+		<Alias>GMT+2:00 Central African Time</Alias>
+		<Alias>South Africa Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Africa/Lagos">
+		<DisplayName locale="default">Africa/Lagos</DisplayName>
+		<Alias>GMT+1:00 W. Central Africa Standard Time</Alias>
+		<Alias>W. Central Africa Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Africa/Nairobi">
+		<DisplayName locale="default">Africa/Nairobi</DisplayName>
+		<Alias>E. Africa Standard Time</Alias>
+		<Alias>EAT</Alias>
+		<Alias>GMT+3:00 East Africa Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Adak">
+		<DisplayName locale="default">America/Adak</DisplayName>
+		<Alias>GMT-10:00 Adak, Alaska, USA</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Anchorage">
+		<DisplayName locale="default">America/Anchorage</DisplayName>
+		<Alias>Alaskan Standard Time</Alias>
+		<Alias>AST</Alias>
+		<Alias>GMT-9:00 Alaska Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Antigua">
+		<DisplayName locale="default">America/Antigua</DisplayName>
+		<Alias>GMT-4:00 Saint John's, Antigua</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Asuncion">
+		<DisplayName locale="default">America/Asuncion</DisplayName>
+		<Alias>GMT-4:00 Asuncion, Paraguay</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Bogota">
+		<DisplayName locale="default">America/Bogota</DisplayName>
+		<Alias>GMT-5:00 SA Pacific Standard Time</Alias>
+		<Alias>IET</Alias>
+		<Alias>SA Pacific Standard Time</Alias>
+		<Alias>US Eastern Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Buenos_Aires">
+		<DisplayName locale="default">America/Buenos_Aires</DisplayName>
+		<Alias>AGT</Alias>
+		<Alias>GMT-3:00 SA Eastern Standard Time</Alias>
+		<Alias>SA Eastern Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Chicago">
+		<DisplayName locale="default">America/Chicago</DisplayName>
+		<Alias>Central Standard Time</Alias>
+		<Alias>CST</Alias>
+		<Alias>GMT-6:00 Central Time (US)</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Cuiaba">
+		<DisplayName locale="default">America/Cuiaba</DisplayName>
+		<Alias>GMT-4:00 Cuiaba, Mato Grosso, Brazil</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Denver">
+		<DisplayName locale="default">America/Denver</DisplayName>
+		<Alias>GMT-7:00 Mountain Time (US)</Alias>
+		<Alias>Mountain Standard Time</Alias>
+		<Alias>MST</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Godthab">
+		<DisplayName locale="default">America/Godthab</DisplayName>
+		<Alias>GMT-3:00 Greenland</Alias>
+		<Alias>GMT-3:00 Nuuk, Greenland, Denmark</Alias>
+		<Alias>Greenland Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Grand_Turk">
+		<DisplayName locale="default">America/Grand_Turk</DisplayName>
+		<Alias>GMT-5:00 Grand Turk</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Guatemala">
+		<DisplayName locale="default">America/Guatemala</DisplayName>
+		<Alias>Central America Standard Time</Alias>
+		<Alias>GMT-6:00 Central America</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Halifax">
+		<DisplayName locale="default">America/Halifax</DisplayName>
+		<Alias>Atlantic Standard Time</Alias>
+		<Alias>GMT-4:00 Atlantic Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Havana">
+		<DisplayName locale="default">America/Havana</DisplayName>
+		<Alias>GMT-5:00 Havana, Cuba</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/La_Paz">
+		<DisplayName locale="default">America/La_Paz</DisplayName>
+		<Alias>GMT-4:00 SA Western Standard Time</Alias>
+		<Alias>PRT</Alias>
+		<Alias>SA Western Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Los_Angeles">
+		<DisplayName locale="default">America/Los_Angeles</DisplayName>
+		<Alias>GMT-8:00 Pacific Standard Time</Alias>
+		<Alias>Pacific Standard Time</Alias>
+		<Alias>PST</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Mazatlan">
+		<DisplayName locale="default">America/Mazatlan</DisplayName>
+		<Alias>GMT-7:00 Mountain Time (Mexico)</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Mexico_City">
+		<DisplayName locale="default">America/Mexico_City</DisplayName>
+		<Alias>GMT-6:00 Mexico Standard Time</Alias>
+		<Alias>Mexico Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Miquelon">
+		<DisplayName locale="default">America/Miquelon</DisplayName>
+		<Alias>GMT-3:00 Saint-Pierre, Miquelon</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/New_York">
+		<DisplayName locale="default">America/New_York</DisplayName>
+		<Alias>Eastern Standard Time</Alias>
+		<Alias>EST</Alias>
+		<Alias>GMT-5:00 Eastern Time (US)</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Phoenix">
+		<DisplayName locale="default">America/Phoenix</DisplayName>
+		<Alias>GMT-7:00 Mountain Standard Time</Alias>
+		<Alias>PNT</Alias>
+		<Alias>US Mountain Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Regina">
+		<DisplayName locale="default">America/Regina</DisplayName>
+		<Alias>Canada Central Standard Time</Alias>
+		<Alias>GMT-6:00 Canada Central Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Santiago">
+		<DisplayName locale="default">America/Santiago</DisplayName>
+		<Alias>GMT-4:00 Pacific SA Standard Time</Alias>
+		<Alias>GMT-4:00 Santiago, Chile</Alias>
+		<Alias>Pacific SA Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Sao_Paulo">
+		<DisplayName locale="default">America/Sao_Paulo</DisplayName>
+		<Alias>BET</Alias>
+		<Alias>E. South America Standard Time</Alias>
+		<Alias>GMT-3:00 Brasilia</Alias>
+		<Alias>GMT-3:00 Brazil Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/St_Johns">
+		<DisplayName locale="default">America/St_Johns</DisplayName>
+		<Alias>CNT</Alias>
+		<Alias>GMT-3:30 Newfoundland Standard Time</Alias>
+		<Alias>Newfoundland Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="America/Thule">
+		<DisplayName locale="default">America/Thule</DisplayName>
+		<Alias>GMT-4:00 Qaanaaq, Greenland, Denmark</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Amman">
+		<DisplayName locale="default">Asia/Amman</DisplayName>
+		<Alias>GMT+2:00 Amman, Jordan</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Baghdad">
+		<DisplayName locale="default">Asia/Baghdad</DisplayName>
+		<Alias>Arabic Standard Time</Alias>
+		<Alias>GMT+3:00 Baghdad, Iraq</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Baku">
+		<DisplayName locale="default">Asia/Baku</DisplayName>
+		<Alias>GMT+4:00 Baku, Azerbaijan</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Bangkok">
+		<DisplayName locale="default">Asia/Bangkok</DisplayName>
+		<Alias>GMT+7:00 SE Asia Standard Time</Alias>
+		<Alias>SE Asia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Beirut">
+		<DisplayName locale="default">Asia/Beirut</DisplayName>
+		<Alias>GMT+2:00 Beirut, Lebanon</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Bishkek">
+		<DisplayName locale="default">Asia/Bishkek</DisplayName>
+		<Alias>GMT+5:00 Bishkek, Kyrgyzstan</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Calcutta">
+		<DisplayName locale="default">Asia/Calcutta</DisplayName>
+		<Alias>GMT+5:30 India Standard Time</Alias>
+		<Alias>India Standard Time</Alias>
+		<Alias>IST</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Colombo">
+		<DisplayName locale="default">Asia/Colombo</DisplayName>
+		<Alias>Sri Lanka Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Damascus">
+		<DisplayName locale="default">Asia/Damascus</DisplayName>
+		<Alias>GMT+2:00 Damascus, Syria</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Dhaka">
+		<DisplayName locale="default">Asia/Dhaka</DisplayName>
+		<Alias>BST</Alias>
+		<Alias>Central Asia Standard Time</Alias>
+		<Alias>GMT+6:00 Central Asia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Dubai">
+		<DisplayName locale="default">Asia/Dubai</DisplayName>
+		<Alias>Arabian Standard Time</Alias>
+		<Alias>GMT+4:00 Arabian Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Ho_Chi_Minh">
+		<DisplayName locale="default">Asia/Ho_Chi_Minh</DisplayName>
+		<Alias>GMT+7:00 Vietnam Standard Time</Alias>
+		<Alias>VST</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Hong_Kong">
+		<DisplayName locale="default">Asia/Hong_Kong</DisplayName>
+		<Alias>GMT+8:00 Hong Kong Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Irkutsk">
+		<DisplayName locale="default">Asia/Irkutsk</DisplayName>
+		<Alias>GMT+8:00 North Asia East Standard Time</Alias>
+		<Alias>North Asia East Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Jerusalem">
+		<DisplayName locale="default">Asia/Jerusalem</DisplayName>
+		<Alias>Jerusalem Standard Time</Alias>
+		<Alias>GMT+2:00 Jerusalem, Israel</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Kabul">
+		<DisplayName locale="default">Asia/Kabul</DisplayName>
+		<Alias>Afghanistan Standard Time</Alias>
+		<Alias>GMT+4:30 Afghanistan Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Kamchatka">
+		<DisplayName locale="default">Asia/Kamchatka</DisplayName>
+		<Alias>GMT+12:00 Kamchatka, Russia</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Karachi">
+		<DisplayName locale="default">Asia/Karachi</DisplayName>
+		<Alias>GMT+5:00 Karachi, Pakistan</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Katmandu">
+		<DisplayName locale="default">Asia/Katmandu</DisplayName>
+		<Alias>GMT+5:45 Nepal Standard Time</Alias>
+		<Alias>Nepal Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Krasnoyarsk">
+		<DisplayName locale="default">Asia/Krasnoyarsk</DisplayName>
+		<Alias>GMT+7:00 North Asia Standard Time</Alias>
+		<Alias>North Asia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Magadan">
+		<DisplayName locale="default">Asia/Magadan</DisplayName>
+		<Alias>GMT+11:00 Magadan, Russia</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Novosibirsk">
+		<DisplayName locale="default">Asia/Novosibirsk</DisplayName>
+		<Alias>Asia/Alma-Ata</Alias>
+		<Alias>GMT+6:00 Almaty, Kazakstan</Alias>
+		<Alias>N. Central Asia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Pyongyang">
+		<DisplayName locale="default">Asia/Pyongyang</DisplayName>
+		<Alias>GMT+9:00 North Korea Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Rangoon">
+		<DisplayName locale="default">Asia/Rangoon</DisplayName>
+		<Alias>GMT+6:30 Myanmar Standard Time</Alias>
+		<Alias>GMT+6:30 Rangoon</Alias>
+		<Alias>Myanmar Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Riyadh">
+		<DisplayName locale="default">Asia/Riyadh</DisplayName>
+		<Alias>Arab Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Seoul">
+		<DisplayName locale="default">Asia/Seoul</DisplayName>
+		<Alias>GMT+9:00 South Korea Standard Time</Alias>
+		<Alias>Korea Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Shanghai">
+		<DisplayName locale="default">Asia/Shanghai</DisplayName>
+		<Alias>China Standard Time</Alias>
+		<Alias>CTT</Alias>
+		<Alias>GMT+8:00 China Standard Time</Alias>
+		<Alias>Malay Peninsula Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Singapore">
+		<DisplayName locale="default">Asia/Singapore</DisplayName>
+		<Alias>GMT+8:00 Singapore Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Taipei">
+		<DisplayName locale="default">Asia/Taipei</DisplayName>
+		<Alias>GMT+8:00 Taiwan Standard Time</Alias>
+		<Alias>Taipei Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Tashkent">
+		<DisplayName locale="default">Asia/Tashkent</DisplayName>
+		<Alias>GMT+5:00 West Asia Standard Time</Alias>
+		<Alias>PLT</Alias>
+		<Alias>West Asia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Tbilisi">
+		<DisplayName locale="default">Asia/Tbilisi</DisplayName>
+		<Alias>GMT+4:00 Asia/Tbilisi</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Tehran">
+		<DisplayName locale="default">Asia/Tehran</DisplayName>
+		<Alias>GMT+3:30 Iran Standard Time</Alias>
+		<Alias>Iran Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Tokyo">
+		<DisplayName locale="default">Asia/Tokyo</DisplayName>
+		<Alias>Asia/Ishigaki</Alias>
+		<Alias>GMT+9:00 Japan Standard Time</Alias>
+		<Alias>JST</Alias>
+		<Alias>Tokyo Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Vladivostok">
+		<DisplayName locale="default">Asia/Vladivostok</DisplayName>
+		<Alias>GMT+10:00 Vladivostok Standard Time</Alias>
+		<Alias>Vladivostok Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Yakutsk">
+		<DisplayName locale="default">Asia/Yakutsk</DisplayName>
+		<Alias>GMT+9:00 Yakutsk Standard Time</Alias>
+		<Alias>Yakutsk Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Yekaterinburg">
+		<DisplayName locale="default">Asia/Yekaterinburg</DisplayName>
+		<Alias>Ekaterinburg Standard Time</Alias>
+		<Alias>GMT+5:00 Ekaterinburg Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Asia/Yerevan">
+		<DisplayName locale="default">Asia/Yerevan</DisplayName>
+		<Alias>Caucasus Standard Time</Alias>
+		<Alias>GMT+4:00 Caucasus Standard Time</Alias>
+		<Alias>NET</Alias>
+	</TimeZone>
+
+	<TimeZone id="Atlantic/Azores">
+		<DisplayName locale="default">Atlantic/Azores</DisplayName>
+		<Alias>Azores Standard Time</Alias>
+		<Alias>GMT-1:00 Azores Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Atlantic/Cape_Verde">
+		<DisplayName locale="default">Atlantic/Cape_Verde</DisplayName>
+		<Alias>Cape Verde Standard Time</Alias>
+		<Alias>GMT-1:00 Cape Verde Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Atlantic/South_Georgia">
+		<DisplayName locale="default">Atlantic/South_Georgia</DisplayName>
+		<Alias>GMT-2:00 Mid-Atlantic</Alias>
+		<Alias>GMT-2:00 South Georgia</Alias>
+		<Alias>Mid-Atlantic Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Atlantic/Stanley">
+		<DisplayName locale="default">Atlantic/Stanley</DisplayName>
+		<Alias>GMT-4:00 Stanley, Falkland Is., UK</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Adelaide">
+		<DisplayName locale="default">Australia/Adelaide</DisplayName>
+		<Alias>Cen. Australia Standard Time</Alias>
+		<Alias>GMT+9:30 Adelaide, South Australia</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Brisbane">
+		<DisplayName locale="default">Australia/Brisbane</DisplayName>
+		<Alias>E. Australia Standard Time</Alias>
+		<Alias>GMT+10:00 West Pacific Standard Time</Alias>
+		<Alias>West Pacific Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Darwin">
+		<DisplayName locale="default">Australia/Darwin</DisplayName>
+		<Alias>ACT</Alias>
+		<Alias>AUS Central Standard Time</Alias>
+		<Alias>GMT+9:30 Australia Central Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Hobart">
+		<DisplayName locale="default">Australia/Hobart</DisplayName>
+		<Alias>GMT+10:00 Hobart</Alias>
+		<Alias>Tasmania Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Lord_Howe">
+		<DisplayName locale="default">Australia/Lord_Howe</DisplayName>
+		<Alias>GMT+10:30 Lord Howe Is.</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Perth">
+		<DisplayName locale="default">Australia/Perth</DisplayName>
+		<Alias>GMT+8:00 W. Australia Standard Time</Alias>
+		<Alias>W. Australia Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Australia/Sydney">
+		<DisplayName locale="default">Australia/Sydney</DisplayName>
+		<Alias>AET</Alias>
+		<Alias>AUS Eastern Standard Time</Alias>
+		<Alias>GMT+10:00 Australia Eastern Standard Time</Alias>
+		<Alias>GMT+10:00 Eastern Standard Time (Australia)</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Berlin">
+		<DisplayName locale="default">Europe/Berlin</DisplayName>
+		<Alias>W. Europe Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Bucharest">
+		<DisplayName locale="default">Europe/Bucharest</DisplayName>
+		<Alias>GMT+2:00 Bucharest</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Budapest">
+		<DisplayName locale="default">Europe/Budapest</DisplayName>
+		<Alias>Central Europe Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Istanbul">
+		<DisplayName locale="default">Europe/Istanbul</DisplayName>
+		<Alias>GTB Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Kiev">
+		<DisplayName locale="default">Europe/Kiev</DisplayName>
+		<Alias>FLE Standard Time</Alias>
+		<Alias>GMT+2:00 FLE Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/London">
+		<DisplayName locale="default">Europe/London</DisplayName>
+		<Alias>GMT Standard Time</Alias>
+		<Alias>GMT Western European Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Minsk">
+		<DisplayName locale="default">Europe/Minsk</DisplayName>
+		<Alias>E. Europe Standard Time</Alias>
+		<Alias>GMT+2:00 Eastern European Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Moscow">
+		<DisplayName locale="default">Europe/Moscow</DisplayName>
+		<Alias>GMT+3:00 Moscow, Volgograd</Alias>
+		<Alias>GMT+3:00 Russian Standard Time</Alias>
+		<Alias>Russian Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Paris">
+		<DisplayName locale="default">Europe/Paris</DisplayName>
+		<Alias>Romance Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Europe/Warsaw">
+		<DisplayName locale="default">Europe/Warsaw</DisplayName>
+		<Alias>Central European Standard Time</Alias>
+		<Alias>ECT</Alias>
+		<Alias>GMT+1:00 Central Europe Standard Time</Alias>
+		<Alias>MET</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Apia">
+		<DisplayName locale="default">Pacific/Apia</DisplayName>
+		<Alias>GMT-11:00 Samoa Standard Time</Alias>
+		<Alias>MIT</Alias>
+		<Alias>Samoa Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Auckland">
+		<DisplayName locale="default">Pacific/Auckland</DisplayName>
+		<Alias>GMT+12:00 Auckland</Alias>
+		<Alias>GMT+12:00 New Zealand Standard Time</Alias>
+		<Alias>New Zealand Standard Time</Alias>
+		<Alias>NST</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Chatham">
+		<DisplayName locale="default">Pacific/Chatham</DisplayName>
+		<Alias>GMT+12:45 Chatham Is., New Zealand</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Easter">
+		<DisplayName locale="default">Pacific/Easter</DisplayName>
+		<Alias>GMT-6:00 Easter Is., Chile</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Fakaofo">
+		<DisplayName locale="default">Pacific/Fakaofo</DisplayName>
+		<Alias>GMT-10:00 Fakaofo, Pacific</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Fiji">
+		<DisplayName locale="default">Pacific/Fiji</DisplayName>
+		<Alias>Fiji Standard Time</Alias>
+		<Alias>GMT+12:00 Fiji Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Gambier">
+		<DisplayName locale="default">Pacific/Gambier</DisplayName>
+		<Alias>GMT-9:00 Gambier Is., French Polynesia</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Guadalcanal">
+		<DisplayName locale="default">Pacific/Guadalcanal</DisplayName>
+		<Alias>Central Pacific Standard Time</Alias>
+		<Alias>GMT+11:00 Central Pacific Standard Time</Alias>
+		<Alias>SST</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Honolulu">
+		<DisplayName locale="default">Pacific/Honolulu</DisplayName>
+		<Alias>GMT-10:00 Hawaiian Standard Time</Alias>
+		<Alias>Hawaiian Standard Time</Alias>
+		<Alias>HST</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Kiritimati">
+		<DisplayName locale="default">Pacific/Kiritimati</DisplayName>
+		<Alias>GMT+14:00 Kiritimati, Christmas Is., Kiribati</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Kwajalein">
+		<DisplayName locale="default">Pacific/Kwajalein</DisplayName>
+		<Alias>Dateline Standard Time</Alias>
+		<Alias>GMT-12:00 Eniwetok, Kwajalein</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Marquesas">
+		<DisplayName locale="default">Pacific/Marquesas</DisplayName>
+		<Alias>GMT-9:30 Taiohae, Marquesas Is.</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Norfolk">
+		<DisplayName locale="default">Pacific/Norfolk</DisplayName>
+		<Alias>GMT+11:30 Kingston, Norfolk Is., Australia</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Palau">
+		<DisplayName locale="default">Pacific/Palau</DisplayName>
+		<Alias>GMT+9:00 Palau Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Pitcairn">
+		<DisplayName locale="default">Pacific/Pitcairn</DisplayName>
+		<Alias>GMT-8:00 Adamstown, Pitcairn, UK</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Rarotonga">
+		<DisplayName locale="default">Pacific/Rarotonga</DisplayName>
+		<Alias>GMT-10:00 Rarotonga, Pacific</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Tahiti">
+		<DisplayName locale="default">Pacific/Tahiti</DisplayName>
+		<Alias>GMT-10:00 Tahiti, Pacific</Alias>
+	</TimeZone>
+
+	<TimeZone id="Pacific/Tongatapu">
+		<DisplayName locale="default">Pacific/Tongatapu</DisplayName>
+		<Alias>GMT+13:00 Tonga Standard Time</Alias>
+		<Alias>Tonga Standard Time</Alias>
+	</TimeZone>
+
+	<TimeZone id="UTC">
+		<DisplayName locale="default">UTC</DisplayName>
+		<Alias>GMT</Alias>
+		<Alias>GMT Greenwich Standard Time</Alias>
+		<Alias>Greenwich Standard Time</Alias>
+	</TimeZone>
+
+</TimeZones>
+

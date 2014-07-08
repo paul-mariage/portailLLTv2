@@ -1,0 +1,21 @@
+
+/******************************************************************************
+ *	Group Detail Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_group_ivGroupDetailDialog .rectangle
+{
+	border-style:solid;
+	border-color:#7F9DB9;
+	border-width:1px;
+	padding-right:2px;
+}
+
+.actuate_iv_ui_dialog_group_ivGroupDetailDialog .padding
+{
+	margin: 3px;
+}
+
+.actuate_iv_ui_dialog_group_ivGroupDetailDialog .inputtext
+{
+	width:62px;
+}

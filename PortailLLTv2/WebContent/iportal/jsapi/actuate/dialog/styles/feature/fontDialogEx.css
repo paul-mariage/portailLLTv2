@@ -1,0 +1,66 @@
+/******************************************************************************
+ *	IV Font Dialog
+ *****************************************************************************/
+.actuate_dialog_font_FontDialogEx table,
+.actuate_dialog_font_FontDialogEx div,
+.actuate_dialog_font_FontDialogEx tr,
+.actuate_dialog_font_FontDialogEx td
+{
+	margin: 0px;
+	padding: 0px;	
+}	
+ 
+.actuate_dialog_font_FontDialogEx div
+{
+	background-color: transparent;	
+}		 
+ 
+.actuate_dialog_font_FontDialogEx .titleSpacing
+{
+	padding-bottom:2px;
+	width:80px;
+}
+
+.actuate_dialog_font_FontDialogEx .itemSpacing
+{
+	padding-bottom:10px;
+}
+
+.fontdialog_okbutton 
+{
+	text-align:center;
+	width:100%;
+	font-size:11px;
+	font-family:tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_dialog_font_FontDialogEx .fontSizeDiv,
+.actuate_dialog_font_FontDialogEx .fontBackgroundDiv
+{
+	padding-left:3px;
+}
+
+.actuate_dialog_font_FontDialogEx .linespacer
+{	
+	background-color: #CCCCCC;
+	color: #CCCCCC;
+	height: 1px;
+	width: 100%;
+}
+
+.actuate_dialog_font_FontDialogEx .fontPreviewBoxA
+{
+	display: relative;
+	height: 35px;
+	width: 338px; 
+	text-align: center;
+	white-space: no-wrap;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #e1e1e1;
+	border-width: 1px;
+	border-radius:4px;
+	background-color: #ffffff;
+}

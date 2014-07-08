@@ -1,0 +1,296 @@
+
+/******************************************************************************
+ * IV Chart Format dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartFormatImages
+{
+	width : 15px;
+	height : 16px;
+	border: none;
+	cursor: pointer;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .outerTable
+{
+	border-style: solid; 
+	border-color: #98AFC7; 
+	border-width: 1px;
+	margin-bottom: 4px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .outerChartTitleDiv
+{
+	left: 10px; 
+	top: 0px;
+	overflow: auto;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .dialog_chartSettings_fonts
+{
+ 	font-size: 11px;
+ 	font-family: tahoma, verdana, arial, sans-serif;
+ 	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartAndLegendTitleLabelText
+{
+  	padding-bottom: 3px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartSizeLabelText
+{
+	position: relative; 
+	top: 6px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartAndLegendTitleInput
+{
+	width: 160px;
+	font-size: 8pt;
+	font-family: tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .xyTitleInputLabelDiv
+{	
+	left: 10px; 
+	top: 0px; 
+	overflow: auto;
+}	
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartPercentColor
+{
+	color: red;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .outerChartSizeDiv
+{	
+	left: -2px;
+	top: 6px;
+	overflow: auto;
+}	
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartWidthHeightInput
+{	
+	width: 60px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartTdWidth
+{
+	width : 60px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartTdUnitWidth
+{
+	width : 100px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartTdHeight
+{
+	width : 60px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartTdUnitHeight
+{
+	width : 100px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartTitleWidth
+{
+	width: 55px;
+}
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .alignRight
+{
+	text-align: right;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .orientationChkBoxDiv
+{
+	overflow: hidden;
+}	
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .dialog_chartSettings_selectFontLink
+{
+ 	width				: 140px;
+  	text-decoration		: underline; 
+	color				: blue; 
+	border-style		: none; 
+	cursor				: pointer;
+	font-size			: 11px;
+	white-space			: nowrap;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .chartSizeDiv
+{	
+	left: 10px; 
+	top: 0px;
+	padding-top: 3px;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog  .categoryLabelCheckboxTD1
+{
+	width: 215px;	
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog  .categoryLabelCheckboxTD2
+{	
+	width		: 48px; 
+	text-align	: right;
+	white-space : nowrap;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog  .categoryLabelCheckboxTD3
+{
+	width		: 60px;
+	font-size	: 11px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .colWidth
+{
+	width: 80px;	
+}
+
+
+.actuate_iv_ui_dialog_chart_ivChartFormatDialog .yAxisScaleInput
+{
+	width	: 50px;
+}
+
+
+/******************************************************************************
+ * IV Chart Format dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartFormatImages
+{
+	width : 15px;
+	height : 16px;
+	border: none;
+	cursor: pointer;
+}
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .outerTable
+{
+	border-style: solid; 
+	border-color: #98AFC7; 
+	border-width: 1px;
+	margin-bottom: 4px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .outerChartTitleDiv
+{
+	left: 10px; 
+	top: 0px;
+	overflow: auto;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .dialog_chartSettings_fonts
+{
+ 	font-size: 11px;
+ 	font-family: tahoma, verdana, arial, sans-serif;
+ 	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartAndLegendTitleLabelText
+{
+  	padding-bottom: 3px;
+}
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartSizeLabelText
+{
+	position: relative; 
+	top: 6px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartAndLegendTitleInput
+{
+	width: 160px;
+	font-size: 8pt;
+	font-family: tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .xyTitleInputLabelDiv
+{	
+	left: 10px; 
+	top: 0px; 
+	overflow: auto;
+}	
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartPercentColor
+{
+	color: red;
+}
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .outerChartSizeDiv
+{	
+	left: -2px;
+	top: 6px;
+	overflow: auto;
+}	
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartWidthHeightInput
+{	
+	width: 55px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .alignRight
+{
+	text-align: right;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .orientationChkBoxDiv
+{
+	overflow: auto;
+}	
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .dialog_chartSettings_selectFontLink
+{
+ 	width				: 90px;
+  	text-decoration		: underline; 
+ 	background-color	: #F0F4F9; 
+ 	border-color		: #F0F4F9; 
+	color				: blue; 
+	border-style		: none; 
+	cursor				: pointer;
+	font-size			: 11px;
+	white-space			: nowrap;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .chartSizeDiv
+{	
+	left: 10px; 
+	top: 0px;
+	padding-top: 3px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog  .categoryLabelCheckboxTD1
+{
+	width: 120px;	
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog  .categoryLabelCheckboxTD2
+{	
+	width		: 105px; 
+	text-align	: right;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog  .categoryLabelCheckboxTD3
+{
+	width		: 75px;
+	font-size	: 11px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .colWidth
+{
+	width: 80px;	
+}
+
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFormatDialog .yAxisScaleInput
+{
+	width	: 50px;
+}

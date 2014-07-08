@@ -1,0 +1,388 @@
+.navtitlearea
+{
+	height: 21px; 
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: White;
+	background-color: #31659C  
+}
+
+#userElement, #licenseElement {
+	padding:	0px 10px;
+}
+
+.navtitletext
+{
+	font-family: verdana, arial, sans-serif; 
+	font-size: 11px; 
+	font-weight: bold;
+	color:white; 
+}
+.navboxarea
+{
+	background-color:#E0E0E0
+}
+.navboxlinktext
+{
+	width: 100%;
+	font-family: verdana; 
+	font-size: 11px; 
+	font-weight: bold;
+	color:#003063;
+}
+.navboxtext
+{
+	width: 100%;
+	font-family: verdana; 
+	font-size: 11px; 
+	font-weight: regular;
+	color:#003063;
+}
+.welcometext
+{
+	width: 100%;
+	font-family: verdana, arial, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #003063;
+}
+
+.contenttitle
+{
+	font-weight: bold; 
+	font-style: italic; 
+	font-size: 19px; 
+	font-family: tahoma, verdana, arial, sans-serif;
+	color: #528CC5;
+	text-decoration: none;
+}
+
+.contentext 
+{
+	font-family: tahoma, verdana, arial, sans-serif; 
+	font-size: 11px;
+	color: Black;
+}
+.navtable
+{
+	margin-top: 0px;
+}
+
+body {
+  background: #efefef;
+}
+.ac {
+  background: #efefef;
+}
+.ac .ac-starting-header {
+  text-align: left;
+  position: relative;
+}
+.ac .ac-starting-header-inner {
+  height: 80px;
+  position: relative;
+}
+.ac .ac-starting-header-inner h1 {
+  font-size: 40px;
+  color: #363636;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+}
+.ac .ac-starting-main {
+  width: 1000px;
+  margin: 40px auto;
+}
+.ac .view-header-title {
+  padding: 20px 0px 0px 32px;
+}
+.ac .ac-pre-login {
+  text-align: center;
+  margin-top: 10%;
+}
+.ac .ac-pre-login .ac-pre-login-inner {
+  margin: 0px auto;
+  width: 450px;
+  text-align: left;
+}
+.ac .ac-pre-login .ac-pre-login-content {
+  margin: 0px 0px 0px 170px;
+  padding-top: 40px;
+}
+.ac .ac-pre-login .ac-pre-login-content h1 {
+  margin: 0px;
+  padding: 0px;
+  color: #aaa;
+  font-size: 19px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ac .ac-pre-login .ac-pre-login-content h2 {
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 300;
+}
+.ac .ac-pre-login .ac-pre-login-content .btn-pre-login {
+  margin-top: 16px;
+  min-width: 155px;
+  height: 38px;
+  font-size: 16px;
+}
+.ac ul.ac-landing-page-app-items {
+  margin-top: 50px;
+  list-style: none;
+}
+.ac ul.ac-landing-page-app-items li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 315px;
+  text-align: center;
+  cursor: pointer;
+}
+.ac ul.ac-landing-page-app-items li img {
+  width: 172px;
+  height: 197px;
+  opacity: 1;
+}
+.ac ul.ac-landing-page-app-items li .ac-landing-page-app-items-detail h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 20px 0px 6px 0px;
+  color: #555;
+}
+.ac ul.ac-landing-page-app-items li .ac-landing-page-app-items-detail .ac-landing-page-app-item-desc {
+  color: #aaa8c5;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 4px 50px 20px 50px;
+}
+.ac ul.ac-landing-page-app-items li .ac-landing-page-app-items-detail .ac-landing-page-app-item-list-icon {
+  font-size: 30px;
+  margin: 0px 0px 0px 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.ac ul.ac-landing-page-app-items li.inactive img {
+  opacity: .7;
+}
+.ac ul.ac-starting-app-items,
+.ac ul.ac-starting-sub-app-items {
+  list-style: none;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+.ac ul.ac-starting-app-items li,
+.ac ul.ac-starting-sub-app-items li {
+  float: left;
+  position: relative;
+  width: 155px;
+  line-height: 16px;
+  cursor: pointer;
+  text-align: left;
+  padding: 0px;
+  margin: 0px 40px 48px 0px;
+}
+.ac ul.ac-starting-app-items li h3,
+.ac ul.ac-starting-sub-app-items li h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 4px 0px;
+  line-height: 16px;
+  color: #464646;
+}
+.ac ul.ac-starting-app-items li p,
+.ac ul.ac-starting-sub-app-items li p {
+  font-size: 14px;
+  color: #b7b7b7;
+  margin: 2px 0px;
+}
+.ac ul.ac-starting-app-items li a,
+.ac ul.ac-starting-sub-app-items li a {
+  color: #0192ff;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+}
+.ac ul.ac-starting-sub-app-items li {
+  margin-bottom: 0px;
+}
+.ac .app-icon {
+  width: 129px;
+  height: 129px;
+}
+.ac .app-sub-icon {
+  width: 96px;
+  height: 100px;
+}
+.ac li.app-user-manage:hover .app-sub-icon {
+  background: url(../img/ihub/app_user_manage_sprite.png) no-repeat 0px -100px;
+}
+.ac li.app-user-manage .app-sub-icon,
+.ac li.app-user-manage:hover .no-hover {
+  background: url(../img/ihub/app_user_manage_sprite.png) no-repeat;
+}
+.ac li.app-iserver .app-sub-icon {
+  background: url(../img/ihub/app_iserver_sprite.png) no-repeat;
+}
+.ac li.app-iserver:hover .app-sub-icon {
+  background: url(../img/ihub/app_iserver_sprite.png) no-repeat 0px -100px;
+}
+.ac li.app-analyzer .app-sub-icon {
+  background: url(../img/ihub/app_analyzer_sprite.png) no-repeat;
+}
+.ac li.app-analyzer:hover .app-sub-icon {
+  background: url(../img/ihub/app_analyzer_sprite.png) no-repeat 0px -100px;
+}
+.ac li.app-xenos .app-sub-icon {
+  background: url(../img/ihub/app_xenos_sprite.png) no-repeat;
+}
+.ac li.app-xenos:hover .app-sub-icon {
+  background: url(../img/ihub/app_xenos_sprite.png) no-repeat 0px -100px;
+}
+.ac li.app-pag .app-sub-icon {
+  background: url(../img/ihub/app_pag_sprite.png) no-repeat;
+}
+.ac li.app-pag:hover .app-sub-icon {
+  background: url(../img/ihub/app_pag_sprite.png) no-repeat 0px -100px;
+}
+.ac .btn-starting {
+  border: none;
+  outline: none;
+  padding: 32px 64px 0px 0px;
+  margin: 0px;
+  color: #818181;
+  font-size: 14px;
+  line-height: 12px;
+  background: none;
+}
+.ac .btn-starting:hover {
+  color: #000;
+}
+.ac .btn-starting i {
+  color: #353535;
+}
+.ac .admin-back-icon {
+  color: #c1c1c1;
+  cursor: pointer;
+}
+.ac .admin-back-icon:hover {
+  color: #363636;
+}
+.ac .admin-icon {
+  color: #e16252;
+}
+.ac ul.ac-starting-app-items {
+  list-style: none;
+  padding: 20px 0px 0px 32px;
+  margin: 0px;
+  position: relative;
+  *z-index: -1;
+}
+.ac ul.ac-starting-app-items li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-right: 16px;
+}
+.ac ul.ac-starting-app-items li i {
+  font-size: 16px;
+  margin: 0px;
+  padding: 12px 0px 0px 0px;
+  width: 28px;
+  height: 28px;
+  line-height: 31px;
+  text-align: center;
+}
+.ac ul.ac-starting-app-items .divider {
+  width: 1px;
+  height: 32px;
+  border-right: #e0e0e0 1px solid;
+  padding-top: 6px;
+}
+.ac .ac-starting-right-header-title {
+  position: absolute;
+  right: 32px;
+  text-align: right;
+  color: #c2c2c2;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 32px;
+  margin: 0px;
+}
+.ac .ac-starting-content-section {
+  text-align: left;
+  border-bottom: #f8f8f8 1px solid;
+  position: relative;
+  clear: both;
+}
+.ac .ac-starting-content-section-inner {
+  border-bottom: #dddddd 1px solid;
+  position: relative;
+  padding: 16px 32px 48px 250px;
+}
+.ac .ac-starting-content-section-inner h3 {
+  font-size: 16px;
+  line-height: 14px;
+  color: #4b4b4b;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px 0px 2px 0px;
+}
+.ac .ac-starting-content-section-inner p {
+  font-size: 14px;
+  color: #c2c2c2;
+}
+.ac .launchpad-product-list {
+  text-align: center;
+  display: none;
+}
+.ac .launchpad-product-list.open {
+  display: block;
+}
+.ac .launchpad-product-list h2 {
+  color: #797979;
+  font-size: 18px;
+  line-height: 18px;
+  background: url(../img/ihub/sub-icon-title-bg.png) repeat-x;
+  width: 1000px;
+  margin: 0px auto;
+  text-transform: uppercase;
+}
+.ac .launchpad-product-list h2 .backline {
+  background: #efefef;
+  padding: 0px 32px;
+}
+.ac .launchpad-product-list ul {
+  color: #797979;
+  list-style: none;
+  text-align: center;
+}
+.ac .launchpad-product-list ul li {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+.ac .launchpad-product-list ul li .launchpad-product-list-icon {
+  font-size: 55px;
+  margin-top: 20px;
+}
+.ac .launchpad-product-list ul li .launchpad-product-list-desc {
+  text-transform: uppercase;
+  color: #28243a;
+  font-weight: 300;
+  margin-top: 24px;
+  font-size: 13px;
+}

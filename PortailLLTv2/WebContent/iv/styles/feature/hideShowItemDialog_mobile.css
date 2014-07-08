@@ -1,0 +1,56 @@
+
+ 
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .x-form-label span
+{
+	padding-left: 40px;
+	float: left;	
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .imageUrl
+{
+	width: 32px !important;
+	height: 20px !important;
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .smallHeight
+{
+	height: 170px;
+	background-color: #F7F7F7 !important;
+	font-size: 12px !important;
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .bigHeight
+{
+	height: 270px;
+	background-color: #F7F7F7 !important;
+	font-size: 12px !important;
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog input
+{
+	background-color: #F7F7F7 !important;	
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog div, .actuate_iv_ui_dialog_group_ivHideShowItemDialog ul,
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog li,
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog table, .actuate_iv_ui_dialog_group_ivHideShowItemDialog tr,
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog td
+{
+	background-image : none;
+	background-color: transparent;	
+	font: 12px tahoma, verdana, arial, sans-serif;
+}		
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .actuateIV_Expand
+{
+	background-image : url("../../../iv/images/tomerge/dialog/minus_mob.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}
+
+.actuate_iv_ui_dialog_group_ivHideShowItemDialog .actuateIV_Collapse
+{
+	background-image : url("../../../iv/images/tomerge/dialog/plus_mob.png");
+	background-repeat : no-repeat;
+	background-position : center;  
+}

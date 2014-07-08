@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActuateJavaComponentLicense
+	 xmlns="http://schemas.actuate.com/license/v8">
+	<ActuateJavaComponentInfo
+		 XMLID="License">
+		<LicenseInfo
+			 Mode="Workgroup"
+			 CPULimit="Unlimited"
+			 LicenseID="3"
+			 UsageType="Evaluation"
+			 IsOfficial="true"
+			 LicenseType="CPUBased"
+			 ServicePack="0"
+			 MajorRelease="23"
+			 IsDevelopment="true"
+			 ExpirationDate="2019-01-22">
+			<LicensedOptions>
+				<LicensedOption
+					 Name="BIRTReport"
+					 Users="Unlimited"/>
+				<LicensedOption
+					 Name="DeploymentKit"
+					 Users="Unlimited"/>
+			</LicensedOptions>
+		</LicenseInfo>
+	</ActuateJavaComponentInfo>
+	<dsig:Signature
+		 xmlns="http://www.w3.org/2000/09/xmldsig#"
+		 xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<SignatureMethod
+				 Algorithm="http://algorithms.actuate.com/license/signature"/>
+			<Reference
+				 URI="#License">
+				<DigestMethod
+					 Algorithm="http://algorithms.actuate.com/license/digest"/>
+				<DigestValue>LTMzNzUzMDQ1MzAwMzk2NjIzOTM=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>MTc4ODg2ODM3NTMzODEzMDA1Ng==</SignatureValue>
+	</dsig:Signature>
+</ActuateJavaComponentLicense>

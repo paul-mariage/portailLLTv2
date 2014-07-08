@@ -1,0 +1,18 @@
+
+.actuate_dialog_format_StringFormattingDialog
+{
+	width: 400px;
+}
+.actuate_dialog_format_StringFormattingDialog .formatdialog_label
+{
+	line-height: 33px;
+}
+.actuate_dialog_format_StringFormattingDialog .formatdialog_dropdown 
+{
+	float:none;
+}
+
+/* temporary change for the demo. Need to be removed */
+.actuate_dialog_format_StringFormattingDialog .formattingHelp {
+	padding-top:25px;
+}

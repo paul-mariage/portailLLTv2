@@ -1,0 +1,71 @@
+
+
+/******************************************************************************
+ *	Number Format Dialog
+ *****************************************************************************/
+.actuate_dialog_format_NumberFormattingDialog table,
+.actuate_dialog_format_NumberFormattingDialog div,
+.actuate_dialog_format_NumberFormattingDialog tr,
+.actuate_dialog_format_NumberFormattingDialog td
+{
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+.actuate_dialog_format_NumberFormattingDialog div
+{
+	background-color: transparent;	
+}
+
+.actuate_dialog_format_NumberFormattingDialog .checkbox_useSeparator 
+{
+	float:right; 
+	text-align: left;
+	margin-bottom:0.5ex;
+	width: 200px;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .formatdialog_dropdown 
+{
+	float:right; 
+	text-align: left;
+	margin-bottom:0.5ex;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .formatdialog_okbutton 
+{
+	width:100%; 
+	text-align:center;
+	margin-top:1ex;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .formattingHelp {
+	font: 11px, Arial; 
+	color: #535353;
+	border-top: none; 
+	border-color: #7F9DB9; 
+	margin-top:2ex;
+	padding-top:3px;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .helpHeader {
+	font-weight: bold;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .valueTextBox {
+	line-height:12px;
+	font-size:8pt;
+	font-family:tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_dialog_format_NumberFormattingDialog td
+{
+	padding-right:20px;
+}
+
+.actuate_dialog_format_NumberFormattingDialog .spacer
+{
+	clear:both;
+}

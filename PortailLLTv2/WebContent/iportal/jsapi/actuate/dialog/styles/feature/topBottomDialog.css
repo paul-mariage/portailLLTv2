@@ -1,0 +1,24 @@
+/******************************************************************************
+ * IV Top Bottom N dialog.
+ *****************************************************************************/
+.actuate_dialog_TopBottomNDialog table,
+.actuate_dialog_TopBottomNDialog div,
+.actuate_dialog_TopBottomNDialog tr,
+.actuate_dialog_TopBottomNDialog td,
+{
+	margin: 0px;
+	padding: 0px;	
+} 
+ 
+.actuate_dialog_TopBottomNDialog .columnPadding
+{
+	padding-right: 7px;
+}
+
+.actuate_dialog_TopBottomNDialog .filterValueInput
+{
+	width: 35px;
+	line-height: 11px;
+	height: 13px;
+	valign: middle;
+}

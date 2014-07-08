@@ -1,0 +1,58 @@
+
+/******************************************************************************
+ *	Advanced Sort Dialog
+ *****************************************************************************/
+.actuate_iv_ui_dialog_ivAdvancedSortDialog table,
+.actuate_iv_ui_dialog_ivAdvancedSortDialog div,
+.actuate_iv_ui_dialog_ivAdvancedSortDialog tr,
+.actuate_iv_ui_dialog_ivAdvancedSortDialog td
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;	
+}
+  
+.actuate_iv_ui_dialog_ivAdvancedSortDialog div
+{
+	background-color: transparent;		 
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .titleSpacing
+{
+	height: 6px;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .itemSpacing
+{
+	height: 11px;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .sectioncontainer
+{
+	top:0px;
+	left:2px;
+	height:49px;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .sectioncontainer1
+{
+	width:170px;
+	float:left;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .sectioncontainer2
+{
+	width:90px;
+	float:right;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .sectionselection
+{
+	display:block;
+}
+
+.actuate_iv_ui_dialog_ivAdvancedSortDialog .isolator
+{
+	clear: both;
+	margin-right:11px;
+}

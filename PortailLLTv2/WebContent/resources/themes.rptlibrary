@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="comments">Copyright (c) 2006 Actuate Corporation.</property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131112-0430 Build &lt;4.2.3.v20131112-0430></property>
+    <themes>
+        <theme name="Borders" id="135">
+            <styles>
+                <style name="group_aggr_cell_blank" id="136">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_front" id="137">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_label" id="138">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="139">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="140">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_header" id="141">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="group_heading" id="313">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="group_header_cell_back" id="142">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="group_header_cell_front" id="143">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="144">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="section_footer" id="145">
+                    <property name="backgroundColor">#8A8AFF</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_header" id="146">
+                    <property name="backgroundColor">#FFB18C</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_heading" id="926">
+                    <property name="backgroundColor">#FFB18C</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_header_cell_chart" id="1461">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table_detail" id="147">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="148">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="149">
+                    <property name="backgroundColor">#EBEDFA</property>
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="150">
+                    <property name="backgroundColor">#0B4E75</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header" id="151">
+                    <property name="backgroundColor">#0B4E75</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header_cell_chart" id="1511">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table" id="152">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="Classic" id="110">
+            <styles>
+                <style name="group_aggr_cell_blank" id="111">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_label" id="112">
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="113">
+                    <property name="fontStyle">italic</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="114">
+                    <property name="backgroundColor">#909090</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="115">
+                    <property name="backgroundColor">#D0D0D0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="116">
+                    <property name="backgroundColor">#F5F5F5</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_header" id="117">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header_cell_chart" id="1171">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="group_header_cell_back" id="118">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_front" id="119">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="120">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="group_header1" id="121">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="group_heading1" id="317">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="group_header2" id="122">
+                    <property name="backgroundColor">#E5E5E5</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="group_heading2" id="318">
+                    <property name="backgroundColor">#E5E5E5</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_footer" id="123">
+                    <property name="backgroundColor">#004080</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_footer1" id="124">
+                    <property name="backgroundColor">#84C1FF</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_footer2" id="125">
+                    <property name="backgroundColor">#8A8AFF</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_header" id="126">
+                    <property name="backgroundColor">#004080</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_header1" id="127">
+                    <property name="backgroundColor">#FFFF80</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_header2" id="128">
+                    <property name="backgroundColor">#80FF80</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_heading" id="927">
+                    <property name="backgroundColor">#004080</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="section_heading1" id="928">
+                    <property name="backgroundColor">#FFFF80</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_heading2" id="929">
+                    <property name="backgroundColor">#80FF80</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_header_cell_chart" id="1261">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table_detail" id="129">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="130">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="131">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="132">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_aggr_cell_front" id="133"/>
+                <style name="group_header" id="134">
+                    <property name="backgroundColor">#808080</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_heading" id="319">
+                    <property name="backgroundColor">#808080</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table" id="160">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                </style>
+            </styles>
+        </theme>
+        <theme name="Classic Blue" id="170">
+            <styles>
+                <style name="group_aggr_cell_blank" id="171">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_front" id="172"/>
+                <style name="group_aggr_cell_label" id="173">
+                    <property name="fontSize">10pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_aggr_cell_value" id="174">
+                    <property name="fontStyle">italic</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer" id="175">
+                    <property name="backgroundColor">#A3B9C9</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer1" id="176">
+                    <property name="backgroundColor">#B3D0D0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_footer2" id="177">
+                    <property name="backgroundColor">#D2E3E3</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="textAlign">right</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="group_header" id="178">
+                    <property name="backgroundColor">#9FB5C6</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_header_cell_back" id="179">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_front" id="180">
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                </style>
+                <style name="group_header_cell_value" id="181">
+                    <property name="fontSize">10pt</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="group_header1" id="182">
+                    <property name="backgroundColor">#A8BDCC</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="group_header2" id="183">
+                    <property name="backgroundColor">#C4D1DB</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="group_heading" id="314">
+                    <property name="backgroundColor">#9FB5C6</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="group_heading1" id="315">
+                    <property name="backgroundColor">#A8BDCC</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="group_heading2" id="316">
+                    <property name="backgroundColor">#C4D1DB</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_footer" id="184">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_footer1" id="185">
+                    <property name="backgroundColor">#DADADA</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_footer2" id="186">
+                    <property name="backgroundColor">#E5E5E5</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_header" id="187">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_header1" id="188">
+                    <property name="backgroundColor">#DADADA</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_header2" id="189">
+                    <property name="backgroundColor">#E5E5E5</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_heading" id="930">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="section_heading1" id="931">
+                    <property name="backgroundColor">#DADADA</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_heading2" id="932">
+                    <property name="backgroundColor">#E5E5E5</property>
+                    <property name="fontSize">10pt</property>
+                </style>
+                <style name="section_header_cell_chart" id="1871">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+                <style name="table" id="190">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                </style>
+                <style name="table_detail" id="191">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_invisible" id="192">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">bottom</property>
+                </style>
+                <style name="table_detail_cell_visible" id="193">
+                    <property name="borderBottomColor">#808080</property>
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#808080</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#808080</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#808080</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">left</property>
+                    <property name="verticalAlign">top</property>
+                </style>
+                <style name="table_footer" id="194">
+                    <property name="backgroundColor">#012141</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header" id="195">
+                    <property name="backgroundColor">#012141</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="table_header_cell_chart" id="1951">
+                    <property name="paddingLeft">0pt</property>
+                </style>
+            </styles>
+        </theme>
+    </themes>
+    <components>
+        <table name="NewTable" id="4">
+            <property name="width">100%</property>
+            <column id="11"/>
+            <header>
+                <row id="5">
+                    <cell id="6"/>
+                </row>
+            </header>
+            <detail>
+                <row id="7">
+                    <cell id="8"/>
+                </row>
+            </detail>
+            <footer>
+                <row id="9">
+                    <cell id="10"/>
+                </row>
+            </footer>
+        </table>
+    </components>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="3"/>
+    </page-setup>
+</library>

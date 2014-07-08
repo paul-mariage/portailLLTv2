@@ -1,0 +1,22 @@
+.actuate_crosstab_builder_row_image
+{
+	background-image: url('../../images/cube/crosstab_row.png') !important;
+	border-style : none;
+	width : 16px;
+	height : 16px;
+}
+
+.actuate_crosstab_builder_column_image
+{
+	background-image: url('../../images/cube/crosstab_column.png') !important;
+	border-style : none;
+	width : 16px;
+	height : 16px;
+}
+.actuate_crosstab_builder_summary_image
+{
+	background-image: url('../../images/cube/crosstab_summary.png') !important;
+	border-style : none;
+	width : 16px;
+	height : 16px;
+}

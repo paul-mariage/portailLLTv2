@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131112-0430 Build &lt;4.2.3.v20131112-0430></property>
+    <themes>
+        <report-item-theme type="Table" name="default-table" id="4">
+            <styles>
+                <style name="table" id="896">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-detail-cell" id="918">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-header-cell" id="919">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-group-header-cell" id="920">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-group-footer-cell" id="921">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-footer-cell" id="922">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Crosstab" name="default-crosstab" id="120">
+            <text-property name="displayName">Default</text-property>
+            <styles>
+                <style name="crosstab" id="121">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="color">#666666</property>
+                </style>
+                <style name="crosstab-header" id="122">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="crosstab-detail" id="123">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                </style>
+                <style name="crosstab-row-header" id="124">
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="crosstab-column-sub-total" id="125">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-sub-total" id="126">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-column-grand-total" id="127">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-grand-total" id="128">
+                    <property name="fontWeight">bold</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Crosstab" name="olive-crosstab" id="130">
+            <text-property name="displayName">Olive</text-property>
+            <styles>
+                <style name="crosstab" id="131">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                </style>
+                <style name="crosstab-header" id="132">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="crosstab-row-sub-total" id="133">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-column-sub-total" id="134">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="crosstab-row-grand-total" id="135">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="crosstab-column-grand-total" id="136">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="crosstab-row-header" id="137">
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="crosstab-detail" id="138">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="default-chart" id="930">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Bar Chart" subType="Side-by-side" unitSpacing="25.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Verdana"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Verdana" size="10.0"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <caption>
+      <font name="Verdana"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <caption>
+     <font name="Verdana"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes>
+    <title>
+     <caption>
+      <font name="Verdana"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition=""/>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="LineSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <title>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <caption>
+         <font name="Verdana" size="10.0"/>
+        </caption>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Verdana" size="10.0">
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Verdana" size="10.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes style="1" visible="true">
+      <color _body=",64,192,192,192"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid tickStyle="0">
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption>
+      <font name="Verdana"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Verdana" size="10.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition=""/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Verdana" size="10.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid tickStyle="3">
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="FlashChart" name="default-flashChart" id="913">
+            <styles>
+                <style name="flashchart" id="915">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Unformatted</property>
+                    </structure>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="FlashGadget" name="default-flashGadget" id="914">
+            <styles>
+                <style name="flashgadget" id="916">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Fixed</property>
+                        <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                    </structure>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Chart Grid" id="927">
+            <xml-property name="customValues"><![CDATA[<type>2</type><jstheme>
+<property name="jschart.theme" value="+++colors%3A+%5B%27%23058DC7%27%2C+%27%2350B432%27%2C+%27%23ED561B%27%2C+%27%23DDDF00%27%2C+%27%2324CBE5%27%2C+%27%2364E572%27%2C+%27%23FF9655%27%2C+%27%23FFF263%27%2C+%27%236AF9C4%27%5D%2C%0D%0A+++chart%3A+%7B%0D%0A++++++backgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+500%2C+500%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27rgb%28255%2C+255%2C+255%29%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27rgb%28240%2C+240%2C+255%29%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%0D%0A%2C%0D%0A++++++borderWidth%3A+2%2C%0D%0A++++++plotBackgroundColor%3A+%27rgba%28255%2C+255%2C+255%2C+.9%29%27%2C%0D%0A++++++plotShadow%3A+true%2C%0D%0A++++++plotBorderWidth%3A+1%0D%0A+++%7D%2C%0D%0A+++title%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23000%27%2C%0D%0A+++++++++font%3A+%27bold+16px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++subtitle%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23666666%27%2C%0D%0A+++++++++font%3A+%27bold+12px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++xAxis%3A+%7B%0D%0A++++++gridLineWidth%3A+1%2C%0D%0A++++++lineColor%3A+%27%23000%27%2C%0D%0A++++++tickColor%3A+%27%23000%27%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23000%27%2C%0D%0A++++++++++++font%3A+%2711px+Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23333%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++yAxis%3A+%7B%0D%0A+++++gridLineWidth%3A+1%2C%0D%0A+++++minorGridLineWidth%3A+1%2C%0D%0A++++++minorTickInterval%3A+%27auto%27%2C%0D%0A++++++lineColor%3A+%27%23000%27%2C%0D%0A++++++lineWidth%3A+1%2C%0D%0A++++++tickWidth%3A+1%2C%0D%0A++++++tickColor%3A+%27%23000%27%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23000%27%2C%0D%0A++++++++++++font%3A+%2711px+Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23333%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++legend%3A+%7B%0D%0A++++++itemStyle%3A+%7B+++++++++%0D%0A+++++++++font%3A+%279pt+Trebuchet+MS%2C+Verdana%2C+sans-serif%27%2C%0D%0A+++++++++color%3A+%27black%27%0D%0A%0D%0A++++++%7D%2C%0D%0A++++++itemHoverStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23039%27%0D%0A++++++%7D%2C%0D%0A++++++itemHiddenStyle%3A+%7B%0D%0A+++++++++color%3A+%27gray%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++labels%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%2399b%27%0D%0A++++++%7D%0D%0A+++%7D%0D%0A"/>
+</jstheme>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Chart Gray" id="928">
+            <xml-property name="customValues"><![CDATA[<type>2</type><jstheme>
+<property name="jschart.theme" value="+++colors%3A+%5B%22%23DDDF0D%22%2C+%22%237798BF%22%2C+%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%23aaeeee%22%2C+%22%23ff0066%22%2C+%22%23eeaaee%22%2C+%0D%0A++++++%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%237798BF%22%2C+%22%23aaeeee%22%5D%2C%0D%0A+++chart%3A+%7B%0D%0A++++++backgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+400%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27rgb%2896%2C+96%2C+96%29%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27rgb%2816%2C+16%2C+16%29%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++borderWidth%3A+0%2C%0D%0A++++++borderRadius%3A+15%2C%0D%0A++++++plotBackgroundColor%3A+null%2C%0D%0A++++++plotShadow%3A+false%2C%0D%0A++++++plotBorderWidth%3A+0%0D%0A+++%7D%2C%0D%0A+++title%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23FFF%27%2C%0D%0A+++++++++font%3A+%2716px+Lucida+Grande%2C+Lucida+Sans+Unicode%2C+Verdana%2C+Arial%2C+Helvetica%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++subtitle%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23DDD%27%2C%0D%0A+++++++++font%3A+%2712px+Lucida+Grande%2C+Lucida+Sans+Unicode%2C+Verdana%2C+Arial%2C+Helvetica%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++xAxis%3A+%7B%0D%0A++++++gridLineWidth%3A+0%2C%0D%0A++++++lineColor%3A+%27%23999%27%2C%0D%0A++++++tickColor%3A+%27%23999%27%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23999%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23AAA%27%2C%0D%0A++++++++++++font%3A+%27bold+12px+Lucida+Grande%2C+Lucida+Sans+Unicode%2C+Verdana%2C+Arial%2C+Helvetica%2C+sans-serif%27%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++yAxis%3A+%7B%0D%0A++++++alternateGridColor%3A+null%2C%0D%0A++++++minorTickInterval%3A+null%2C%0D%0A+++++gridLineWidth%3A+1%2C%0D%0A++++++gridLineColor%3A+%27rgba%28255%2C+255%2C+255%2C+.1%29%27%2C%0D%0A++++++lineWidth%3A+0%2C%0D%0A++++++tickWidth%3A+0%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23999%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23AAA%27%2C%0D%0A++++++++++++font%3A+%27bold+12px+Lucida+Grande%2C+Lucida+Sans+Unicode%2C+Verdana%2C+Arial%2C+Helvetica%2C+sans-serif%27%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++legend%3A+%7B%0D%0A++++++itemStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%2C%0D%0A++++++itemHoverStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23FFF%27%0D%0A++++++%7D%2C%0D%0A++++++itemHiddenStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23333%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++labels%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++tooltip%3A+%7B%0D%0A++++++backgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+50%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27rgba%2896%2C+96%2C+96%2C+.8%29%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27rgba%2816%2C+16%2C+16%2C+.8%29%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++borderWidth%3A+0%2C%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23FFF%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++%0D%0A+++plotOptions%3A+%7B%0D%0A++++++pie%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%2C%0D%0A++++++++++++connectorColor%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++line%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++spline%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++scatter%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++candlestick%3A+%7B%0D%0A+++++++++lineColor%3A+%27white%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++toolbar%3A+%7B%0D%0A++++++itemStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigation%3A+%7B%0D%0A++++++buttonOptions%3A+%7B%0D%0A+++++++++backgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23606060%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23333333%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++borderColor%3A+%27%23000000%27%2C%0D%0A+++++++++symbolStroke%3A+%27%23C0C0C0%27%2C%0D%0A+++++++++hoverSymbolStroke%3A+%27%23FFFFFF%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++exporting%3A+%7B%0D%0A++++++buttons%3A+%7B%0D%0A+++++++++exportButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%2355BE3B%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++printButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%237797BE%27%0D%0A+++++++++%7D%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++%2F%2F+scroll+charts%0D%0A+++rangeSelector%3A+%7B%0D%0A++++++buttonTheme%3A+%7B%0D%0A+++++++++fill%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++states%3A+%7B%0D%0A++++++++++++hover%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.4%2C+%27%23BBB%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.6%2C+%27%23888%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27white%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%2C%0D%0A++++++++++++select%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.1%2C+%27%23000%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.3%2C+%27%23333%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27yellow%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%0D%0A+++++++++%7D+++++++++++++++%0D%0A++++++%7D%2C%0D%0A++++++inputStyle%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23333%27%2C%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%2C%0D%0A++++++labelStyle%3A+%7B%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigator%3A+%7B%0D%0A++++++handles%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23666%27%2C%0D%0A+++++++++borderColor%3A+%27%23AAA%27%0D%0A++++++%7D%2C%0D%0A++++++outlineColor%3A+%27%23CCC%27%2C%0D%0A++++++maskFill%3A+%27rgba%2816%2C+16%2C+16%2C+0.5%29%27%2C%0D%0A++++++series%3A+%7B%0D%0A+++++++++color%3A+%27%237798BF%27%2C%0D%0A+++++++++lineColor%3A+%27%23A6C7ED%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++scrollbar%3A+%7B%0D%0A++++++barBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++barBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonArrowColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++buttonBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++rifleColor%3A+%27%23FFF%27%2C%0D%0A++++++trackBackgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+10%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27%23000%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27%23333%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++trackBorderColor%3A+%27%23666%27%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++%2F%2F+special+colors+for+some+of+the+demo+examples%0D%0A+++legendBackgroundColor%3A+%27rgba%2848%2C+48%2C+48%2C+0.8%29%27%2C%0D%0A+++legendBackgroundColorSolid%3A+%27rgb%2870%2C+70%2C+70%29%27%2C%0D%0A+++dataLabelsColor%3A+%27%23444%27%2C%0D%0A+++textColor%3A+%27%23E0E0E0%27%2C%0D%0A+++maskColor%3A+%27rgba%28255%2C255%2C255%2C0.3%29%27%0D%0A"/>
+</jstheme>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Chart Green" id="929">
+            <xml-property name="customValues"><![CDATA[<type>2</type><jstheme>
+<property name="jschart.theme" value="++colors%3A+%5B%22%23DDDF0D%22%2C+%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%237798BF%22%2C+%22%23aaeeee%22%2C+%22%23ff0066%22%2C+%22%23eeaaee%22%2C+%0D%0A++++++%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%237798BF%22%2C+%22%23aaeeee%22%5D%2C%0D%0A+++chart%3A+%7B%0D%0A++++++backgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+50%25%2C+100%25%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27rgb%2848%2C+96%2C+48%29%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27rgb%280%2C+0%2C+0%29%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++borderColor%3A+%27%23000000%27%2C%0D%0A++++++borderWidth%3A+2%2C%0D%0A++++++className%3A+%27dark-container%27%2C%0D%0A++++++plotBackgroundColor%3A+%27rgba%28255%2C+255%2C+255%2C+.1%29%27%2C%0D%0A++++++plotBorderColor%3A+%27%23CCCCCC%27%2C%0D%0A++++++plotBorderWidth%3A+1%0D%0A+++%7D%2C%0D%0A+++title%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23C0C0C0%27%2C%0D%0A+++++++++font%3A+%27bold+16px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++subtitle%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23666666%27%2C%0D%0A+++++++++font%3A+%27bold+12px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++xAxis%3A+%7B%0D%0A++++++gridLineColor%3A+%27%23333333%27%2C%0D%0A++++++gridLineWidth%3A+1%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++lineColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++tickColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++yAxis%3A+%7B%0D%0A++++++gridLineColor%3A+%27%23333333%27%2C%0D%0A++++++gridLineWidth%3A+1%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++lineColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++minorTickInterval%3A+null%2C%0D%0A++++++tickColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++tickWidth%3A+1%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++legend%3A+%7B%0D%0A++++++itemStyle%3A+%7B%0D%0A+++++++++font%3A+%279pt+Trebuchet+MS%2C+Verdana%2C+sans-serif%27%2C%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%2C%0D%0A++++++itemHoverStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23FFF%27%0D%0A++++++%7D%2C%0D%0A++++++itemHiddenStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23444%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++tooltip%3A+%7B%0D%0A++++++backgroundColor%3A+%27rgba%280%2C+0%2C+0%2C+0.75%29%27%2C%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23F0F0F0%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++toolbar%3A+%7B%0D%0A++++++itemStyle%3A+%7B+%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++plotOptions%3A+%7B%0D%0A++++++pie%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%2C%0D%0A++++++++++++connectorColor%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++line%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++spline%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++scatter%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++candlestick%3A+%7B%0D%0A+++++++++lineColor%3A+%27white%27%0D%0A++++++%7D%0D%0A+++%7D%2C++++++%0D%0A+++labels%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigation%3A+%7B%0D%0A++++++buttonOptions%3A+%7B%0D%0A+++++++++backgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23606060%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23333333%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++borderColor%3A+%27%23000000%27%2C%0D%0A+++++++++symbolStroke%3A+%27%23C0C0C0%27%2C%0D%0A+++++++++hoverSymbolStroke%3A+%27%23FFFFFF%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++exporting%3A+%7B%0D%0A++++++buttons%3A+%7B%0D%0A+++++++++exportButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%2355BE3B%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++printButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%237797BE%27%0D%0A+++++++++%7D%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++rangeSelector%3A+%7B%0D%0A++++++buttonTheme%3A+%7B%0D%0A+++++++++fill%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++states%3A+%7B%0D%0A++++++++++++hover%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.4%2C+%27%23BBB%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.6%2C+%27%23888%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27white%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%2C%0D%0A++++++++++++select%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.1%2C+%27%23000%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.3%2C+%27%23333%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27yellow%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%0D%0A+++++++++%7D+++++++++++++++%0D%0A++++++%7D%2C%0D%0A++++++inputStyle%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23333%27%2C%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%2C%0D%0A++++++labelStyle%3A+%7B%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigator%3A+%7B%0D%0A++++++handles%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23666%27%2C%0D%0A+++++++++borderColor%3A+%27%23AAA%27%0D%0A++++++%7D%2C%0D%0A++++++outlineColor%3A+%27%23CCC%27%2C%0D%0A++++++maskFill%3A+%27rgba%2816%2C+16%2C+16%2C+0.5%29%27%2C%0D%0A++++++series%3A+%7B%0D%0A+++++++++color%3A+%27%237798BF%27%2C%0D%0A+++++++++lineColor%3A+%27%23A6C7ED%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++scrollbar%3A+%7B%0D%0A++++++barBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++barBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonArrowColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++buttonBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++rifleColor%3A+%27%23FFF%27%2C%0D%0A++++++trackBackgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+10%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27%23000%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27%23333%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++trackBorderColor%3A+%27%23666%27%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++legendBackgroundColor%3A+%27rgba%280%2C+0%2C+0%2C+0.5%29%27%2C%0D%0A+++legendBackgroundColorSolid%3A+%27rgb%2835%2C+35%2C+70%29%27%2C%0D%0A+++dataLabelsColor%3A+%27%23444%27%2C%0D%0A+++textColor%3A+%27%23C0C0C0%27%2C%0D%0A+++maskColor%3A+%27rgba%28255%2C255%2C255%2C0.3%29%27"/>
+</jstheme>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Chart Blue" id="13">
+            <xml-property name="customValues"><![CDATA[<type>2</type><jstheme>
+<property name="jschart.theme" value="+++colors%3A+%5B%22%23DDDF0D%22%2C+%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%237798BF%22%2C+%22%23aaeeee%22%2C+%22%23ff0066%22%2C+%22%23eeaaee%22%2C+%0D%0A++++++%22%2355BF3B%22%2C+%22%23DF5353%22%2C+%22%237798BF%22%2C+%22%23aaeeee%22%5D%2C%0D%0A+++chart%3A+%7B%0D%0A++++++backgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+250%2C+500%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27rgb%2848%2C+48%2C+96%29%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27rgb%280%2C+0%2C+0%29%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++borderColor%3A+%27%23000000%27%2C%0D%0A++++++borderWidth%3A+2%2C%0D%0A++++++className%3A+%27dark-container%27%2C%0D%0A++++++plotBackgroundColor%3A+%27rgba%28255%2C+255%2C+255%2C+.1%29%27%2C%0D%0A++++++plotBorderColor%3A+%27%23CCCCCC%27%2C%0D%0A++++++plotBorderWidth%3A+1%0D%0A+++%7D%2C%0D%0A+++title%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23C0C0C0%27%2C%0D%0A+++++++++font%3A+%27bold+16px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++subtitle%3A+%7B%0D%0A++++++style%3A+%7B+%0D%0A+++++++++color%3A+%27%23666666%27%2C%0D%0A+++++++++font%3A+%27bold+12px+%22Trebuchet+MS%22%2C+Verdana%2C+sans-serif%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++xAxis%3A+%7B%0D%0A++++++gridLineColor%3A+%27%23333333%27%2C%0D%0A++++++gridLineWidth%3A+1%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++lineColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++tickColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++yAxis%3A+%7B%0D%0A++++++gridLineColor%3A+%27%23333333%27%2C%0D%0A+++++++gridLineWidth%3A+1%2C%0D%0A++++++labels%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++lineColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++minorTickInterval%3A+null%2C%0D%0A++++++tickColor%3A+%27%23A0A0A0%27%2C%0D%0A++++++tickWidth%3A+1%2C%0D%0A++++++title%3A+%7B%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%2C%0D%0A++++++++++++fontSize%3A+%2712px%27%2C%0D%0A++++++++++++fontFamily%3A+%27Trebuchet+MS%2C+Verdana%2C+sans-serif%27%0D%0A+++++++++%7D++++++++++++%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++legend%3A+%7B%0D%0A++++++itemStyle%3A+%7B%0D%0A+++++++++font%3A+%279pt+Trebuchet+MS%2C+Verdana%2C+sans-serif%27%2C%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%2C%0D%0A++++++itemHoverStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23FFF%27%0D%0A++++++%7D%2C%0D%0A++++++itemHiddenStyle%3A+%7B%0D%0A+++++++++color%3A+%27%23444%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++tooltip%3A+%7B%0D%0A++++++backgroundColor%3A+%27rgba%280%2C+0%2C+0%2C+0.75%29%27%2C%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23F0F0F0%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++toolbar%3A+%7B%0D%0A++++++itemStyle%3A+%7B+%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++plotOptions%3A+%7B%0D%0A++++++pie%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23A0A0A0%27%2C%0D%0A++++++++++++connectorColor%3A+%27%23A0A0A0%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++line%3A+%7B%0D%0A+++++++++dataLabels%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++spline%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++scatter%3A+%7B%0D%0A+++++++++marker%3A+%7B%0D%0A++++++++++++lineColor%3A+%27%23333%27%0D%0A+++++++++%7D%0D%0A++++++%7D%2C%0D%0A++++++candlestick%3A+%7B%0D%0A+++++++++lineColor%3A+%27white%27%0D%0A++++++%7D%0D%0A+++%7D%2C++++++%0D%0A+++labels%3A+%7B%0D%0A++++++style%3A+%7B%0D%0A+++++++++color%3A+%27%23CCC%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigation%3A+%7B%0D%0A++++++buttonOptions%3A+%7B%0D%0A+++++++++backgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23606060%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23333333%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++borderColor%3A+%27%23000000%27%2C%0D%0A+++++++++symbolStroke%3A+%27%23C0C0C0%27%2C%0D%0A+++++++++hoverSymbolStroke%3A+%27%23FFFFFF%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++exporting%3A+%7B%0D%0A++++++buttons%3A+%7B%0D%0A+++++++++exportButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%2355BE3B%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++printButton%3A+%7B%0D%0A++++++++++++symbolFill%3A+%27%237797BE%27%0D%0A+++++++++%7D%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++%2F%2F+scroll+charts%0D%0A+++rangeSelector%3A+%7B%0D%0A++++++buttonTheme%3A+%7B%0D%0A+++++++++fill%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A+++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++style%3A+%7B%0D%0A++++++++++++color%3A+%27%23CCC%27%2C%0D%0A++++++++++++fontWeight%3A+%27bold%27%0D%0A+++++++++%7D%2C%0D%0A+++++++++states%3A+%7B%0D%0A++++++++++++hover%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.4%2C+%27%23BBB%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.6%2C+%27%23888%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27white%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%2C%0D%0A++++++++++++select%3A+%7B%0D%0A+++++++++++++++fill%3A+%7B%0D%0A++++++++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++++++++stops%3A+%5B%0D%0A+++++++++++++++++++++%5B0.1%2C+%27%23000%27%5D%2C%0D%0A+++++++++++++++++++++%5B0.3%2C+%27%23333%27%5D%0D%0A++++++++++++++++++%5D%0D%0A+++++++++++++++%7D%2C%0D%0A+++++++++++++++stroke%3A+%27%23000000%27%2C%0D%0A+++++++++++++++style%3A+%7B%0D%0A++++++++++++++++++color%3A+%27yellow%27%0D%0A+++++++++++++++%7D%0D%0A++++++++++++%7D%0D%0A+++++++++%7D+++++++++++++++%0D%0A++++++%7D%2C%0D%0A++++++inputStyle%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23333%27%2C%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%2C%0D%0A++++++labelStyle%3A+%7B%0D%0A+++++++++color%3A+%27silver%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++navigator%3A+%7B%0D%0A++++++handles%3A+%7B%0D%0A+++++++++backgroundColor%3A+%27%23666%27%2C%0D%0A+++++++++borderColor%3A+%27%23AAA%27%0D%0A++++++%7D%2C%0D%0A++++++outlineColor%3A+%27%23CCC%27%2C%0D%0A++++++maskFill%3A+%27rgba%2816%2C+16%2C+16%2C+0.5%29%27%2C%0D%0A++++++series%3A+%7B%0D%0A+++++++++color%3A+%27%237798BF%27%2C%0D%0A+++++++++lineColor%3A+%27%23A6C7ED%27%0D%0A++++++%7D%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++scrollbar%3A+%7B%0D%0A++++++barBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++barBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonArrowColor%3A+%27%23CCC%27%2C%0D%0A++++++buttonBackgroundColor%3A+%7B%0D%0A++++++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+20%5D%2C%0D%0A++++++++++++stops%3A+%5B%0D%0A+++++++++++++++%5B0.4%2C+%27%23888%27%5D%2C%0D%0A+++++++++++++++%5B0.6%2C+%27%23555%27%5D%0D%0A++++++++++++%5D%0D%0A+++++++++%7D%2C%0D%0A++++++buttonBorderColor%3A+%27%23CCC%27%2C%0D%0A++++++rifleColor%3A+%27%23FFF%27%2C%0D%0A++++++trackBackgroundColor%3A+%7B%0D%0A+++++++++linearGradient%3A+%5B0%2C+0%2C+0%2C+10%5D%2C%0D%0A+++++++++stops%3A+%5B%0D%0A++++++++++++%5B0%2C+%27%23000%27%5D%2C%0D%0A++++++++++++%5B1%2C+%27%23333%27%5D%0D%0A+++++++++%5D%0D%0A++++++%7D%2C%0D%0A++++++trackBorderColor%3A+%27%23666%27%0D%0A+++%7D%2C%0D%0A+++%0D%0A+++%2F%2F+special+colors+for+some+of+the%0D%0A+++legendBackgroundColor%3A+%27rgba%280%2C+0%2C+0%2C+0.5%29%27%2C%0D%0A+++legendBackgroundColorSolid%3A+%27rgb%2835%2C+35%2C+70%29%27%2C%0D%0A+++dataLabelsColor%3A+%27%23444%27%2C%0D%0A+++textColor%3A+%27%23C0C0C0%27%2C%0D%0A+++maskColor%3A+%27rgba%28255%2C255%2C255%2C0.3%29%27%0D%0A"/>
+</jstheme>]]></xml-property>
+        </report-item-theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="23"/>
+    </page-setup>
+</library>

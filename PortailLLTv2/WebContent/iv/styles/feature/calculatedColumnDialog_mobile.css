@@ -1,0 +1,20 @@
+/******************************************************************************
+ *	calculated column dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_calculation_ivCalculatedColumnDialog .calculationHeader {
+	width: 300px; 
+}
+
+.actuate_iv_ui_dialog_calculation_ivCalculatedColumnDialog .calculationExpression {
+	width: 300px; 
+	position: relative; 
+	height: 80px;
+	line-height:15px;
+	overflow:auto;
+}
+
+.actuate_iv_ui_dialog_calculation_ivCalculatedColumnDialog .suggestionList {
+	width: 300px;
+	height: 150px;	
+}

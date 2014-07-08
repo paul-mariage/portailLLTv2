@@ -1,0 +1,111 @@
+
+/******************************************************************************
+ * IV Chart Filter dialog.
+ *****************************************************************************/
+.actuate_dialog_ChartFilterDialog  table,
+.actuate_dialog_ChartFilterDialog  div,
+.actuate_dialog_ChartFilterDialog  tr
+	
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.actuate_dialog_ChartFilterDialog .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+ 
+.actuate_dialog_ChartFilterDialog table
+{
+	background-color: transparent;
+} 
+ 
+.actuate_dialog_ChartFilterDialog .valueTextBox
+{	
+	width: 146px;
+}
+
+.actuate_dialog_ChartFilterDialog .margin
+{	
+	margin: 3px;
+}
+
+.actuate_dialog_ChartFilterDialog .listSelectedValuesWidth
+{
+	width: 199px;
+	height: 50px;
+}
+
+.actuate_dialog_ChartFilterDialog .link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_dialog_ChartFilterDialog .link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}
+
+
+/******************************************************************************
+ * IV Flash Chart Filter dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog  table,
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog  div,
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog  tr	
+	
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .dialog_content_table td
+{
+	padding: 2px;
+	margin: 0px;
+}
+ 
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog table, .actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog div
+{
+	background-color: transparent;
+} 
+ 
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .valueTextBox
+{	
+	width: 146px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .margin
+{	
+	margin: 3px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .listSelectedValuesWidth
+{
+	width: 199px;
+	height: 50px;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .link_enabled
+{
+	color: #0000ff;
+	border-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.actuate_iv_ui_dialog_flashchart_ivFlashChartFilterDialog .link_disabled
+{
+	color: #777777;
+	border-style: none;
+	text-decoration: underline;
+	cursor: default;
+}

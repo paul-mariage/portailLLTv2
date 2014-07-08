@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emitter Config Fragment
+Bundle-SymbolicName: com.actuate.birt.report.engine.emitter.config; singleton:=true
+Bundle-Version: 23.0.0.v20140122
+Bundle-Vendor: Actuate Corporation
+Fragment-Host: org.eclipse.birt.report.engine.emitter.config;bundle-version="4.2.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-PatchFragment: true
+Bundle-ClassPath: library.jar

@@ -1,0 +1,116 @@
+/*********** File Picker Dialog ***********/
+
+	/* Breadcrumb navigation area */
+.filepicker_breadcrumb
+{
+	cursor: default;
+}
+
+	/* Breadcrumb navigation area selectable item*/
+.filepicker_breadcrumb_item_enabled
+{
+	cursor: pointer;	
+	color: #000000; 		
+}
+
+	/* Breadcrumb navigation area selectable item*/
+.filepicker_breadcrumb_item_disabled
+{
+	color: #808080; 		
+}
+
+.filepicker_detail_enabled
+{
+	background-color: #ffffff;
+}
+
+.filepicker_detail_disabled
+{
+	background-color: #eaeaea;
+}
+
+.filepicker_upBtn_enabled
+{
+	cursor: pointer;
+}
+
+.filepicker_upBtn_disabled
+{
+	cursor: default;
+}
+
+/* Background color of file listing header */
+.filepicker_fileListingHeader_background
+{
+	background-color: #c6d7ef;
+}
+
+/* Bottom border color of file listing header */
+.filepicker_fileListingHeader_border_bottom
+{
+	border-bottom-color:#524d52;
+}
+
+/* Bottom border color of file listing header */
+.filepicker_fileListingHeader_border_right
+{
+	border-right-color: #849ebd;
+}
+
+.filepicker_smalliconImageButton
+{
+	background-image: url( ../../images/sprite_smallicon.png ) !important; 
+	background-image: url( ../../images/sprite_smallicon.gif );
+	background-repeat: no-repeat;
+	border-style: none;  
+}
+
+.filepicker_othermergeImageButton
+{  
+	background: url( ../../images/dialog_other_merge.gif ); 
+	background-repeat: no-repeat; 
+	border-style: none;  	
+}
+
+.sprite-downArrowButton { width: 17px; height: 17px; background-position: 0 -30px; } 
+.sprite-upArrowButton { width: 24px; height: 20px; background-position: 0 -77px; } 
+.sprite-expression_valid { width: 14px; height: 13px; background-position: 0 -127px; } 
+.sprite-expression_invalid { width: 14px; height: 13px; background-position: 0 -170px; } 
+.sprite-Close { width: 14px; height: 13px; background-position: 0 -213px; } 
+.sprite-new_report-design { width: 55px; height: 70px; background-position: 0 -256px; } 
+.sprite-open-report { width: 63px; height: 60px; background-position: 0 -356px; } 
+.sprite-upArrowButton_disabled { width: 24px; height: 20px; background-position: 0 -446px; } 
+.sprite-Move_up { width: 25px; height: 26px; background-position: 0 -30px; } 
+.sprite-cancel { width: 18px; height: 22px; background-position: 0 -76px; } 
+.sprite-icon_rpttemplate { width: 16px; height: 16px; background-position: 0 -128px; } 
+.sprite-icon_iob { width: 16px; height: 16px; background-position: 0 -174px; } 
+.sprite-calendar { width: 34px; height: 21px; background-position: 0 -220px; } 
+.sprite-collapse { width: 13px; height: 13px; background-position: 0 -271px; } 
+.sprite-accept { width: 13px; height: 13px; background-position: 0 -314px; } 
+.sprite-buttons { width: 18px; height: 18px; background-position: 0 -366px; } 
+.sprite-Movedown { width: 18px; height: 18px; background-position: 0 -414px; cursor: pointer; } 
+.sprite-add { width: 16px; height: 16px; background-position: 0 -470px; } 
+.sprite-stop { width: 22px; height: 22px; background-position: 0 -516px; } 
+.sprite-expand { width: 13px; height: 13px; background-position: 0 -568px; } 
+.sprite-viewpdf { width: 16px; height: 16px; background-position: 0 -611px; } 
+.sprite-minus { width: 9px; height: 9px; background-position: 0 -657px; } 
+.sprite-Moveup { width: 16px; height: 16px; background-position: 0 -696px; cursor: pointer; } 
+.sprite-twobutton { width: 32px; height: 16px; background-position: 0 -752px; } 
+.sprite-Move_down { width: 16px; height: 16px; background-position: 0 -798px; } 
+.sprite-rptdesign16x16 { width: 16px; height: 16px; background-position: 0 -844px; } 
+.sprite-Go { width: 16px; height: 16px; background-position: 0 -890px; } 
+.sprite-data-column { width: 16px; height: 16px; background-position: 0 -936px; } 
+.sprite-restore { width: 14px; height: 16px; background-position: 0 -982px; } 
+.sprite-parameter_group { width: 16px; height: 16px; background-position: 0 -1028px; } 
+.sprite-folder { width: 18px; height: 17px; background-position: 0 -1074px; } 
+.sprite-spellcheck { width: 22px; height: 22px; background-position: 0 -1121px; } 
+.sprite-icon_bizdesign { width: 16px; height: 16px; background-position: 0 -1173px; } 
+.sprite-rtarrow { width: 17px; height: 17px; background-position: 0 -1219px; } 
+.sprite-data_field { width: 16px; height: 14px; background-position: 0 -1266px; } 
+.sprite-icon_sma { width: 16px; height: 16px; background-position: 0 -1310px; } 
+.sprite-dataset_filter { width: 16px; height: 16px; background-position: 0 -1356px; } 
+.sprite-ltarrow { width: 17px; height: 17px; background-position: 0 -1402px; } 
+.sprite-dataset { width: 16px; height: 16px; background-position: 0 -1449px; } 
+.sprite-maximize { width: 12px; height: 15px; background-position: 0 -1495px; } 
+.sprite-sort { width: 12px; height: 13px; background-position: 0 -1625px; } 
+.sprite-plus { width: 9px; height: 9px; background-position: 0 -1666px; } 

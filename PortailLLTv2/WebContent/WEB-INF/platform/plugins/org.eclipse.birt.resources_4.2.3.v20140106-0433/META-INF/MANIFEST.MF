@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Vendor: Eclipse BIRT Project
+Eclipse-BundleShape: dir
+Bundle-Version: 4.2.3.v20140106-0433
+Bundle-Localization: plugin
+Bundle-Name: BIRT Resources Plug-in
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.birt.resources;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

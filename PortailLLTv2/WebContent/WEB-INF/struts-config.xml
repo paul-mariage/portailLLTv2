@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+    
+    <!-- ========== Data Source Configuration =============================== -->
+    <data-sources />
+    
+    <!-- ========== Form Bean Definitions ================================== -->
+    <form-beans type="org.apache.struts.action.ActionFormBean">
+        
+        <form-bean name="loginForm" type="com.actuate.activeportal.forms.LoginForm" />
+        <form-bean name="iPortalLoginForm" type="com.actuate.iportal.forms.IPortalLoginForm" />
+        <form-bean name="fileListActionForm" type="com.actuate.activeportal.forms.FileListActionForm" />
+        <form-bean name="searchFilesActionForm" type="com.actuate.activeportal.forms.SearchFilesActionForm" />
+        <form-bean name="userOptionsActionForm" type="com.actuate.activeportal.forms.UserOptionsActionForm" />
+        <form-bean name="createQueryActionForm" type="com.actuate.activeportal.forms.QueryActionForm" />
+        <form-bean name="runQueryActionForm" type="com.actuate.activeportal.forms.QueryActionForm" />
+        <form-bean name="AcSubmitJobActionForm" type="com.actuate.activeportal.forms.SubmitJobActionForm" />
+        <form-bean name="browseFileActionForm" type="com.actuate.activeportal.forms.BrowseFileActionForm" />
+        <form-bean name="TableParamListActionForm" type="com.actuate.activeportal.forms.TableParamListActionForm" />
+        <form-bean name="TableRowEditorActionForm" type="com.actuate.activeportal.forms.TableRowEditorActionForm" />
+        <form-bean name="AcAnalyticsBrowseFolderActionForm" type="com.actuate.activeportal.forms.BrowseFileActionForm"/>
+        <form-bean name="getJobDetailsActionForm" type="com.actuate.activeportal.forms.GetJobDetailsActionForm" />
+        <form-bean name="getFileDetailsActionForm" type="com.actuate.activeportal.forms.GetFileDetailsActionForm" />
+		<form-bean name="mobileSubscriptionActionForm" type="com.actuate.activeportal.forms.MobileSubscriptionActionForm"/>
+		<form-bean name="mobileSelectBookmarkActionForm" type="com.actuate.activeportal.forms.MobileSelectBookmarkActionForm"/>
+        <form-bean name="selectJobsActionForm" type="com.actuate.activeportal.forms.SelectJobsActionForm" />
+        <form-bean name="selectJobNoticesActionForm" type="com.actuate.activeportal.forms.SelectJobNoticesActionForm" />
+        <form-bean name="channelListActionForm" type="com.actuate.activeportal.forms.ChannelListActionForm" />
+        <form-bean name="fileFoldersPrivilegeActionForm" type="com.actuate.activeportal.forms.FileFoldersPrivilegeActionForm"/>
+        <form-bean name="subscribeChannelActionForm" 	type="com.actuate.activeportal.forms.SubscribeChannelActionForm"/>
+        <form-bean name="createFolderActionForm" 		type="com.actuate.activeportal.forms.CreateFolderActionForm"/>
+        <form-bean name="moveFileFolderActionForm" 		type="com.actuate.activeportal.forms.MoveFileFolderActionForm"/>
+        <form-bean name="renameFolderActionForm" 		type="com.actuate.activeportal.forms.RenameFolderActionForm"/>
+        <form-bean name="skinManagerActionForm" type="com.actuate.activeportal.forms.SkinManagerActionForm" />
+        <form-bean name="skindetailform" type="com.actuate.activeportal.forms.SkinEditorActionForm" />
+        <form-bean name="skinEditorActionForm" type="com.actuate.activeportal.forms.SkinEditorActionForm" />
+        <form-bean name="fileUploadActionForm" type="com.actuate.activeportal.forms.FileUploadActionForm" />
+        <form-bean name="saveSearchActionForm" type="com.actuate.activeportal.forms.SaveSearchActionForm" />
+        <form-bean name="manageMyPagesActionForm" type="com.actuate.activeportal.forms.ManageMyPagesActionForm" />
+        <form-bean name="activateActionForm" 		type="com.actuate.activeportal.forms.ActivateActionForm"/>
+    </form-beans>
+    
+    <!-- ========== Global Forward Definitions =============================== -->
+    <global-forwards type="org.apache.struts.action.ActionForward">
+        <forward name="logout" path="/logout.do" />
+        <forward name="landing" path="/" redirect="true"/>
+        <forward name="ssologout" path="/ssologout.do" />
+        <forward name="login" path="/login.do" />
+        <forward name="error" path="/iportal/activePortal/private/common/errors/errorpage.jsp" />
+        <forward name="errorportlet" path="/iportal/activePortal/private/common/errors/errorportlet.jsp" />
+        <forward name="skinerror" path="/iportal/activePortal/private/common/errors/error.jsp" />
+        <forward name="authexpired" path="/login.do" />
+        <forward name="goto" path="/iportal/activePortal/private/common/goto.jsp" />
+		<forward name="canceljob" path="/canceljob.do" />
+		<forward name="requestercanceljob" path="/requestercanceljob.do" />
+		<forward name="createquery" path="/query/create.do" />
+		<forward name="deletefile" path="/deletefile.do" />
+		<forward name="deletejobnotice" path="/deletejobnotice.do" />
+		<forward name="deletejob" path="/deletejob.do" />
+		<forward name="deletejobschedule" path="/deletejobschedule.do" />
+		<forward name="requesterdeletejob" path="/requesterdeletejob.do" />
+		<forward name="requesterdeletejobschedule" path="/requesterdeletejobschedule.do" />
+		<forward name="downloadfile" path="/servlet/DownloadFile" />
+		<forward name="executedocument" path="/executedocument.do" />
+		<forward name="executequery" path="/query/execute.do" />
+		<forward name="executereport" path="/executereport.do" />
+		<forward name="getjobdetails" path="/getjobdetails.do" />
+		<forward name="getrequesterjobdetails" path="/getrequesterjobdetails.do" />
+		<forward name="submitquery" path="/query/submit.do" />
+		<forward name="viewframeset" path="/iportal/activePortal/viewer/viewframeset.jsp" />
+		<forward name="viewpage" path="/servlet/ViewPage" />
+		<forward name="viewcube" path="/viewcube.do" />
+		<forward name="viewsoi" path="/viewsoi.do" />
+		<forward name="browsefile" path="/browsefile.do" />
+		<forward name="getsavedsearch" path="/viewer/getsavedsearch.do" />
+		<forward name="managemypages" path="/managemypages.do" />
+		<forward name="iv" path="/iv" />
+		<forward name="wr" path="/wr" />
+		<forward name="da" path="/da" />
+		<forward name="dashboard" path="/dashboard" />
+    </global-forwards>
+    
+    <!-- ========== Action Mapping Definitions =============================== -->
+    <action-mappings type="org.apache.struts.action.ActionMapping">
+        
+        <!-- Process a user login -->
+       
+        <action
+            path="/login"
+            name="loginForm"
+            scope="request"
+            input="/iportal/activePortal/private/login.jsp"
+            type="com.actuate.activeportal.actions.AcSsoLoginAction"
+            validate="false">
+            <forward name="loginform" path="/iportal/activePortal/private/login.jsp" />
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do"  />
+            -->
+            <forward name="success" path="/dashboard/jsp/myfiles.jsp" redirect="true" />
+            <forward name="dashboard" path="/dashboard" redirect="true" />
+            <forward name="ajcLogin" path="/ajclanding.jsp" redirect="true" />
+            <forward name="landing" path="/login.jsp" redirect="false" />
+            <forward name="activate" path="/activate.jsp" redirect="false" />
+            <forward name="wait" path="/checksaml.jsp" redirect="false" />
+        </action>
+        
+       	<action
+            path="/activate"
+            name="activateActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.ActivateAction"
+            validate="false">                        
+            <forward name="success" path="/checksaml.jsp" redirect="false" />            
+            <forward name="error" path="/activate.jsp" redirect="false"/>
+       	</action>
+       	
+       	<action
+            path="/checkstatus"
+            name="activateActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcCheckActivateStatus"
+            validate="false">                        
+            <forward name="success" path="/login.do" redirect="true" />            
+            <forward name="error" path="/activate.jsp" redirect="false"/>
+       	</action>
+       	       	
+        <!-- Process iPortal login -->
+        <action
+            path="/iPortalLogin"
+            name="iPortalLoginForm"
+            scope="request"
+            input="/login.jsp"
+            type="com.actuate.iportal.actions.AcLoginAction"
+            validate="false">
+            <forward name="landing" path="/login.jsp" />
+            <forward name="iPortalLoginForm" path="/login.jsp" />
+        </action>
+        
+        <!-- Process a user logout -->
+        <action path="/logout" type="com.actuate.activeportal.actions.AcLogoutAction">
+        <!-- In iPortal, /logout.do sends to landing page, not login page.
+            <forward name="landing" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/landing.jsp" />
+        -->
+        <!-- redirect to login page
+            <forward name="landing" path="/login.do" redirect="true" />
+        -->
+        	<forward name="landing" path="/login.jsp" redirect="true"/>
+        </action>
+        
+         <action path="/ssologout" type="com.actuate.activeportal.actions.AcSsoLogoutAction">
+        
+        </action>
+
+        <!-- Process getfolderitems  -->
+        <action
+            attribute="fileListActionForm"
+            name="fileListActionForm"
+            path="/getfolderitems"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcGetFolderItemsAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/filefolderlist.jsp" />
+            <forward name="dashboard" path="/dashboard" redirect="true" />
+      
+        </action>
+
+	<!-- Process portlet getfolderitems -->
+        <action
+            attribute="fileListActionForm"
+            name="fileListActionForm"
+            path="/getportletfolderitems"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcGetFolderItemsAction"
+            validate="false">
+            <forward name="success" path="/iportal/portlets/filefolderlist/filefolderlistportlet.jsp" />
+        </action>
+
+        <action
+            path="/browseportletfile"
+            name="browseFileActionForm"
+            input="/iportal/portlets/browsefile.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcBrowseFileAction"
+            validate="false">
+            <forward name="success" path="/iportal/portlets/browsefile.jsp" />
+        </action>
+
+        <!-- Process Search  -->
+        <action
+            attribute="fileListActionForm"
+            name="searchFilesActionForm"
+            path="/searchfiles"
+            scope="request"
+            type="com.actuate.activeportal.actions.SelectFilesAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/search/filefolderlist.jsp" />
+        </action>
+        
+        <!-- Process getfiledetails  -->
+        <action 
+        	path="/getfiledetails"
+        	name="getFileDetailsActionForm"
+        	scope="request" 
+        	type="com.actuate.activeportal.actions.AcGetFileDetailsAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/filedetail.jsp" />
+        </action>
+        
+        <!-- Process deletefile  -->
+        <action path="/deletefile" type="com.actuate.activeportal.actions.AcDeleteFileAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/deletefilestatus.jsp" />
+            <forward name="error" path="/iportal/activePortal/private/filesfolders/deletefilestatus.jsp" />
+            <forward name="confirm" path="/iportal/activePortal/private/filesfolders/confirm.jsp" />
+        </action>
+        
+        <!-- Process createfolder  -->
+        <action 
+        	path="/createfolder"
+        	name="createFolderActionForm"
+        	scope="request" 
+        	type="com.actuate.activeportal.actions.AcCreateFolderAction" 
+        	validate="false">
+            <forward name="showform" path="/iportal/activePortal/private/filesfolders/createfolder.jsp" />
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+            <forward name="success" path="/getfolderitems.do" redirect="true" />
+            
+            <!--
+            <forward name="cancel" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+            <forward name="cancel" path="/getfolderitems.do" redirect="true" />
+        </action>
+        
+        <!-- Process movefilefolder  -->
+        <action 
+        	path="/movefilefolder"
+        	name="moveFileFolderActionForm"
+        	scope="request" 
+        	type="com.actuate.activeportal.actions.AcMoveFileFolderAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/movecopy.jsp" />
+           	<forward name="folderitem" path="/getfolderitems.do" redirect="true" />
+        </action>
+        
+        <!-- Process rename folder  -->
+        <action 
+        	path="/renamefolder"
+        	name="renameFolderActionForm"
+        	scope="request" 
+        	type="com.actuate.activeportal.actions.AcRenameFolderAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/filesfolders/renamefolder.jsp" />
+           	<forward name="folderitem" path="/getfolderitems.do" redirect="true" />
+        </action>
+        
+        <!-- Process file/folder privilege  -->
+        <action
+            path="/filefoldersprivilege"
+            name="fileFoldersPrivilegeActionForm"
+            scope="session"
+            input="/iportal/activePortal/private/filesfolders/privilege.jsp"
+            type="com.actuate.activeportal.actions.AcFileFoldersPrivilegeAction" validate="false">
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+            <forward name="success" path="/getfolderitems.do" redirect="true" />
+        </action>
+
+        <!-- Displays list of jobs ( completed/scheduled/pending/running)  -->
+        <action
+            path="/selectjobs"
+            name="selectJobsActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcSelectJobsAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/selectjobs.jsp?showBreadCrumb=false" />
+        </action>
+
+        <!-- Process getjobdetails  -->
+        <action 
+        	path="/getjobdetails"
+        	name="getJobDetailsActionForm"
+        	scope="request"
+        	type="com.actuate.activeportal.actions.AcGetJobDetailsAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/getjobdetails.jsp" />
+        </action>
+         <!-- Process getrequestjobdetails  -->
+        <action 
+        	path="/getrequesterjobdetails"
+        	name="getJobDetailsActionForm"
+        	scope="request"
+        	type="com.actuate.activeportal.actions.AcGetJobDetailsAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/getrequesterjobdetails.jsp" />
+        </action>
+        <!-- Process deletejob  -->
+        <action path="/deletejob" type="com.actuate.activeportal.actions.AcDeleteJobAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/joboperationstatus.jsp" />
+        </action>
+        
+        <!-- Process deletejobschedule  -->
+        <action path="/deletejobschedule" type="com.actuate.activeportal.actions.AcDeleteJobScheduleAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/joboperationstatus.jsp" />
+        </action>    
+            
+         <!-- Process requesterdeletejob  -->
+        <action path="/requesterdeletejob" type="com.actuate.activeportal.actions.AcDeleteJobAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/requesterjoboperationstatus.jsp" />
+        </action>
+
+         <!-- Process requesterdeletejobschedule  -->
+        <action path="/requesterdeletejobschedule" type="com.actuate.activeportal.actions.AcDeleteJobScheduleAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/requesterjoboperationstatus.jsp" />
+        </action>
+        
+        <!-- Process canceljob  -->
+        <action path="/canceljob" type="com.actuate.activeportal.actions.AcCancelJobAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/joboperationstatus.jsp" />
+        </action>
+        
+         <!-- Process requestercanceljob  -->
+        <action path="/requestercanceljob" type="com.actuate.activeportal.actions.AcCancelJobAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/requesterjoboperationstatus.jsp" />
+        </action>
+        
+        <!-- Displays list of mobile subscription  -->
+        <action
+            path="/mobilesubscription"
+            name="mobileSubscriptionActionForm"
+            scope="session"
+            type="com.actuate.activeportal.actions.AcMobileSubscriptionAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/mobile/subscription/subscriptionlist.jsp?showBreadCrumb=false" />
+            <forward name="editSubscription" path="/iportal/activePortal/private/mobile/subscription/subscription.jsp" />
+            <forward name="addSubscription" path="/iportal/activePortal/private/mobile/subscription/subscription.jsp" />
+            <forward name="operationStatus" path="/iportal/activePortal/private/mobile/subscription/operationstatus.jsp"/>
+            <forward name="deleteSuccess" path="/mobilesubscription.do" redirect="true" />
+        </action>
+
+        <!-- mobile select bookmark -->
+        <action
+            path="/mobileSelectBookmark"
+            name="mobileSelectBookmarkActionForm"
+            scope="session"
+            type="com.actuate.activeportal.actions.AcMobileSelectBookmarkAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/mobile/bookmarkSelection.jsp" />
+        </action>
+
+
+        <!-- Displays list of notices for a given channel  -->
+        <action
+            path="/selectjobnotices"
+            name="selectJobNoticesActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcSelectJobNoticesAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/channels/channelnoticelist.jsp?showBreadCrumb=false" />
+        </action>
+
+        <!-- Displays list of notices for a given channel  -->
+        <action
+            path="/selectchannels"
+            name="channelListActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.ChannelListAction"
+            validate="false">
+            <forward name="channellist" path="/iportal/activePortal/private/channels/channellist.jsp" />
+        </action>
+
+        
+        <!-- Process createchannel  -->
+        <action path="/createchannel" type="com.actuate.activeportal.actions.AcCreateChannelAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/channels/channeloperationstatus.jsp" />
+        </action>
+        
+        <!-- Process updatechannel  -->
+        <action path="/updatechannel" type="com.actuate.activeportal.actions.AcUpdateChannelAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/channels/channeloperationstatus.jsp" />
+        </action>
+        
+        <!-- Process createchannel  -->
+        <action path="/deletechannel" type="com.actuate.activeportal.actions.AcDeleteChannelAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/channels/channeloperationstatus.jsp" />
+        </action>
+        
+        <!-- Subscribe to channels  -->
+        <action
+            path="/subscribeChannel"
+            name="subscribeChannelActionForm"
+            scope="session"
+            input="/iportal/activePortal/private/channels/channelsubscribe.jsp"
+            type="com.actuate.activeportal.actions.AcSubscribeChannelAction"
+            validate="false">
+            <forward name="success" path="/selectchannels.do" />
+        </action>
+
+        <!-- Process getjobnoticedetails  -->
+        <action path="/getnoticejobdetails"
+        	name="getJobDetailsActionForm"
+        	scope="request"
+        	type="com.actuate.activeportal.actions.AcGetNoticeJobDetailsAction" 
+        	validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/getjobdetails.jsp" />
+        </action>
+        
+        <!-- Process deletejobNotice  -->
+        <action path="/deletejobnotice" type="com.actuate.activeportal.actions.AcDeleteJobNoticeAction" validate="false">
+            <forward name="success" path="/iportal/activePortal/private/jobs/joboperationstatus.jsp" />
+        </action>
+        
+        <!-- Process executereport  -->
+        <action
+            path="/executereport"
+            name="AcSubmitJobActionForm"
+            scope="session"
+            input="/iportal/activePortal/private/newrequest/newrequest.jsp"
+            type="com.actuate.activeportal.actions.AcSubmitJobAction"
+            validate="false">
+            <forward name="viewroi" path="/iportal/activePortal/viewer/viewframeset.jsp" redirect="true" />
+            <forward name="viewreport" path="/servlet/DownloadFile" redirect="true" />
+            <forward name="viewbirt" path="/iv" redirect="true" />
+            <forward name="viewessreport" path="/servlet" redirect="true" />
+            <forward name="wait" path="/iportal/activePortal/private/newrequest/waitforexecution.jsp" redirect="true" />
+
+            <!--
+            <forward name="viewroi" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/iportal/activePortal/viewer/viewframeset.jsp" />
+            <forward name="viewreport" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/servlet/DownloadFile" />
+            <forward name="viewbirt"   path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/iv" redirect="false" />
+			<forward name="viewessreport" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/servlet" />
+            <forward name="wait" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/iportal/activePortal/private/newrequest/waitforexecution.jsp" />
+            -->
+        </action>
+        
+        <!-- Process submitjob  -->
+        <action
+            path="/submitjob"
+            name="AcSubmitJobActionForm"
+            scope="session"
+            input="/iportal/activePortal/private/newrequest/newrequest.jsp"
+            type="com.actuate.activeportal.actions.AcSubmitJobAction"
+            validate="false">
+            <forward name="query" path="/query/submit.do" />
+            <forward name="createquery" path="/query/create.do" />
+            <forward name="viewroi" path="/iportal/activePortal/viewer/viewframeset.jsp" redirect="true" />
+            <forward name="viewreport" path="/servlet/DownloadFile" redirect="true" />
+            <forward name="viewessreport" path="/servlet" redirect="true" />
+            <forward name="success" path="/iportal/activePortal/private/newrequest/submitjobstatus.jsp" />
+        </action>
+        <action
+            path="/browsefile"
+            name="browseFileActionForm"
+            input="/iportal/activePortal/private/newrequest/browse.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcBrowseFileAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/newrequest/browse.jsp" />
+            <forward name="browseFile" path="/iportal/activePortal/private/common/browseFile.jsp" />
+        </action>
+
+        <!-- Process options  -->
+        <action
+            path="/options"
+            name="userOptionsActionForm"
+            input="/iportal/activePortal/private/options/options.jsp"
+            scope="session"
+            type="com.actuate.activeportal.actions.AcOptionsAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/options/options.jsp" />
+            <!--
+            <forward name="saved" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+            <forward name="saved" path="/getfolderitems.do" redirect="true" />
+            <forward name="dashboard" path="/iportal/activePortal/private/options/options.jsp" />
+        </action>
+        <action
+            path="/options/save"
+            name="userOptionsActionForm"
+            input="/iportal/activePortal/private/options/options.jsp"
+            scope="session"
+            type="com.actuate.activeportal.actions.AcOptionsAction"
+            validate="false">
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            <forward name="saved" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+            <forward name="success" path="/getfolderitems.do" redirect="true" />
+            <forward name="saved" path="/getfolderitems.do" redirect="true" />
+        </action>
+        
+        <!-- Query do's: create,execute,submit -->
+        <action
+            path="/query/create"
+            name="createQueryActionForm"
+            input="/iportal/activePortal/private/query/create.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcCreateQueryAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/query/create.jsp" />
+            <forward name="cancel" path="/getfolderitems.do" redirect="true" />
+            <!--
+            <forward name="cancel" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+			<forward name="overwritePrompt" path="/iportal/activePortal/private/query/fileexists.jsp" />
+			<forward name="confirmation" path="/iportal/activePortal/private/query/confirmation.jsp" />
+        </action>
+        <action
+            path="/query/execute"
+            name="runQueryActionForm"
+            input="/iportal/activePortal/private/query/execute.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcRunQueryAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/query/execute.jsp" />
+            <forward name="cancel" path="/getfolderitems.do" redirect="true" />
+            <!--
+            <forward name="cancel" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+        </action>
+        <action
+            path="/query/submit"
+            name="runQueryActionForm"
+            input="/iportal/activePortal/private/query/execute.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcRunQueryAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/query/execute.jsp" />
+            <forward name="cancel" path="/getfolderitems.do" redirect="true" />
+            <!--
+            <forward name="cancel" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            -->
+			<forward name="confirmation" path="/iportal/activePortal/private/query/runconfirmation.jsp" />
+        </action>
+        
+        <!-- other do's -->
+        <action path="/cancelreport" type="com.actuate.activeportal.actions.AcCancelReportAction">
+            <forward name="Succeeded" path="/iportal/activePortal/viewer/closewindow.jsp?status=succeeded" />
+            <forward name="Failed" path="/iportal/activePortal/viewer/closewindow.jsp?status=failed" />
+            <forward name="InActive" path="/iportal/activePortal/viewer/closewindow.jsp?status=inactive" />
+        </action>
+        <action input="/iportal/activePortal/private/newrequest/waitforexecution.jsp" path="/waitforreportexecution" type="com.actuate.activeportal.actions.AcWaitForExecuteReportAction">
+            <forward name="success" path="/iportal/activePortal/viewer/viewreport.jsp" />
+            <forward name="fail" path="/iportal/activePortal/viewer/closewindow.jsp" />
+        </action>
+        <action path="/executedocument" type="com.actuate.activeportal.actions.AcExecuteDocumentAction" validate="false">
+            <forward name="success" path="/executereport.do" redirect="true" />
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/executereport.do" />
+            -->
+        </action>
+        <action
+            path="/tableList"
+            name="TableParamListActionForm"
+            input="/iportal/activePortal/private/parameters/table/tableparameters.jsp"
+            scope="session"
+            type="com.actuate.activeportal.actions.TableParamEditorAction"
+            validate="false">
+            <forward name="close" path="/iportal/activePortal/private/parameters/table/close.jsp" />
+            <forward name="tableParamList" path="/iportal/activePortal/private/parameters/table/tableparameters.jsp" />
+        </action>
+        <action
+            path="/editTableRow"
+            name="TableRowEditorActionForm"
+            input="/iportal/activePortal/private/parameters/table/roweditor.jsp"
+            attribute="TableRowEditorActionForm"
+            scope="session"
+            type="com.actuate.activeportal.actions.TableRowEditorAction"
+            validate="false">
+            <forward name="close" path="/iportal/activePortal/private/parameters/table/close.jsp" />
+            <forward name="tableRowEditor" path="/iportal/activePortal/private/parameters/table/roweditor.jsp" />
+        </action>
+        <action
+            path="/analyticsbrowsefolder"
+            name="AcAnalyticsBrowseFolderActionForm"
+            input="/iportal/activePortal/private/cubeviewer/analyticsbrowsefolder.jsp"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcBrowseFileAction"
+            validate="false">
+            <forward name="success" path="/iportal/activePortal/private/cubeviewer/analyticsbrowsefolder.jsp" />
+        </action>
+        <!-- Several URLs below must use relative path for Analytics context -->
+        <action
+            path="/viewcube"
+            type="com.actuate.activeportal.actions.AcViewCubeAction"
+            scope="session"
+            validate="false">
+            <forward name="analyticsbrowsefolder" path="analyticsbrowsefolder.do"/>
+            <forward name="analyticsexplevel" path="servlet/AnalyticsExpLevel"/>
+            <forward name="downloadcube" path="servlet/DownloadFile"/>
+            <forward name="dbdetail" path="cubedetail.do"/>
+            <forward name="dbstore" path="servlet/CubeStore"/>
+            <forward name="odbotunnel" path="servlet/OdboTunnel"/>
+            <forward name="success" path="/iportal/activePortal/private/cubeviewer/viewcube.jsp"/>
+        </action>
+
+        <action
+            path="/cubedetail"
+            type="com.actuate.activeportal.actions.AcDrillToDetailAction"
+            scope="session"
+            validate="false">
+            <forward name="success" path="/servlet/DownloadFile" redirect="true" />
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/servlet/DownloadFile" />
+            -->
+        </action>
+        <!-- View soi  -->
+        <action
+            path="/viewsoi"
+            name="AcSubmitJobActionForm"
+            scope="session"
+            input="/iportal/activePortal/private/newrequest/newrequest.jsp"
+            type="com.actuate.activeportal.actions.AcViewSOIAction"
+            validate="false">
+            <forward name="viewessreport" path="/servlet" redirect="true" />
+        </action>
+
+		<!-- Skin Actions -->
+		<action
+	    	path="/customize"
+	        name="skinManagerActionForm"
+	        scope="request"
+			type="com.actuate.activeportal.actions.AcSkinManagerAction">
+			<forward name="success" path="/iportal/activePortal/private/customization/skinmanager.jsp" />
+			<forward name="downloadwar" path="/servlet/CacheDownload" />
+		</action>
+		
+		<action
+			path="/skinedit"
+			name="skinEditorActionForm"
+			scope="session"
+			input="/customize.do"
+			type="com.actuate.activeportal.actions.AcSkinEditorAction">
+			<forward name="success" path="/iportal/activePortal/private/customization/skinedit.jsp" />
+		</action>
+	  
+		<action
+			path="/uploadlicense"
+			name="fileUploadActionForm"
+			scope="request"
+			type="com.actuate.activeportal.actions.AcFileUploadAction">
+			<forward name="success" path="/iportal/admin/fileupload.jsp" />
+		</action>
+		
+		<action
+			path="/uploadimage"
+			name="fileUploadActionForm"
+			scope="request"
+			type="com.actuate.activeportal.actions.AcFileUploadAction">
+			<forward name="success" path="/iportal/activePortal/private/customization/fileupload.jsp" />
+		</action>		
+
+        <action
+        	path="/treebrowser"
+        	type="com.actuate.activeportal.actions.TreeBrowserAction"
+        	scope="request">
+        	<forward name="success" path="/iportal/activePortal/private/filesfolders/treebrowser.jsp" />
+        </action>
+        
+        <!-- Self-diagnostic ping -->
+        <action
+            path="/ping"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcPingAction" validate="false">
+			<forward name="success" path="/iportal/activePortal/private/diagnosis/pingresponse.jsp" />
+        </action>
+
+        <!-- Get saved search -->
+        <action
+            path="/viewer/getsavedsearch"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcGetSavedSearchAction" validate="false">
+            <forward name="success" path="/getfolderitems.do" redirect="true" />
+            <forward name="searchreport" path="/iportal/activePortal/viewer/searchreportpage.jsp" redirect="true" />
+            <!--
+            <forward name="success" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/getfolderitems.do" />
+            <forward name="searchreport" path="/iportal/activePortal/private/common/processredirect.jsp?redirectPath=/iportal/activePortal/viewer/searchreportpage.jsp" />
+            -->
+			<forward name="requestsearch" path="/iportal/activePortal/viewer/requestsearch.jsp"/>
+        </action>
+
+        <!-- Save search -->
+        <action
+            path="/viewer/savesearch"
+            name="saveSearchActionForm"
+            input="/iportal/activePortal/viewer/savesearch.jsp"
+            scope="session"
+            type="com.actuate.activeportal.actions.AcSaveSearchAction" validate="false">
+			<forward name="success" path="/iportal/activePortal/viewer/requestsearch.jsp"/>
+			<forward name="browse" path="/browsefile.do" />
+        </action>
+
+        <!-- Manage my pages -->
+        <action
+            path="/managemypages"
+            name="manageMyPagesActionForm"
+            scope="request"
+            type="com.actuate.activeportal.actions.AcManageMyPagesAction" validate="false">
+			<forward name="success" path="/iportal/activePortal/private/mypage/managemypages.jsp"/>
+        </action>
+
+        <!-- Sample Requester -->
+        <!--
+        <action
+            path="/samplerequester"
+            scope="request"
+            type="sample.AcSampleRequesterAction" validate="false">
+			<forward name="parameter" path="/iportal/activePortal/private/sample/samplerequester.jsp" />
+        </action>
+        -->
+
+    </action-mappings>
+	<!-- Message Resources -->
+	<message-resources parameter="com.actuate.activeportal.resources.ActivePortalResources" null="false"/>
+	<message-resources key="iportalResources" parameter="com.actuate.activeportal.resources.ActivePortalResources"
+	null="false"/>
+
+
+</struts-config>
+

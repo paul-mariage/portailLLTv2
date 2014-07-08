@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	The configuration file is used to enable/disable render options and change their default values.
+	The "name" and "default" field are required, and the "enabled" field is optional. If unset, it will be true by default.
+	The "enabled" option is stored in ConfigurableOption, and can be accessed via IConfigurableOption.isEnabled().
+	If the old configuration file RenderDefaults.cfg/RenderOptions.xml is also present in config plugin jar, 
+	this file will override the default values in RenderDefaults.cfg/RenderOptions.xml.
+ -->
+<!-- The following is a sample. Uncomment the desired option to activate the configuration --> 
+<RenderOptions>
+	<!-- Enables the emitter. Set to "false" will hide this emitter in export content dialog. -->
+<!--
+	<emitter enabled="true"/>
+-->
+<!--
+	<option name="excelRenderOption.wrappingText" default="true" enabled="true"/>
+	<option name="ChartDpi" default="192" enabled="true"/>
+	<option name="excelRenderOption.ExportChartsAsImages" default="false" enabled="true"/>
+	<option name="excelRenderOption.EnableLiveFormula" default="true" enabled="true"/>
+	<option name="excelRenderOption.hideGridlines" default="false" enabled="true"/>
+	<option name="excelRenderOption.multipleSheet" default="true" enabled="true"/>
+	<option name="excelRenderOption.AutoFitPivotTable" default="true" enabled="true"/>
+	<option name="excelRenderOption.EnablePivotTable" default="true" enabled="true"/>
+-->
+</RenderOptions>

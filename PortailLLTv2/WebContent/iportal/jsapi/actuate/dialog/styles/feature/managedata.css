@@ -1,0 +1,495 @@
+/* Copyright 1994-2009, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+
+/******************************************************************************
+ * Manage Data Dialog Styles
+ *****************************************************************************/
+
+.actuate-managedata-description-panel .actuate-widget-panel-body {
+	color: black;
+	padding: 5px 5px 5px 5px;
+	border-bottom: 1px solid white; 
+}
+
+/*  border-color: #D6DEE2*/
+
+/*
+ * Main panel
+ */
+.actuate-managedata-main-panel .actuate-widget-panel-body {
+	border: 0px;
+}
+
+.actuate-managedata-main-panel .actuate-widget-border-layout-ct {
+	background-color: white;
+	background-image: none;
+}
+
+
+/******************************************************************************
+ * Category list
+ *****************************************************************************/
+
+.actuate-managedata-category-panel .actuate-widget-panel-body {
+	background-color: #F4F4F4;
+}
+
+.actuate-managedata-category-list,
+.actuate-managedata-category-list .actuate-list-inner {
+	background-color: transparent !important;
+	border-style: none !important;
+}
+
+.actuate-managedata-category-list .actuate-list-item,
+.actuate-managedata-category-list .actuate-list-selected {
+	color: #3B444D !important;
+	background-color: transparent !important;
+	text-decoration: none;	
+	padding: 8px 0px 8px 0px !important;
+	border-style: none !important;
+	white-space: normal !important;
+}
+
+.actuate-managedata-category-list .actuate-list-item-text
+{
+	float: left;
+}
+
+/*
+.actuate-managedata-category-list .actuate-list-selected {
+	font-weight: bold;
+}
+*/
+
+.actuate-managedata-category-list .actuate-dir-list-icon-parent {
+	background: transparent url(../../images/arrow.png) no-repeat;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-left: 4px;
+	padding-right: 5px;
+}
+
+#actuateDataManagerDialogDirectoryList .actuate-tree-node-icon{
+	width: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	visibility: hidden;
+}
+
+#actuateDataManagerDialogDirectoryList .actuate-tree-selected{
+	background-color:#3399FF
+}
+
+
+.actuate-managedata-category-list .actuate-dir-list-icon-root {
+	float: left;
+	width: 6px;
+	height: 16px;	
+}
+
+/******************************************************************************
+ * Data selection lists
+ *****************************************************************************/
+ 
+.actuate-managedata-data-panel .actuate-widget-panel-body {
+	border: none;
+}
+
+.actuate-managedata-data-list-panel .actuate-widget-panel-body {
+	border: 1px solid #D0D0D0;		
+}
+.actuate-managedata-category-panel{
+	border: 1px solid #D0D0D0;
+	border-right-width:0px;
+}
+.actuate-managedata-data-list-panel .actuate-widget-panel-header {
+	background-image: none;
+	border-style: none;
+	font-weight: normal;
+	color: black;
+}
+
+
+.actuate-managedata-data-list {
+	border-style: none !important;
+}	
+
+.actuate-managedata-data-list .actuate-list-hd {
+	background: none !important;	
+	font-weight: normal;
+	color: black;
+	border-style: none !important;
+}
+
+.actuate-managedata-data-list .actuate-icon-datamart {
+	background: transparent url(../../images/datamart.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;	
+}
+
+.actuate-managedata-data-list .actuate-icon-file-datadesign {
+	background: transparent url(../../images/file_icon_types_file-data-design.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;	
+}
+
+.actuate-managedata-data-list .actuate-icon-file-data {
+	background: transparent url(../../images/file_icon_types_file-data.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;	
+}
+
+.actuate-managedata-data-list .actuate-icon-add {
+	background: transparent url(../../images/icon-add-green.png) no-repeat;
+	cursor: pointer;
+	float:right;
+	width: 16px;
+	height: 16px;
+	padding-right: 15px;
+}
+
+.actuate-managedata-data-list .actuate-icon-parameter-list,
+.actuate-managedata-data-list .actuate-icon-parameter-list-disabled,
+.actuate-managedata-data-list .actuate-icon-parameter-list-hidden
+{
+	background: transparent url(../../images/parameter.png) no-repeat;
+	cursor: pointer;
+	float:left;
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+}
+
+.actuate-list-selected .actuate-icon-parameter-list
+{
+	background: transparent url(../../images/parameter_selected.png) no-repeat;
+}	
+
+.actuate-managedata-data-list .actuate-icon-remove,
+.actuate-managedata-data-list .actuate-icon-remove-disabled	
+{
+	background: transparent url(../../images/icon-x-red.png) no-repeat;
+	cursor: pointer;
+	float:right;
+	width: 16px;
+	height: 16px;
+	padding-right: 15px;
+}
+ .actuate-icon-syncMetaData,
+ .actuate-icon-syncMetaData-disabled	
+ {
+ 	background: transparent url(../../images/icon-ygg-refresh-default.png) no-repeat;
+ 	cursor: pointer;	
+ 	float: right;
+ 	width: 16px !important;
+ 	height: 16px !important;
+ 	border: none;
+ }
+ 
+ .actuate-icon-leftMetaData
+ {
+    background: transparent url("../../images/greenbutton-arrow-left.png")no-repeat;
+    width: 39px !important;
+ 	height: 79px !important;
+ 	border: medium none;
+ }
+ .actuate-icon-rightMetaData
+ {
+    background: transparent url("../../images/greenbutton-arrow-right.png")no-repeat ;
+    width: 39px !important;
+ 	height: 100px !important;
+ 	border: medium none;
+ }
+.actuate-managedata-data-list .actuate-icon-expand {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: transparent url(../../../widget/themes/classic/images/icon-angle-right.png) no-repeat;
+	cursor: pointer;
+}
+
+.actuate-managedata-data-list .actuate-list-selected .actuate-icon-expand {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: transparent url(../../../widget/themes/classic/images/icon-angle-right-white.png) no-repeat;
+	cursor: pointer;
+}
+
+.actuate-managedata-data-list .actuate-icon-expanded {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: transparent url(../../../widget/themes/classic/images/icon-angle-down.png) no-repeat;
+	cursor: pointer;
+}
+
+.actuate-managedata-data-list .actuate-list-selected .actuate-icon-expanded {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: transparent url(../../../widget/themes/classic/images/icon-angle-down-white.png) no-repeat;
+	cursor: pointer;
+}
+
+.actuate-managedata-data-list .actuate-access-type {
+	float: left;
+	color: #8F8F8F;
+	width: 40px;
+}
+
+.actuate-managedata-data-list .actuate-access-type-arrow,
+.actuate-managedata-data-list .actuate-access-type-arrow-disabled
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: transparent url(../../images/dropdown-arrow.png) no-repeat;
+	margin-left: 16px;
+	cursor: pointer;	
+}
+
+.actuate-managedata-data-list .actuate-access-type-arrow-disabled,
+.actuate-managedata-data-list .actuate-icon-remove-disabled,
+.actuate-managedata-data-list .actuate-icon-update-disabled,
+.actuate-managedata-data-list .actuate-icon-parameter-list-hidden
+{
+	cursor: default;
+	background: none;
+}
+
+.actuate-managedata-data-list .actuate-icon-parameter-list-disabled
+{
+	cursor: default;
+	-moz-opacity: 0.5;
+   	opacity:.5;
+   	filter: alpha(opacity=50);
+}
+
+.actuate-managedata-data-list .actuate-data-entry {
+	float: left;
+	padding-left: 5px;
+	width: 150px;		
+}
+	
+.actuate-managedata-data-list .actuate-list-item {
+	cursor: default;
+	text-decoration: none;	
+	border: none !important;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom: 0px solid #EEEDE5 !important;
+	background-color: white;
+	color: inherit;
+	padding: 2px 0px 0px 0px !important;
+}
+
+.actuate-managedata-data-list .actuate-list-selected {
+	cursor: default;
+	text-decoration: none;	
+	border: none !important;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom: 0px solid #EEEDE5 !important;
+	background: none repeat scroll 0 0 #464646 !important;
+    color: white !important;
+	padding: 2px 0px 0px 0px !important;
+}
+
+.actuate-managedata-data-list .actuate-list-over
+{
+	cursor: default;
+	text-decoration: none;	
+	border: none !important;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom: 0px solid #EEEDE5 !important;
+	background: none repeat scroll 0 0 #dddddd;
+    color: black;
+	padding: 2px 0px 0px 0px !important;
+}
+/******************************************************************************
+ * Data details panel
+ *****************************************************************************/
+
+.actuate-managedata-data-list .actuate-managedata-data-details {
+	clear: both;
+	background-color: white !important;
+	padding: 8px 14px 0px 14px;	
+}
+.actuate-managedata-data-list{
+	 font: 16px 'Source Sans Pro',tahoma,arial,helvetica,sans-serif;
+	 font-weight: 500;
+	 color: #353535;
+}
+.actuate-managedata-data-list .actuate-managedata-data-details .actuate-widget-panel-body {
+	background-color: white !important;
+	padding-left: 20px;
+	overflow-x: hidden !important;
+    overflow-y: auto !important;
+} 
+
+.actuate-managedata-details-list .actuate-icon-cube {
+	background: transparent url(../../images/cube/cube.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;	
+}
+
+.actuate-managedata-details-list .actuate-icon-dataset {
+	background: transparent url(../../images/data_set.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;
+}
+
+.actuate-managedata-details-list .actuate-icon-linkeddataset {
+	background: transparent url(../../images/linkeddataset.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;
+}
+
+.actuate-managedata-details-list .actuate-icon-parameter {
+	background: transparent url(../../images/parameter.png) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;	
+}
+
+.actuate-managedata-data-details .actuate-list,
+.actuate-managedata-data-details .actuate-list-inner,
+.actuate-managedata-details-list .actuate-list-item {
+	border-style: none !important;
+	background-color: transparent !important;
+	white-space: normal !important;	
+}
+
+.actuate-managedata-details-list .actuate-data-name,
+.actuate-managedata-details-list .actuate-data-name-hd
+{
+	float: left;
+	width: 100px;
+	padding-left: 5px;
+	color: #353535;
+	white-space:nowrap;
+}
+
+.actuate-data-cube,
+.actuate-data-dataset,
+.actuate-data-linkeddataset
+{
+	cursor: pointer;
+	text-decoration: underline;	
+}
+	
+.actuate-managedata-details-list .actuate-data-name-hd
+{
+	padding-left: 21px;
+	color: black; 
+}
+	
+.actuate-managedata-details-list .actuate-data-type-hd
+{
+	float: left;
+}
+
+.actuate-managedata-description-label,
+.actuate-managedata-data-list .actuate-data-entry-break
+{
+	float:left;
+	white-space:nowrap;	
+	overflow :hidden;
+}
+.actuate-managedata-details-list .actuate-data-type
+{
+	color: #8F8F8F;
+	float: left;
+}
+
+/** Global values for all lists inside this dialog **/
+.actuate-managedata-data-list .actuate-list-item,
+.actuate-managedata-data-list .actuate-list-item-selected,
+.actuate-managedata-category-list .actuate-list-item,
+.actuate-managedata-category-list .actuate-list-item-selected,
+.actuate-managedata-details-list .actuate-list-item,
+.actuate-managedata-details-list .actuate-list-item-selected
+{
+	white-space: normal !important;
+	line-height: normal;
+	height: auto !important;	
+}
+
+/*
+	IE6 is broken as usual and needs the height to have a fixed value,
+	else the layout will be broken.
+*/
+.actuate-browser-ie6 .actuate-managedata-data-list div.actuate-list-item,
+.actuate-browser-ie6 .actuate-managedata-data-list div.actuate-list-item-selected
+{
+	height: 16px !important;
+}
+
+/*
+  IE6: Remove focus rectangle from selection
+*/
+.actuate-browser-ie6 .actuate-managedata-data-list div.actuate-list-selected
+{
+	border-top: 0px none !important;
+	border-left: 0px none !important;
+	border-right: 0px none !important;
+}
+
+#actuateDataManagerDialogDirectoryList .actuate-tree-node-disabled .actuate-tree-ec-icon{
+	-moz-opacity: 0.5;
+   opacity:.5;
+   filter: alpha(opacity=50);
+}
+	
+
+.actuate-browser-ie6 .actuate-managedata-data-list div.actuate-list-item-expanded
+{
+	height: auto !important;
+}
+
+/*
+  Required by IE6, IE7 and IE8compat to prevent the panel body to float when scrolling.
+*/
+.actuate-browser-ie .actuate-managedata-data-list .actuate-managedata-data-details .actuate-widget-panel-body {
+	position: static;
+}
+
+.actuate-managedatadialog-left{
+	padding: 00px 3px 4px 2px;
+}
+
+.actuate-managedatadialog-right{
+	padding: 90px 3px 4px 2px;
+}
+
+.actuate-managedatadialog-left .actuate-widget-btn-center .actuate-widget-btn-text,
+.actuate-managedatadialog-right .actuate-widget-btn-center .actuate-widget-btn-text{
+	width: 39px;
+	height: 79px;
+}
+
+.actuate-managedatadialog-left .actuate-widget-btn-left, 
+.actuate-managedatadialog-left .actuate-widget-btn-right,
+.actuate-managedatadialog-left .actuate-widget-btn-center,
+.actuate-managedatadialog-right .actuate-widget-btn-left, 
+.actuate-managedatadialog-right .actuate-widget-btn-right,
+.actuate-managedatadialog-right .actuate-widget-btn-center{
+	background: none !important;
+	border: none !important;
+} 

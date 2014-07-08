@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VolumeProfiles>
+<!--
+This VolumeProfile contains several <Profile> tags.  In each <profile> tag, 
+<ProfileName> is the name of this profile.
+<RepositoryType>: allow two values - enterprise, workgroup.
+<ServerUrl> contains server url, for example, http://server1:8000.  If repositorytype is workgroup,
+serverUrl will be ignored.
+<volume> is the volume name.  If repositoryType is workgroup, volume will be ignored.
+<Default> is optional. Valid values: true, false.  You can have only one default tag set to true.
+If iportal request url does not contain serverurl, volume, repositorytype inforamtion, 
+iPortal uses this default profile for the request url.  
+If there are no default profile defined, SERVER_DEFAULT, DEFAULT_VOLUME, and REPOSITORY_TYPE defined in 
+WEB-INF/web.xml will be used as the default values for serverurl, volume, and repositorytype.  In this case,
+a randomly generated name will be used as a temporary name for default profile.  
+
+If iportal request contains serverurl, repositorytype, volume that is not defined in this file, 
+a temporary profile name will be created for this set of volume property.  
+A temporary name is not persitent and will be lost every time when iportal restarts.
+-->
+
+<!-- examples: -->
+<!-- 
+    <Profile>
+    	<Default>true</Default>
+    	<ProfileName>profile1</ProfileName>
+        <ServerUrl>http://serverName:port</ServerUrl>
+        <Volume>volumeName</Volume>
+        <RepositoryType>Enterprise</RepositoryType>
+    </Profile>
+    <Profile>
+    	<ProfileName>profile2</ProfileName>
+        <RepositoryType>workgroup</RepositoryType>
+    </Profile>
+-->
+
+    <Profile>
+      <Default>true</Default>
+      <ProfileName>workgroup</ProfileName>
+      <RepositoryType>workgroup</RepositoryType>
+    </Profile>
+</VolumeProfiles>
+

@@ -1,0 +1,718 @@
+/* Copyright 1994-2006, Actuate Software Corp., All rights reserved. */
+
+@CHARSET "ISO-8859-1";
+
+/******************************************************************************
+ *	Shared Dialog Styles
+ *****************************************************************************/
+ 
+.actuate_shared_resource .dialogLabelFont
+{
+	font: 12px/16px 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_shared_resource .dialog_default_button
+{
+	background-color:#ffffff;
+	border-style:solid;
+	border-color: #528CC5;
+	border-width:1px;
+	cursor: pointer;
+	font-size		: 8pt;
+ 	font-family		: tahoma,verdana,arial,sans-serif;
+ 	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_new_data_image
+{
+	background-image: url('../images/new_data.png');
+}
+
+.actuate_data_set_image
+{
+	background-image: url('../images/data_set.png') !important;
+}
+
+.actuate-tree-selected .actuate_data_set_image
+{
+	background-image: url('../images/data_set_white.png') !important;
+}
+
+.actuate_cube_image
+{
+	background-image: url('../images/cube/cube.png') !important;
+}
+
+.actuate-tree-selected .actuate_cube_image
+{
+	background-image: url('../images/cube/cube-white.png') !important;
+}	
+
+.actuate_linkeddataset_image
+{
+	background-image: url('../images/linkeddataset.png') !important;
+}
+
+.actuate-tree-selected .actuate_linkeddataset_image
+{
+	background-image: url('../images/linkeddataset-white.png') !important;
+}
+
+.actuate_linkedcube_image
+{
+	background-image: url('../images/linkeddataset.png') !important;
+}
+
+.actuate-tree-selected .actuate_linkedcube_image
+{
+	background-image: url('../images/linkeddataset-white.png') !important;
+}
+
+
+.actuate_attribute_image
+{
+	background-image: url('../images/cube/attribute.png') !important;
+}
+
+.actuate-tree-selected .actuate_attribute_image
+{
+	background-image: url('../images/cube/attribute-white.png') !important;
+}
+
+.actuate_shared_dimension_image
+{
+	background-image: url('../images/cube/shared_dimension.png') !important;
+}	
+
+.actuate_reportlibrary_image
+{
+	background-image: url('../images/reportlibrary.gif');
+}	
+
+.actuate_parameter_image
+{
+	background-image: url('../images/parameter.png');
+}
+
+.actuate_dimension_image
+{
+	background-image: url('../images/cube/dimension.png') !important;
+}
+
+.actuate-tree-selected .actuate_dimension_image
+{
+	background-image: url('../images/cube/dimension-white.png') !important;
+}
+
+.actuate_level_image
+{
+	background-image: url('../images/cube/level.png') !important;
+}
+
+.actuate-tree-selected .actuate_level_image
+{
+	background-image: url('../images/cube/level-white.png') !important;
+}
+
+.actuate_measure_image
+{
+	background-image: url('../images/cube/measure.png') !important;
+}
+
+ .actuate-list-selected .actuate_data_column_image
+ {
+ 	background-image: url("../images/column-white.png") !important;
+ }
+ 
+.actuate-tree-selected .actuate_measure_image
+{
+	background-image: url('../images/cube/measure-white.png') !important;
+}
+
+.actuate_data_column_image, 
+.actuate_data_column_string_image, 
+.actuate_data_column_number_image 
+{
+	background-image: url('../images/column.png') !important;
+}
+
+.actuate-tree-selected .actuate_data_column_image, 
+.actuate-tree-selected .actuate_data_column_string_image, 
+.actuate-tree-selected .actuate_data_column_number_image 
+{
+	background-image: url('../images/column-white.png') !important;
+}	
+
+.actuate_data_none_image 
+{
+	visibility: hidden;
+}	
+
+.actuate_folder_image
+{
+	background-image: url('../images/folder16.png');
+}
+
+.actuate-tree-node-collapsed .actuate-tree-node-icon
+{
+	background-image: url('../images/folderClose16.png');
+}
+
+ .actuate_column_image
+{
+	background-image: url('../images/column.png') !important;
+}
+
+.actuate-tree-selected .actuate_column_image
+{
+	background-image: url('../images/column-white.png') !important;
+}
+
+.actuateCSSSprite_dialog
+{
+	background-image  : url('../images/dialog.png');
+	background-color  : transparent;
+	border-style: none;
+}
+
+.actuate-iv-dialog .helpLinkButtonPosition
+{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 22px;
+	height: 17px;
+	margin-bottom: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.actuate-iv-dialog .helpLinkButtonPosition .actuate-widget-btn-left, .actuate-iv-dialog .helpLinkButtonPosition .actuate-widget-btn-right
+{
+	background:0;
+	height: 0px;
+	width : 0px;
+}/******************************************************************************
+ *	Copyright (c) 2004 Actuate Corporation and others.
+ *	All rights reserved. This program and the accompanying materials 
+ *	are made available under the terms of the Eclipse Public License v1.0
+ *	which accompanies this distribution, and is available at
+ *	http://www.eclipse.org/legal/epl-v10.html
+ *	
+ *	Contributors:
+ *		Actuate Corporation - Initial implementation.
+ *****************************************************************************/
+@CHARSET "ISO-8859-1";
+
+/******************************************************************************
+ * firstload.png
+ ******************************************************************************/
+.actuateIV_BrsEdit{ background-position: 0 0; width: 32px; height: 32px; } 
+.actuateIV_BrsEdit_over{ background-position: 0 -34px; width: 32px; height: 32px; } 
+.actuateIV_Close{ background-position: 0 -68px; width: 14px; height: 14px; } 
+.actuateIV_Collapse{ background-position: 0 -84px; width: 9px; height: 9px; } 
+.actuateIV_Expand{ background-position: 0 -95px; width: 9px; height: 9px; } 
+.actuateIV_Export{ background-position: 0 -106px; width: 16px; height: 16px; } 
+.actuateIV_ExportReport{ background-position: 0 -124px; width: 16px; height: 16px; } 
+.actuateIV_ExportReport_disabled{ background-position: 0 -142px; width: 16px; height: 16px; } 
+.actuateIV_Export_disabled{ background-position: 0 -160px; width: 16px; height: 16px; } 
+.actuateIV_Facebook_enable{ background-position: 0 -178px; width: 18px; height: 18px; } 
+.actuateIV_Hide_margin{ background-position: 0 -198px; width: 16px; height: 16px; } 
+.actuateIV_Hide_show_item{ background-position: 0 -216px; width: 16px; height: 16px; } 
+.actuateIV_Hide_show_item_disabled{ background-position: 0 -234px; width: 16px; height: 16px; } 
+.actuateIV_Interactive_viewer{ background-position: 0 -252px; width: 16px; height: 16px; } 
+.actuateIV_Interactive_viewer_disabled{ background-position: 0 -270px; width: 16px; height: 16px; } 
+.actuateIV_Launch_viewer{ background-position: 0 -288px; width: 16px; height: 16px; } 
+.actuateIV_Link_to_pg{ background-position: 0 -306px; width: 16px; height: 16px; } 
+.actuateIV_MOB_Close{ background-position: 0 -324px; width: 35px; height: 30px; } 
+.actuateIV_MOB_File{ background-position: 0 -356px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Redo{ background-position: 0 -388px; width: 35px; height: 30px; } 
+.actuateIV_MOB_TOC{ background-position: 0 -420px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Undo{ background-position: 0 -452px; width: 35px; height: 30px; } 
+.actuateIV_MOB_openRecent{ background-position: 0 -484px; width: 35px; height: 30px; } 
+.actuateIV_Parameter{ background-position: 0 -516px; width: 13px; height: 16px; } 
+.actuateIV_Parameter_disabled{ background-position: 0 -534px; width: 13px; height: 16px; } 
+.actuateIV_Print{ background-position: 0 -552px; width: 16px; height: 16px; } 
+.actuateIV_Print_disabled{ background-position: 0 -570px; width: 16px; height: 16px; } 
+.actuateIV_Save{ background-position: 0 -588px; width: 16px; height: 16px; } 
+.actuateIV_Save_disabled{ background-position: 0 -606px; width: 16px; height: 16px; } 
+.actuateIV_Show_margin{ background-position: 0 -624px; width: 16px; height: 16px; } 
+.actuateIV_Toc{ background-position: 0 -642px; width: 14px; height: 16px; } 
+.actuateIV_Toc_disabled{ background-position: 0 -660px; width: 14px; height: 16px; } 
+.actuateIV_Toc_mob{ background-position: 0 -678px; width: 32px; height: 23px; } 
+.actuateIV_back_mob{ background-position: 0 -703px; width: 68px; height: 29px; } 
+.actuateIV_collapsexpand{ background-position: 0 -734px; width: 9px; height: 9px; } 
+.actuateIV_disable_brsEdit{ background-position: 0 -745px; width: 32px; height: 32px; } 
+.actuateIV_divider{ background-position: 0 -779px; width: 2px; height: 30px; } 
+.actuateIV_first{ background-position: 0 -811px; width: 16px; height: 16px; } 
+.actuateIV_first_disabled{ background-position: 0 -829px; width: 16px; height: 16px; } 
+.actuateIV_first_mob{ background-position: 0 -847px; width: 32px; height: 23px; } 
+.actuateIV_first_over{ background-position: 0 -872px; width: 16px; height: 16px; } 
+.actuateIV_h2_bg{ background-position: 0 -890px; width: 7px; height: 7px; } 
+.actuateIV_icon-back1{ background-position: 0 -899px; width: 36px; height: 30px; } 
+.actuateIV_last{ background-position: 0 -931px; width: 16px; height: 16px; } 
+.actuateIV_last_disabled{ background-position: 0 -949px; width: 16px; height: 16px; } 
+.actuateIV_last_mob{ background-position: 0 -967px; width: 32px; height: 23px; } 
+.actuateIV_last_over{ background-position: 0 -992px; width: 16px; height: 16px; } 
+.actuateIV_logo{ background-position: 0 -1010px; width: 116px; height: 22px; } 
+.actuateIV_next{ background-position: 0 -1034px; width: 16px; height: 16px; } 
+.actuateIV_next_disabled{ background-position: 0 -1052px; width: 16px; height: 16px; } 
+.actuateIV_next_mob{ background-position: 0 -1070px; width: 32px; height: 23px; } 
+.actuateIV_next_over{ background-position: 0 -1095px; width: 16px; height: 16px; } 
+.actuateIV_prev{ background-position: 0 -1113px; width: 16px; height: 16px; } 
+.actuateIV_prev_disabled{ background-position: 0 -1131px; width: 16px; height: 16px; } 
+.actuateIV_prev_mob{ background-position: 0 -1149px; width: 32px; height: 23px; } 
+.actuateIV_prev_over{ background-position: 0 -1174px; width: 16px; height: 16px; } 
+.actuateIV_redo{ background-position: 0 -1192px; width: 32px; height: 32px; } 
+.actuateIV_redo_disabled{ background-position: 0 -1226px; width: 16px; height: 16px; } 
+.actuateIV_redo_mob{ background-position: 0 -1244px; width: 32px; height: 23px; } 
+.actuateIV_redo_over{ background-position: 0 -1269px; width: 32px; height: 32px; } 
+.actuateIV_start{ background-position: 0 -1303px; width: 32px; height: 32px; } 
+.actuateIV_start_active{ background-position: 0 -1337px; width: 32px; height: 32px; } 
+.actuateIV_start_disable{ background-position: 0 -1371px; width: 32px; height: 32px; } 
+.actuateIV_start_mob{ background-position: 0 -1405px; width: 32px; height: 22px; } 
+.actuateIV_start_over{ background-position: 0 -1429px; width: 32px; height: 32px; } 
+.actuateIV_toolbarHelp{ background-position: 0 -1463px; width: 16px; height: 16px; } 
+.actuateIV_undo{ background-position: 0 -1481px; width: 32px; height: 32px; } 
+.actuateIV_undo_disabled{ background-position: 0 -1515px; width: 16px; height: 16px; } 
+.actuateIV_undo_mob{ background-position: 0 -1533px; width: 32px; height: 23px; } 
+.actuateIV_undo_over{ background-position: 0 -1558px; width: 32px; height: 32px; } 
+
+/******************************************************************************
+ * view.gif
+ ******************************************************************************/
+.actuateIV_parameterrun{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_disabled{ background-position: 0 -18px; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_over{ background-position: 0 -36px; width: 16px; height: 16px; } 
+.actuateIV_parameterrun_running{ background-position: 0 -54px; width: 16px; height: 16px; }  
+.actuateIV_tocclose{ background-position: 0 -108px; width: 16px; height: 16px; } 
+.actuateIV_toccollapse{ background-position: 0 -126px; width: 12px; height: 12px; } 
+.actuateIV_tocexpand{ background-position: 0 -140px; width: 12px; height: 12px; } 
+.actuateIV_tocleaf{ background-position: 0 -154px; width: 16px; height: 16px; } 
+.actuateIV_tocleaf_active{ background-position: 0 -172px; width: 16px; height: 16px; } 
+
+/******************************************************************************
+ * selection.png
+ ******************************************************************************/
+.actuateIV_A_transparent{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_Add_group{ background-position: 0 -66px; width: 16px; height: 16px; } 
+.actuateIV_Add_group_active{ background-position: 0 -132px; width: 16px; height: 16px; } 
+.actuateIV_Advance_sort{ background-position: 0 -198px; width: 17px; height: 16px; } 
+.actuateIV_Aggregate{ background-position: 0 -264px; width: 16px; height: 16px; } 
+.actuateIV_Aggregate_active{ background-position: 0 -330px; width: 16px; height: 16px; } 
+.actuateIV_Align_center{ background-position: 0 -396px; width: 16px; height: 16px; } 
+.actuateIV_Align_center_active{ background-position: 0 -462px; width: 16px; height: 16px; } 
+.actuateIV_Align_center_active{ background-position: 0 -528px; width: 16px; height: 16px; } 
+.actuateIV_Align_left{ background-position: 0 -594px; width: 16px; height: 16px; } 
+.actuateIV_Align_left_active{ background-position: 0 -660px; width: 16px; height: 16px; } 
+.actuateIV_Align_right{ background-position: 0 -726px; width: 16px; height: 16px; } 
+.actuateIV_Align_right_active{ background-position: 0 -792px; width: 16px; height: 16px; } 
+.actuateIV_Apply{ background-position: 0 -858px; width: 16px; height: 16px; } 
+.actuateIV_Apply_view{ background-position: 0 -924px; width: 16px; height: 16px; } 
+.actuateIV_Calculation{ background-position: 0 -990px; width: 16px; height: 16px; } 
+.actuateIV_Calculation_active{ background-position: 0 -1056px; width: 16px; height: 16px; } 
+.actuateIV_Copy_format{ background-position: 0 -1122px; width: 16px; height: 16px; } 
+.actuateIV_Copy_style{ background-position: 0 -1188px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer{ background-position: 0 -1254px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer_active{ background-position: 0 -1320px; width: 16px; height: 16px; } 
+.actuateIV_DataAnalyzer_over{ background-position: 0 -1386px; width: 16px; height: 16px; } 
+.actuateIV_Delete{ background-position: 0 -1452px; width: 16px; height: 16px; } 
+.actuateIV_Delete{ background-position: 0 -1518px; width: 16px; height: 16px; } 
+.actuateIV_Delete_active{ background-position: 0 -1584px; width: 16px; height: 16px; } 
+.actuateIV_Delete_group{ background-position: 0 -1650px; width: 16px; height: 16px; } 
+.actuateIV_EditCalculation{ background-position: 0 -1716px; width: 15px; height: 16px; } 
+.actuateIV_Filter_disabled{ background-position: 0 -1782px; width: 16px; height: 16px; } 
+.actuateIV_Format_data{ background-position: 0 -1848px; width: 16px; height: 16px; } 
+.actuateIV_Format_data_active{ background-position: 0 -1914px; width: 16px; height: 16px; } 
+.actuateIV_Format_data_disabled{ background-position: -67px 0; width: 16px; height: 16px; } 
+.actuateIV_Format_font{ background-position: -67px -66px; width: 15px; height: 16px; } 
+.actuateIV_Format_font{ background-position: -67px -132px; width: 16px; height: 16px; } 
+.actuateIV_Format_font_active{ background-position: -67px -198px; width: 16px; height: 16px; } 
+.actuateIV_Hide_column{ background-position: -67px -264px; width: 16px; height: 16px; } 
+.actuateIV_Invoke{ background-position: -67px -330px; width: 16px; height: 16px; } 
+.actuateIV_Invoke_bg{ background-position: -67px -396px; width: 32px; height: 30px; } 
+.actuateIV_Invoke_disabled{ background-position: -67px -476px; width: 16px; height: 16px; } 
+.actuateIV_MOB_Chart-Type{ background-position: -67px -542px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Filter{ background-position: -67px -622px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Format_Data{ background-position: -67px -702px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Object{ background-position: -67px -782px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Sort-Ascending{ background-position: -67px -862px; width: 35px; height: 30px; } 
+.actuateIV_MOB_Sort-Descending{ background-position: -67px -942px; width: 35px; height: 30px; } 
+.actuateIV_More_on16{ background-position: -67px -1022px; width: 16px; height: 16px; } 
+.actuateIV_Move_column{ background-position: -67px -1088px; width: 16px; height: 16px; } 
+.actuateIV_Move_to_left{ background-position: -67px -1154px; width: 16px; height: 16px; } 
+.actuateIV_Move_to_right{ background-position: -67px -1220px; width: 16px; height: 16px; } 
+.actuateIV_Page_break{ background-position: -67px -1286px; width: 16px; height: 16px; } 
+.actuateIV_PrintServer{ background-position: -67px -1352px; width: 16px; height: 16px; } 
+.actuateIV_Reorder_columns{ background-position: -67px -1418px; width: 16px; height: 16px; } 
+.actuateIV_Show_all_columns{ background-position: -67px -1484px; width: 16px; height: 16px; } 
+.actuateIV_SortMenu16{ background-position: -67px -1550px; width: 16px; height: 16px; } 
+.actuateIV_SortMenu16_active{ background-position: -67px -1616px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending{ background-position: -67px -1682px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending_active{ background-position: -67px -1748px; width: 16px; height: 16px; } 
+.actuateIV_Sort_ascending_disabled{ background-position: -67px -1814px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending{ background-position: -67px -1880px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending_active{ background-position: -67px -1946px; width: 16px; height: 16px; } 
+.actuateIV_Sort_descending_disabled{ background-position: -152px 0; width: 16px; height: 16px; } 
+.actuateIV_Switch_view{ background-position: -152px -66px; width: 16px; height: 16px; } 
+.actuateIV_Text{ background-position: -152px -132px; width: 16px; height: 16px; } 
+.actuateIV_Text_disabled{ background-position: -152px -198px; width: 16px; height: 16px; } 
+.actuateIV_align16{ background-position: -152px -264px; width: 16px; height: 16px; } 
+.actuateIV_arrow__r{ background-position: -152px -330px; width: 6px; height: 9px; } 
+.actuateIV_arrow__r_active{ background-position: -152px -389px; width: 6px; height: 9px; } 
+.actuateIV_button_arrow_bg{ background-position: -152px -448px; width: 19px; height: 27px; } 
+.actuateIV_button_bg{ background-position: -152px -525px; width: 27px; height: 27px; } 
+.actuateIV_button_bg_gr{ background-position: -152px -602px; width: 27px; height: 27px; } 
+.actuateIV_calculation16{ background-position: -152px -679px; width: 16px; height: 16px; } 
+.actuateIV_calculation16_active{ background-position: -152px -745px; width: 16px; height: 16px; } 
+.actuateIV_chartFlash16{ background-position: -152px -811px; width: 16px; height: 16px; } 
+.actuateIV_chartFlash16_active{ background-position: -152px -877px; width: 16px; height: 16px; } 
+.actuateIV_chartHTML516{ background-position: -152px -943px; width: 16px; height: 16px; } 
+.actuateIV_chartHTML516_active{ background-position: -152px -1009px; width: 16px; height: 16px; } 
+.actuateIV_chart_format{ background-position: -152px -1075px; width: 16px; height: 16px; } 
+.actuateIV_chart_format_active{ background-position: -152px -1141px; width: 16px; height: 16px; } 
+.actuateIV_column_width{ background-position: -152px -1207px; width: 16px; height: 16px; } 
+.actuateIV_column_width_active{ background-position: -152px -1273px; width: 16px; height: 16px; } 
+.actuateIV_conditional_format{ background-position: -152px -1339px; width: 16px; height: 16px; } 
+.actuateIV_do_not_repeat{ background-position: -152px -1405px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories{ background-position: -152px -1471px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_active{ background-position: -152px -1537px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_disabled{ background-position: -152px -1603px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Categories_over{ background-position: -152px -1669px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series{ background-position: -152px -1735px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_active{ background-position: -152px -1801px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_disabled{ background-position: -152px -1867px; width: 16px; height: 16px; } 
+.actuateIV_drill_down_from_Series_over{ background-position: -152px -1933px; width: 16px; height: 16px; } 
+.actuateIV_filter16{ background-position: -237px 0; width: 16px; height: 16px; } 
+.actuateIV_filter16_active{ background-position: -237px -66px; width: 16px; height: 16px; } 
+.actuateIV_font16{ background-position: -237px -132px; width: 16px; height: 16px; } 
+.actuateIV_font16_active{ background-position: -237px -198px; width: 16px; height: 16px; } 
+.actuateIV_groupDelete16{ background-position: -237px -264px; width: 16px; height: 16px; } 
+.actuateIV_groupDelete16_active{ background-position: -237px -330px; width: 16px; height: 16px; } 
+.actuateIV_help16{ background-position: -237px -396px; width: 16px; height: 16px; } 
+.actuateIV_help16_active{ background-position: -237px -462px; width: 16px; height: 16px; } 
+.actuateIV_hide_detail{ background-position: -237px -528px; width: 16px; height: 16px; } 
+.actuateIV_hide_tooltip{ background-position: -237px -594px; width: 16px; height: 16px; } 
+.actuateIV_managedata16{ background-position: -237px -660px; width: 16px; height: 16px; } 
+.actuateIV_managedata16_active{ background-position: -237px -726px; width: 16px; height: 16px; } 
+.actuateIV_modify16{ background-position: -237px -792px; width: 16px; height: 16px; } 
+.actuateIV_modify16_active{ background-position: -237px -858px; width: 16px; height: 16px; } 
+.actuateIV_open16{ background-position: -237px -924px; width: 16px; height: 16px; } 
+.actuateIV_open16_active{ background-position: -237px -990px; width: 16px; height: 16px; } 
+.actuateIV_overlay_cornertopLeft{ background-position: -237px -1056px; width: 3px; height: 22px; } 
+.actuateIV_overlay_cornertopRight{ background-position: -237px -1128px; width: 3px; height: 22px; } 
+.actuateIV_overlay_drill_up_from_Categories{ background-position: -237px -1200px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_active{ background-position: -237px -1266px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_disabled{ background-position: -237px -1332px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Categories_over{ background-position: -237px -1398px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series{ background-position: -237px -1464px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_active{ background-position: -237px -1530px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_disabled{ background-position: -237px -1596px; width: 16px; height: 16px; } 
+.actuateIV_overlay_drill_up_from_Series_over{ background-position: -237px -1662px; width: 16px; height: 16px; } 
+.actuateIV_overlaychart{ background-position: -237px -1728px; width: 25px; height: 16px; } 
+.actuateIV_overlaydataAnalyzer{ background-position: -237px -1794px; width: 14px; height: 14px; } 
+.actuateIV_overlaydataAnalyzer_over{ background-position: -237px -1858px; width: 14px; height: 14px; } 
+.actuateIV_overlayedit{ background-position: -237px -1922px; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_active{ background-position: -322px 0; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_m{ background-position: -322px -66px; width: 16px; height: 16px; } 
+.actuateIV_overlayedit_over{ background-position: -322px -132px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter{ background-position: -322px -198px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter_active{ background-position: -322px -264px; width: 16px; height: 16px; } 
+.actuateIV_overlayexistfilter_over{ background-position: -322px -330px; width: 16px; height: 16px; } 
+.actuateIV_overlayfilter{ background-position: -322px -396px; width: 16px; height: 16px; } 
+.actuateIV_overlayfilter_over{ background-position: -322px -462px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu{ background-position: -322px -528px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu_active{ background-position: -322px -594px; width: 16px; height: 16px; } 
+.actuateIV_overlaymenu_over{ background-position: -322px -721px; width: 16px; height: 16px; }
+.actuateIV_overlaymenu_dashboard{ background-position: -322px -660px; width: 11px; height: 11px; }
+.actuateIV_overlaymenu_dashboard_active{ background-position: -322px -660px; width: 11px; height: 11px; }
+.actuateIV_overlaymenu_dashboard_over{ background-position: -322px -660px; width: 11px; height: 11px; } 
+.actuateIV_overlaysortasc{ background-position: -322px -787px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortasc_over{ background-position: -322px -853px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortdesc{ background-position: -322px -919px; width: 16px; height: 16px; } 
+.actuateIV_overlaysortdesc_over{ background-position: -322px -985px; width: 16px; height: 16px; } 
+.actuateIV_overlayswitchcolumn{ background-position: -322px -1051px; width: 11px; height: 6px; } 
+.actuateIV_overlayswitchcolumn_active{ background-position: -322px -1107px; width: 11px; height: 6px; } 
+.actuateIV_overlayswitchtotable{ background-position: -322px -1163px; width: 20px; height: 20px; } 
+.actuateIV_overlayswitchtotable_active{ background-position: -322px -1233px; width: 20px; height: 20px; } 
+.actuateIV_parameter16{ background-position: -322px -1303px; width: 16px; height: 16px; } 
+.actuateIV_parameter16_active{ background-position: -322px -1369px; width: 16px; height: 16px; } 
+.actuateIV_redo16{ background-position: -322px -1435px; width: 16px; height: 16px; } 
+.actuateIV_redo16_active{ background-position: -322px -1501px; width: 16px; height: 16px; } 
+.actuateIV_repeat{ background-position: -322px -1567px; width: 16px; height: 16px; } 
+.actuateIV_save16{ background-position: -322px -1633px; width: 16px; height: 16px; } 
+.actuateIV_save16_active{ background-position: -322px -1699px; width: 16px; height: 16px; } 
+.actuateIV_saveas16{ background-position: -322px -1765px; width: 16px; height: 16px; } 
+.actuateIV_saveas16_active{ background-position: -322px -1831px; width: 16px; height: 16px; } 
+.actuateIV_savepreview16{ background-position: -322px -1897px; width: 16px; height: 16px; } 
+.actuateIV_savepreview16_active{ background-position: -407px 0; width: 16px; height: 16px; } 
+.actuateIV_section16{ background-position: -407px -66px; width: 16px; height: 16px; } 
+.actuateIV_section16_active{ background-position: -407px -132px; width: 16px; height: 16px; } 
+.actuateIV_sectionDelete16{ background-position: -407px -198px; width: 16px; height: 16px; } 
+.actuateIV_sectionDelete16_active{ background-position: -407px -264px; width: 16px; height: 16px; } 
+.actuateIV_show_detail{ background-position: -407px -330px; width: 16px; height: 16px; } 
+.actuateIV_show_tooltip{ background-position: -407px -396px; width: 16px; height: 16px; } 
+.actuateIV_sort16{ background-position: -407px -462px; width: 16px; height: 16px; } 
+.actuateIV_sort16_active{ background-position: -407px -528px; width: 16px; height: 16px; } 
+.actuateIV_theme16{ background-position: -407px -594px; width: 16px; height: 16px; } 
+.actuateIV_theme16_active{ background-position: -407px -660px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchart{ background-position: -407px -726px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchartOff{ background-position: -407px -792px; width: 16px; height: 16px; } 
+.actuateIV_toolbarchart_active{ background-position: -407px -858px; width: 16px; height: 16px; } 
+.actuateIV_toolbarfilter{ background-position: -407px -924px; width: 16px; height: 16px; } 
+.actuateIV_toolbarfilter{ background-position: -407px -990px; width: 32px; height: 32px; } 
+.actuateIV_toolbarfilter_over{ background-position: -407px -1072px; width: 32px; height: 32px; } 
+.actuateIV_top_bottom_N{ background-position: -407px -1154px; width: 16px; height: 16px; } 
+.actuateIV_top_bottom_N_active{ background-position: -407px -1220px; width: 16px; height: 16px; } 
+.actuateIV_undo16{ background-position: -407px -1286px; width: 16px; height: 16px; } 
+.actuateIV_undo16_active{ background-position: -407px -1352px; width: 16px; height: 16px; } 
+
+
+
+/******************************************************************************
+ * dialog.png
+ ******************************************************************************/
+
+.actuateIV_Add{ background-position: 0 0; width: 16px; height: 16px; } 
+.actuateIV_AddAll{ background-position: 0 -18px; width: 16px; height: 16px; } 
+.actuateIV_AddAll_disabled{ background-position: 0 -36px; width: 16px; height: 16px; } 
+.actuateIV_Add_disabled{ background-position: 0 -54px; width: 16px; height: 16px; } 
+.actuateIV_AlignCenter_disable{ background-position: 0 -72px; width: 32px; height: 32px; } 
+.actuateIV_AlignCenter_enable{ background-position: 0 -106px; width: 32px; height: 32px; } 
+.actuateIV_AlignCenter_over{ background-position: 0 -140px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_disable{ background-position: 0 -174px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_enable{ background-position: 0 -208px; width: 32px; height: 32px; } 
+.actuateIV_AlignLeft_over{ background-position: 0 -242px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_disable{ background-position: 0 -276px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_enable{ background-position: 0 -310px; width: 32px; height: 32px; } 
+.actuateIV_AlignRight_over{ background-position: 0 -344px; width: 32px; height: 32px; } 
+.actuateIV_Container_corner_left_bottom{ background-position: 0 -378px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_left_top{ background-position: 0 -395px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_right_bottom{ background-position: 0 -412px; width: 15px; height: 15px; } 
+.actuateIV_Container_corner_right_top{ background-position: 0 -429px; width: 15px; height: 15px; } 
+.actuateIV_Container_shade_bottom{ background-position: 0 -446px; width: 290px; height: 42px; } 
+.actuateIV_Container_shade_corner{ background-position: 0 -490px; width: 35px; height: 40px; } 
+.actuateIV_Container_shade_right{ background-position: 0 -532px; width: 42px; height: 240px; } 
+.actuateIV_Movedown{ background-position: 0 -774px; width: 25px; height: 26px; } 
+.actuateIV_Moveup{ background-position: 0 -802px; width: 25px; height: 26px; } 
+.actuateIV_Remove{ background-position: 0 -830px; width: 16px; height: 16px; } 
+.actuateIV_RemoveAll{ background-position: 0 -848px; width: 16px; height: 16px; } 
+.actuateIV_RemoveAll_disabled{ background-position: 0 -866px; width: 16px; height: 16px; } 
+.actuateIV_Remove_disabled{ background-position: 0 -884px; width: 16px; height: 16px; } 
+.actuateIV_arrow_down_mobi{ background-position: 0 -902px; width: 32px; height: 32px; } 
+.actuateIV_arrow_up_mobi{ background-position: 0 -936px; width: 32px; height: 32px; } 
+.actuateIV_bold_disable{ background-position: 0 -1004px; width: 32px; height: 32px; } 
+.actuateIV_bold_disable_mobi{ background-position: 0 -1004px; width: 32px; height: 32px; } 
+.actuateIV_bold_enable{ background-position: 0 -1038px; width: 26px; height: 26px; } 
+.actuateIV_bold_enable{ background-position: 0 -1066px; width: 32px; height: 32px; } 
+.actuateIV_bold_enable_mobi{ background-position: 0 -1100px; width: 32px; height: 32px; } 
+.actuateIV_bold_over{ background-position: 0 -1134px; width: 32px; height: 32px; } 
+.actuateIV_calendar{ background-position: 0 -1168px; width: 34px; height: 21px; } 
+.actuateIV_chartformat_collapse{ background-position: 0 -1191px; width: 16px; height: 16px; } 
+.actuateIV_chartformat_expand{ background-position: 0 -1209px; width: 16px; height: 16px; } 
+.actuateIV_dialogClose{ background-position: 0 -1227px; width: 14px; height: 13px; } 
+.actuateIV_dialogClose_mob{ background-position: 0 -1242px; width: 12px; height: 12px; } 
+.actuateIV_dialogHelp{ background-position: 0 -1256px; width: 21px; height: 21px; } 
+.actuateIV_down-arrow{ background-position: 0 -1279px; width: 16px; height: 16px; } 
+.actuateIV_expression_invalid{ background-position: 0 -1297px; width: 14px; height: 13px; } 
+.actuateIV_expression_valid{ background-position: 0 -1312px; width: 14px; height: 13px; } 
+.actuateIV_fileGeneric16{ background-position: 0 -1327px; width: 16px; height: 16px; } 
+.actuateIV_folderClose16{ background-position: 0 -1345px; width: 16px; height: 16px; } 
+.actuateIV_italic_disable{ background-position: 0 -1397px; width: 32px; height: 32px; } 
+.actuateIV_italic_disable_mobi{ background-position: 0 -1397px; width: 32px; height: 32px; } 
+.actuateIV_italic_enable{ background-position: 0 -1431px; width: 32px; height: 32px; } 
+.actuateIV_italic_enable_mobi{ background-position: 0 -1465px; width: 32px; height: 32px; } 
+.actuateIV_italic_over{ background-position: 0 -1499px; width: 32px; height: 32px; } 
+.actuateIV_ltarrow{ background-position: 0 -1533px; width: 17px; height: 17px; } 
+.actuateIV_minus_mob{ background-position: 0 -1552px; width: 32px; height: 32px; } 
+.actuateIV_open16{ background-position: 0 -1586px; width: 16px; height: 16px; } 
+.actuateIV_plus_mob{ background-position: 0 -1604px; width: 32px; height: 32px; } 
+.actuateIV_rtarrow{ background-position: 0 -1638px; width: 17px; height: 17px; } 
+.actuateIV_underline_disable{ background-position: 0 -1691px; width: 32px; height: 32px; } 
+.actuateIV_underline_disable_mobi{ background-position: 0 -1691px; width: 32px; height: 32px; } 
+.actuateIV_underline_enable{ background-position: 0 -1725px; width: 32px; height: 32px; } 
+.actuateIV_underline_over{ background-position: 0 -1759px; width: 32px; height: 32px; } 
+.actuateIV_up-arrow{ background-position: 0 -1793px; width: 16px; height: 16px; } 
+
+
+
+/******************************************************************************
+ * flashgadget.gif
+ ******************************************************************************/
+
+.actuateIV_Bullet{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_Bullet_selected{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_Cylinder{ background-position: 0 -106px; width: 48px; height: 48px; } 
+.actuateIV_Cylinder_selected{ background-position: 0 -159px; width: 48px; height: 48px; } 
+.actuateIV_LinearGauge{ background-position: 0 -212px; width: 48px; height: 48px; } 
+.actuateIV_LinearGauge_selected{ background-position: 0 -265px; width: 48px; height: 48px; } 
+.actuateIV_Meter{ background-position: 0 -318px; width: 48px; height: 48px; } 
+.actuateIV_Meter_selected{ background-position: 0 -371px; width: 48px; height: 48px; } 
+.actuateIV_Thermometer{ background-position: 0 -424px; width: 48px; height: 48px; } 
+.actuateIV_Thermometer_selected{ background-position: 0 -477px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ * brs.png
+ ******************************************************************************/
+ .actuateIV_BG_Divider{background-position: -34px -421px; height: 32px; width: 16px;}
+
+/******************************************************************************
+ *	chart subtype
+ *****************************************************************************/
+ 
+/******************************************************************************
+ *	otherchart.gif
+ *****************************************************************************/
+.actuateIV_IV_line_on { background-position: 0 -30px; } 
+.actuateIV_area_depth_selected { background-position: 0 -132px; } 
+.actuateIV_barStick_stock_selected { background-position: 0 -240px; } 
+.actuateIV_bubble_selected { background-position: 0 -348px; } 
+.actuateIV_candlestick_stock_selected { background-position: 0 -450px; } 
+.actuateIV_difference_selected { background-position: 0 -558px; } 
+.actuateIV_gantt_selected { background-position: 0 -660px; } 
+.actuateIV_overlay_area_selected { background-position: 0 -762px; } 
+.actuateIV_overlay_line_flash_selected { background-position: 0 -870px; } 
+.actuateIV_overlay_line_selected { background-position: 0 -972px; } 
+.actuateIV_scatter_selected { background-position: 0 -1080px; } 
+
+/******************************************************************************
+ *	percentstarkedchart.gif
+ *****************************************************************************/
+.actuateIV_percentStacked_area_selected{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_barChart_selected{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar_flashChart_selected{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_bar_selected{ background-position: 0 -189px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column_flash_selected{ background-position: 0 -272px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column_selected{ background-position: 0 -355px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_cone_selected{ background-position: 0 -408px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_line_selected{ background-position: 0 -461px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_pyramid_selected{ background-position: 0 -514px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_tube_selected{ background-position: 0 -567px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	piechart.gif
+ *****************************************************************************/
+.actuateIV_IV_doughnut-angle_on{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_doughnut-front_on{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_flash_selected{ background-position: 0 -154px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_selected{ background-position: 0 -231px; width: 48px; height: 48px; } 
+.actuateIV_pie_flash_selected{ background-position: 0 -284px; width: 72px; height: 72px; } 
+.actuateIV_pie_flash_selectedchart{ background-position: 0 -361px; width: 72px; height: 72px; } 
+.actuateIV_pie_selected{ background-position: 0 -438px; width: 48px; height: 48px; } 
+.actuateIV_standard_meter_selected{ background-position: 0 -491px; width: 48px; height: 48px; } 
+.actuateIV_superimposed_meter_selected{ background-position: 0 -544px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	sidebysidechart.gif
+ *****************************************************************************/
+.actuateIV_IV_column-single_on{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_column-stack_on{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_sideBySide_barChart_selected{ background-position: 0 -154px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_bar_flashChart_selected{ background-position: 0 -207px; width: 78px; height: 78px; } 
+.actuateIV_sideBySide_column_flash_selected{ background-position: 0 -290px; width: 78px; height: 78px; } 
+.actuateIV_sideBySide_column_selected{ background-position: 0 -373px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_cone_selected{ background-position: 0 -426px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_pyramid_selected{ background-position: 0 -479px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_tube_selected{ background-position: 0 -532px; width: 48px; height: 48px; } 
+ 
+ 
+/******************************************************************************
+ *	stackedchart.gif
+ *****************************************************************************/
+.actuateIV_stackded_column_flash_selected{ background-position: 0 0; width: 78px; height: 78px; } 
+.actuateIV_stackded_column_selected{ background-position: 0 -83px; width: 48px; height: 48px; } 
+.actuateIV_stacked_area_selected{ background-position: 0 -136px; width: 48px; height: 48px; } 
+.actuateIV_stacked_barChart_selected{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar_flashChart_selected{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_stacked_cone_selected{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_stacked_line_selected{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_stacked_pyramid_selected{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_stacked_tube_selected{ background-position: 0 -484px; width: 48px; height: 48px; } 
+
+
+ 
+/******************************************************************************
+ *	unsel_otherchart.gif
+ *****************************************************************************/
+.actuateIV_IV_line_off { background-position: 0 -30px; } 
+.actuateIV_barStick_stock { background-position: 0 -132px; } 
+.actuateIV_bubble { background-position: 0 -240px; } 
+.actuateIV_candlestick_stock { background-position: 0 -342px; } 
+.actuateIV_difference { background-position: 0 -450px; } 
+.actuateIV_gantt { background-position: 0 -552px; } 
+.actuateIV_overlay_area { background-position: 0 -654px; } 
+.actuateIV_overlay_line { background-position: 0 -762px; } 
+.actuateIV_scatter { background-position: 0 -870px; } 
+
+/******************************************************************************
+ *	unsel_percentstarkedchart.gif
+ *****************************************************************************/
+.actuateIV_percentStacked_area{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_bar_flash{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_column{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_column_flash{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_percentStacked_cone{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_line{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_pyramid{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_percentStacked_tube{ background-position: 0 -484px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	unsel_piechart.gif
+ *****************************************************************************/
+.actuateIV_IV_doughnut-angle_off{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_doughnut-front_off{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_IV_pie-angle_off{ background-position: 0 -154px; width: 72px; height: 72px; } 
+.actuateIV_doughnut_flash{ background-position: 0 -231px; width: 72px; height: 72px; } 
+.actuateIV_pie{ background-position: 0 -308px; width: 78px; height: 78px; } 
+.actuateIV_pie_depth{ background-position: 0 -391px; width: 78px; height: 78px; } 
+.actuateIV_pie_flash{ background-position: 0 -474px; width: 72px; height: 72px; } 
+.actuateIV_standard_meter{ background-position: 0 -551px; width: 48px; height: 48px; } 
+.actuateIV_superimposed_meter{ background-position: 0 -604px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	unsel_sidebysidechart.gif
+ *****************************************************************************/
+.actuateIV_IV_column-single_off{ background-position: 0 0; width: 72px; height: 72px; } 
+.actuateIV_IV_column-stack_off{ background-position: 0 -77px; width: 72px; height: 72px; } 
+.actuateIV_sideBySide_column{ background-position: 0 -154px; width: 48px; height: 48px; } 
+.actuateIV_sideBySide_column_flash{ background-position: 0 -207px; width: 78px; height: 78px; } 
+.actuateIV_sideByside_bar{ background-position: 0 -290px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_bar_flash{ background-position: 0 -343px; width: 78px; height: 78px; } 
+.actuateIV_sideByside_cone{ background-position: 0 -426px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_pyramid{ background-position: 0 -479px; width: 48px; height: 48px; } 
+.actuateIV_sideByside_tube{ background-position: 0 -532px; width: 48px; height: 48px; } 
+
+
+/******************************************************************************
+ *	unsel_stackedchart.png
+ *****************************************************************************/
+.actuateIV_stacked_area{ background-position: 0 0; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar{ background-position: 0 -53px; width: 48px; height: 48px; } 
+.actuateIV_stacked_bar_flash{ background-position: 0 -106px; width: 78px; height: 78px; } 
+.actuateIV_stacked_column{ background-position: 0 -189px; width: 48px; height: 48px; } 
+.actuateIV_stacked_column_flash{ background-position: 0 -242px; width: 78px; height: 78px; } 
+.actuateIV_stacked_cone{ background-position: 0 -325px; width: 48px; height: 48px; } 
+.actuateIV_stacked_line{ background-position: 0 -378px; width: 48px; height: 48px; } 
+.actuateIV_stacked_pyramid{ background-position: 0 -431px; width: 48px; height: 48px; } 
+.actuateIV_stacked_tube{ background-position: 0 -484px; width: 48px; height: 48px; } 
+
+/******************************************************************************
+ *	radarchart.gif
+ *****************************************************************************/
+.actuateIV_standardradar_selected { background-position: 0 -30px; } 
+.actuateIV_IV_spider_selected { background-position: 0 -132px; } 
+.actuateIV_bullseye_selected { background-position: 0 -234px; }
+
+/******************************************************************************
+ *	unsel_radarchart.gif
+ *****************************************************************************/
+.actuateIV_IV_standardradar { background-position: 0 -30px; } 
+.actuateIV_IV_spider { background-position: 0 -132px; } 
+.actuateIV_IV_bullseye { background-position: 0 -234px; } 

@@ -1,0 +1,23 @@
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog table,
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog div,
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog tr
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog .dialog_content_table td
+{
+	padding:  5px 0px 5px 0px;
+	margin: 0px;
+}
+
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog .dialog_content_table .lableright
+{
+	padding: 0px 4px 0px 0px;
+}
+
+.actuate_iv_ui_dialog_column_ivMoveToGroupDialog .padding
+{
+	padding-bottom : 5px;
+}

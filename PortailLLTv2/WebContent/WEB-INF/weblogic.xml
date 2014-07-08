@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<container-descriptor>
+		<servlet-reload-check-secs>-1</servlet-reload-check-secs>
+		<prefer-web-inf-classes>true</prefer-web-inf-classes>
+	</container-descriptor>
+	<session-descriptor>
+		<http-proxy-caching-of-cookies>true</http-proxy-caching-of-cookies>
+	</session-descriptor>
+	<jsp-descriptor>
+		<page-check-seconds>-1</page-check-seconds>
+		<working-dir>./jsp_precompile_dir/work</working-dir>
+		<backward-compatible>true</backward-compatible>
+	</jsp-descriptor>
+	<library-ref>
+		<library-name>jstl</library-name>
+		<specification-version>1.1</specification-version>
+		<implementation-version>1.1.2</implementation-version>
+		<exact-match>true</exact-match>
+	</library-ref>
+</weblogic-web-app>

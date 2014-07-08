@@ -1,0 +1,154 @@
+
+
+/******************************************************************************
+ * IV Simple export data dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .checkboxPadding
+{
+	margin-right: 2px;
+}			
+ 
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .movebuttons
+{
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .select
+{
+	width:180px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .titleSpacing
+{
+	height: 3px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .radioButtonSpacing
+{
+	height: 2px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .moveButtonSpacing
+{
+	text-align: center;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .itemSpacing
+{
+	height: 10px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .seperatorSpacing
+{
+	height: 5px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .encodeRowStyleSpacing
+{
+	height: 15px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .encodestyleSpacing
+{
+	height: 6px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .dBackground .encodeRowStyle
+{
+	line-height: 0px;
+	valign: top;
+	vertical-align: top;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .inputWidth
+{
+	width: 285px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .columnsDiv
+{
+	height: 140px; 
+	width: 170px;
+	padding-bottom: 10px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .cellpad
+{
+	padding: 5px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .buttonPaddingStyle
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.actuate_iv_ui_dialog_ivSimpleExportDataDialog .buttonWidth
+{
+	width: 37px !important;	
+}	
+
+/******************************************************************************
+ * IV Selected export data dialog.
+ *****************************************************************************/
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog table,
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog div,
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog tr,
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog td	
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .checkboxPadding
+{
+	margin-right: 2px;
+}	
+ 
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .single_select
+{
+	width:180px;
+	font-size:8pt;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .select
+{
+	width:180px;
+	font-size:8pt;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .titleSpacing
+{
+	height: 3px;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .itemSpacing
+{
+	height: 10px;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .columnsDiv
+{
+	height: 140px; 
+	width: 180px; 
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .cellpad
+{
+	padding: 5px;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .buttonPaddingStyle
+{
+	padding-left: 17px;
+	padding-right: 17px;
+}
+
+.actuate_iv_ui_dialog_ivSelectedExportDataDialog .movebuttons
+{
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}

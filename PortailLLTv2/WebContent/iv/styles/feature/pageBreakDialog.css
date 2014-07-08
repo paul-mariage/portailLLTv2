@@ -1,0 +1,17 @@
+/******************************************************************************
+ *	Page Break Dialog
+ *****************************************************************************/
+  
+.actuate_iv_ui_dialog_ivPageBreakDialog .pagebreak_dialog_rectangle
+{
+	border-style	: solid;
+	border-color	: #7F9DB9;
+	border-width	: 1px;
+	padding-right	: 2px;
+}
+
+.actuate_iv_ui_dialog_ivPageBreakDialog .pagebreak_dialog_inputtext
+{
+	line-height	: 130%;
+	width		: 180px;
+}

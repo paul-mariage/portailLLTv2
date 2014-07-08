@@ -1,0 +1,54 @@
+
+/******************************************************************************
+ *	Boolean Format Dialog
+ *****************************************************************************/
+.actuate_dialog_format_BooleanFormattingDialog table,
+.actuate_dialog_format_BooleanFormattingDialog div,
+.actuate_dialog_format_BooleanFormattingDialog tr,
+.actuate_dialog_format_BooleanFormattingDialog td	
+{
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+.actuate_dialog_format_BooleanFormattingDialog div
+{
+	background-color: transparent;	
+}
+ 
+.actuate_dialog_format_BooleanFormattingDialog .formatdialog_label 
+{
+	float:left; 
+	text-align:left;
+	margin-bottom:0.5ex;
+	margin-right: 10px;
+}
+
+.actuate_dialog_format_BooleanFormattingDialog .formatdialog_dropdown 
+{
+	float:right; 
+	text-align: left;
+	margin-bottom:0.5ex;
+}
+
+.actuate_dialog_format_BooleanFormattingDialog .formatdialog_okbutton 
+{
+	width:100%; 
+	text-align:center;
+	margin-top:1ex;
+}
+
+.actuate_dialog_format_BooleanFormattingDialog .formattingHelp {
+	font: 11px, Arial; 
+	font-style: normal;
+	font-weight: normal;
+	color: #535353;
+	border-top: none; 
+	border-color: #7F9DB9; 
+	margin-top:2ex;
+	padding-top:1ex;
+}
+
+.actuate_dialog_format_BooleanFormattingDialog .helpHeader {
+	 
+}

@@ -1,0 +1,29 @@
+
+
+/******************************************************************************
+ *	LinkToThisPage Dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_ivLinkToThisPageDialog .linktothispage_dialog_textarea
+{
+	width		: 260px;
+	font-size	: 8pt;
+	font-family	: tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	position: relative; 
+	height		: 80px;
+	line-height	:15px;
+	overflow	:auto;
+	bakground-image: none;
+}
+
+.actuate_iv_ui_dialog_ivLinkToThisPageDialog .linktothispage_dialog_inputtext
+{
+	line-height	: 130%;
+	width		: 390px;
+	font-size	: 8pt;
+	font-family	: tahoma,verdana,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.actuate.oda.feature"
+      label="%featureName"
+      version="23.0.0.v20140122"
+      provider-name="%providerName"
+      plugin="com.actuate.oda.adapter.dtp">
+
+   <description url="http://www.actuate.com/birt">
+      %description
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.datatools.enablement.oda.feature" version="1.11.2" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.actuate.data.oda.ais"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"/>
+
+   <plugin
+         id="com.actuate.data.oda.birt.propertyProvider"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"/>
+
+   <plugin
+         id="com.actuate.oda.adapter.dtp"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"
+         unpack="false"/>
+
+   <plugin
+         id="com.actuate.oda.consumer.helper"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"
+         unpack="false"/>
+
+   <plugin
+         id="com.actuate.data.oda.pojo"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"
+         unpack="false"/>
+
+   <plugin
+         id="com.actuate.data.oda.ereport"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"
+         unpack="false"/>
+
+   <plugin
+         id="com.actuate.data.oda.amazonaws.dynamodb"
+         download-size="0"
+         install-size="0"
+         version="23.0.0.v20140122"
+         unpack="false"/>
+
+</feature>

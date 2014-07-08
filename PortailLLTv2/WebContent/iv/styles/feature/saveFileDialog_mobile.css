@@ -1,0 +1,24 @@
+
+/******************************************************************************
+ *	save file / document dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .filebrowser_dialog_breadcrumb_item_enabled,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .filebrowser_dialog_breadcrumb_item_enabled,
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .filebrowser_dialog_breadcrumb_item_disabled,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .filebrowser_dialog_breadcrumb_item_disabled
+{
+	font: 15px tahoma, verdana, arial, sans-serif !important;
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .elementsWidth,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .elementsWidth
+{
+	width: 270px !important;	
+}
+
+.actuate_iv_ui_dialog_file_ivSaveFileDialog .comboWidth,
+.actuate_iv_ui_dialog_file_ivSaveDocumentDialog .comboWidth
+{
+	width: 270px !important;	
+}

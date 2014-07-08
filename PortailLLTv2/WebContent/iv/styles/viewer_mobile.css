@@ -1,0 +1,110 @@
+.viewerBody
+{
+	background-color:#474747;
+}
+
+.actuate_mobile_shared .dialog_default_button
+{
+	font-size: 13px ;	
+	height : 30px;
+	background-color:#ffffff;
+	border-style:solid;
+	border-color: #528CC5;
+	border-width:1px;
+	cursor: pointer;
+ 	font-family		: tahoma,verdana,arial,sans-serif;
+ 	font-style: normal;
+	font-weight: normal;
+}
+
+.actuate_shared_resource .dialogLabelFont
+{
+	font: 12px tahoma, verdana, arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+.actuate_mobile_shared .iv_dialog_link_enabled, .actuate_mobile_shared .iv_dialog_link_disabled
+{
+	font-size: 15px;	
+}
+
+/******************************************************************************
+ *	IV toc menu
+ *****************************************************************************/
+ 
+ div#toc_cascading_div .x-toolbar-title
+ {
+ 	font-size 		: 20px;
+ 	line-height     :36px;
+ }
+ 
+ div#toc_cascading_div .x-list-item
+{
+	font-size 		: 20px;
+	font-weight		: bold;
+}
+ 
+
+/******************************************************************************
+ *	IV context menu
+ *****************************************************************************/
+ 
+ div#contextmenu_cascading_div .x-toolbar-title
+ {
+ 	font-size 		: 1em;
+ 	padding-top		: .3em;
+ }
+ 
+ div#contextmenu_cascading_div .x-list-item
+{
+	font-size 		: 1em;
+	font-weight		: bold;
+}
+
+
+.new_toolbar_outermostDiv .x-list-item
+{
+	font-size : 20px !important;
+	font-weight : bold;
+}
+
+/******************************************************************************
+ *	Page Nav Bar
+ *****************************************************************************/
+ #page_navbar .x-input-slider:after
+ {
+ 	height 				: 4px;
+    top 				: 1em;
+ 	-webkit-box-shadow	: #000000 0 0 0;
+ 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9b9796), color-stop(2%, #9b9796), color-stop(100%, #9b9796));
+    background-image: linear-gradient(#9b9796, #9b9796 2%, #9b9796);
+ }
+ #page_navbar .x-thumb:before
+ {
+ 	border 					: transparent;
+ 	background-color		: transparent;
+ 	width					: 1em;
+ 	height					: 1em;
+ 	top						: .575em;
+ 	border-radius			: .5em;
+ 	-webkit-border-radius	: .5em;
+ 	-webkit-box-shadow	: #000000 0 0 0;
+ 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #efefef), color-stop(100%, #666362));
+    background-image: linear-gradient(#ffffff, #efefef 2%, #666362);
+ }
+ 
+ #page_navbar_displaydiv .new_button
+ {
+ 	display 		  	: -webkit-box;	
+ 	-webkit-box-align 	: center;
+ 	position			: absolute;	
+ 	top					: 2.9em !important;
+ }
+ 
+ .actuateViewerContainer th
+ {
+ 	 font-weight: bold;
+ 	 text-align: center;
+ }
+
+  

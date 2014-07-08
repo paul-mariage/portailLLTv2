@@ -1,0 +1,24 @@
+/******************************************************************************
+ *	IV Aggregation dialog
+ *****************************************************************************/
+td#selecFunctionLabel
+{
+	width : 110px;
+}
+
+td#sortDirectionLabel
+{
+	width : 110px;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivAggregationAccordionDialog .aggregation_level
+{
+	float:left; 
+	padding-left : 0px !important;
+}
+
+.actuate_iv_ui_dialog_aggregation_ivColumnAggregationDialog .aggregation_level
+{
+	float:left; 
+	padding-left : 0px !important;
+}

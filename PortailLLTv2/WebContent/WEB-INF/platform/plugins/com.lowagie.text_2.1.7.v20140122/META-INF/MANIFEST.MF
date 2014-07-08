@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lowagie Itext
+Bundle-SymbolicName: com.lowagie.text
+Bundle-Version: 2.1.7.v20140122
+Bundle-Vendor: Eclipse.org
+Bundle-Localization: plugin
+Bundle-ClassPath: lib/itextasian-1.5.2.jar,
+ library.jar,
+ lib/com.lowagie.text_2.1.7.v201003052100.jar
+Export-Package: com.lowagie.text,
+ com.lowagie.text.html,
+ com.lowagie.text.html.simpleparser,
+ com.lowagie.text.pdf,
+ com.lowagie.text.pdf.codec,
+ com.lowagie.text.pdf.codec.wmf,
+ com.lowagie.text.pdf.crypto,
+ com.lowagie.text.pdf.events,
+ com.lowagie.text.pdf.fonts,
+ com.lowagie.text.pdf.hyphenation,
+ com.lowagie.text.xml,
+ com.lowagie.text.xml.xmp,
+ com.lowagie.tools
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-ExtensibleAPI: true
+

@@ -1,0 +1,19 @@
+/******************************************************************************
+ *	condition format dialog
+ *****************************************************************************/
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .previewbox
+{
+	width: 290px; 
+	border-radius: 4px;
+}
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .conditionalformatcontainer
+{
+	border-radius: 4px;
+}	
+
+.actuate_iv_ui_dialog_style_ivConditionalFormattingDialog .previewtext
+{
+	width: 290px; 
+}

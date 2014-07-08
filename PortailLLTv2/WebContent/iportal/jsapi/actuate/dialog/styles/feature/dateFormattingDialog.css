@@ -1,0 +1,55 @@
+
+/******************************************************************************
+ *	Date Format Dialog
+ *****************************************************************************/
+.actuate_dialog_format_DateFormattingDialog table,
+.actuate_dialog_format_DateFormattingDialog div,
+.actuate_dialog_format_DateFormattingDialog tr,
+.actuate_dialog_format_DateFormattingDialog td
+{
+	margin: 0px;
+	padding: 0px;	
+}
+ 
+.actuate_dialog_format_DateFormattingDialog div
+{
+	background-color: transparent;	
+}
+
+ 
+
+.actuate_dialog_format_DateFormattingDialog .formatdialog_dropdown 
+{
+	float:right; 
+	text-align: left;
+	margin-bottom:0.5ex;
+}
+
+.actuate_dialog_format_DateFormattingDialog .formatdialog_okbutton 
+{
+	width:100%; 
+	text-align:center;
+	margin-top:1ex;
+}
+
+.actuate_dialog_format_DateFormattingDialog .formattingHelp {
+
+}
+
+.actuate_dialog_format_DateFormattingDialog .helpHeader {
+	font-weight: bold;
+}
+
+.actuate_dialog_format_DateFormattingDialog .valueTextBox {
+	font: 12px/16px 'Source Sans Pro', tahoma, verdana, arial, sans-serif;
+}
+
+.actuate_dialog_format_DateFormattingDialog td
+{
+	padding-right:20px;
+}
+
+.actuate_dialog_format_DateFormattingDialog .spacer
+{
+	clear:both;
+}

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: InfoApp Widget Extension Fragment
+Bundle-SymbolicName: com.actuate.infoapp.model.widget;singleton:=true
+Bundle-Version: 23.0.0.v20140122
+Bundle-Vendor: Actuate Corporation
+Fragment-Host: com.actuate.infoapp.model
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,131 @@
+.mobileLandingNavbar
+{
+    position			: relative;
+	overflow			: hidden;
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size			: 8pt;
+	bottom				: 0px;
+	width				: 100%;
+	background-image	: url( '../images/navbg.png' );
+	background-repeat	: repeat-x;
+	height				: 49px;
+	text-align			: left;
+	margin				: 0px;
+	padding				: 0px;
+	border				: none;
+	outline				: none;
+}
+.mobileLandingSubListBar
+{
+    position			: relative;
+	overflow			: hidden;
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size			: 8pt;
+	background-image	: url( '../images/BG-toolbar.png' );
+	background-repeat	: repeat-x;
+	height				: 44px;
+	text-align			: left;
+	margin				: 0px;
+	padding				: 0px;
+	border				: none;
+	outline				: none;
+}
+.mobileLandingSubDetail
+{
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	position:relative;
+}
+.mobileLandingSubDetailLabel
+{
+	width:50px;
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size:12pt !important;
+	font-weight:bold;
+}
+.mobileLandingSubDetailName
+{
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size:18px !important;
+	max-width:320px;
+}
+.mobileLandingSubDetailTime
+{
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size:10pt !important;
+	max-width:460px;
+}
+.mobileLandingSubDetailDesc
+{
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size:8pt !important;
+}
+.navBarDashboard, .navBarMyDoc, .navBarSetting
+{
+	border:0 !important;
+	color:white !important;
+	width:150px;
+	height:49px !important;
+	vertical-align: bottom;
+	background-position: top !important; 
+	background-image: none !important;
+	background-color:transparent !important;
+}
+.navBarDashboardImg, .navBarMyDocImg, .navBarSettingImg
+{
+	width: 80px !important;
+	height:50px !important;
+	background-position: top !important; 
+}
+.subscriptonBack, .subscriptonRefreshImg
+{
+	height:28px;
+	width:24px;
+}
+.subscriptonRefresh
+{
+	background-position: top !important; 
+	background-image: none !important;
+	background-color:transparent !important;
+	vertical-align: middle;	
+	border:0 !important;
+	padding:0 !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	color:white !important;
+}
+.subDetailOpen
+{
+	border:0 !important;
+	padding:0 !important;
+	margin:0 !important;
+	color:white !important;
+	width:89px !important;
+	height:29px !important;
+	vertical-align: middle;
+}
+.subscriptonBack
+{
+	width:68px !important;
+	height:40px !important;
+}
+
+.sublistRight
+{
+	border-width: 0px !important;
+	border-right-width:1px !important;
+	border-color:#4b4b4b !important;
+	border-style:solid !important;
+	border-radius : 0px !important;
+	font-family			: tahoma,verdana,arial,sans-serif;	
+	font-size:12pt !important;
+	height:100% !important;
+}
+
+.sublistBodyWidth
+{
+	width : 100% !important;
+}
+
